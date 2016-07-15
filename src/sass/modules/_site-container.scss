@@ -9,11 +9,11 @@
 	background-color: #333;
 
 	@include respondTo(x-large) {
-		padding: _size(section-spacing);
+		// padding: _size(section-spacing);
 	}
 
 	@include respondTo(large) {
-		padding: _size(section-spacing-small);
+		// padding: _size(section-spacing-small);
 	}
 
 	.is-menu-visible {
@@ -21,7 +21,7 @@
 	}
 
 	@include respondTo(x-small) {
-		padding: 5px;
+		// padding: 5px;
 	}
 
 	@include respondTo(small) {
