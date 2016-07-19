@@ -2,6 +2,12 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
+  display: flex;
+  flex-direction: column;
+
+  &__section {
+    margin-top: 30px;
+  }
   input {
     margin-bottom: 8px;
     font-size: 14px;

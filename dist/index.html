@@ -31,65 +31,270 @@
     </section>
 
     <section class="l-mainContent mainContent">
+
       <div class="panelContainer">
         <div class="formContainer">
+          <h3>Shopping Cart Review (#1)</h3>
+          
+          <div class="tableRow tableHeader">
+           <div class="tableRow__text">Image</div>
+           <div class="tableRow__text">Item Description</div>
+           <div class="tableRow__text">Size</div>
+           <div class="tableRow__num">Amount</div>
+          </div>
+
+          <div class="tableRow">
+           <div class="tableRow__text">image</div>
+           <div class="tableRow__text">Summer 2013 Red Tour Tee (JTI57889)</div>
+           <div class="tableRow__text">XL</div>
+           <div class="tableRow__num">7,680</div>
+          </div>
+
+          <div class="tableRow">
+           <div class="tableRow__text">image</div>
+           <div class="tableRow__text">Summer 2013 Red Tour Tee (JTI57889)</div>
+           <div class="tableRow__text">XL</div>
+           <div class="tableRow__num">7,680</div>
+          </div>
+
+          <div class="tableRow">
+           <div class="tableRow__text">image</div>
+           <div class="tableRow__text">Summer 2013 Red Tour Tee (JTI57889)</div>
+           <div class="tableRow__text">XL</div>
+           <div class="tableRow__num">7,680</div>
+          </div> 
+
+        </div>
+
+        <div class="buttonPanel">
+          <a class="actionButton">check out</a>
+        </div>
+      </div>
+
+      <div class="panelContainer">
+        <div class="formContainer">
+          <h3>Review Shipping Address (#2)</h3>
+          
+          <div class="tableRow tableHeader">
+           <div class="tableRow__text">Billing Address</div>
+           <div class="tableRow__text">Shipping Address</div>
+          </div>
+
+          <div class="tableRow">
+           <div class="tableRow__text">521 Broaway</div>
+           <div class="tableRow__text">353 Mission Street</div>
+          </div>
+
+          <div class="tableRow">
+           <div class="tableRow__text">Apt #101</div>
+           <div class="tableRow__text"></div>
+          </div>
+
+          <div class="tableRow">
+           <div class="tableRow__text">San Francisco</div>
+           <div class="tableRow__text">Daily City</div>
+          </div> 
+
+          <div class="tableRow">
+           <div class="tableRow__text">CA</div>
+           <div class="tableRow__text">CA</div>
+          </div> 
+
+          <div class="tableRow">
+           <div class="tableRow__text">94121</div>
+           <div class="tableRow__text">94321</div>
+          </div> 
+
+          <div class="tableRow">
+           <div class="tableRow__text">United States</div>
+           <div class="tableRow__text">United States</div>
+          </div> 
+
+        </div>
+
+        <div class="buttonPanel">
+          <a class="actionButton">check out</a>
+        </div>
+      </div>
+
+      <div class="panelContainer">
+        <div class="formContainer">
+          <h3>Add Shipping Address (#3-A)</h3>
+
+          <form class="dataForm">
+            <div class="dataForm__section">
+              <div class="inputGroup">
+                <input type="text">
+                <label>Customer Name</label>
+              </div>
+            </div>
+
+            <div class="dataForm__section">
+              <div class="inputGroup">
+                <input type="text">
+                <label>Company Name</label>
+              </div>
+            </div>
+
+             <div class="dataForm__section">
+                <div class="inputGroup">
+                 <input type="text">
+                 <label>Street Address Line 1</label>
+               </div>
+             </div>
+
+              <div class="dataForm__section">
+                <div class="inputGroup">
+                  <input type="text">
+                  <label>Street Address Line 2</label>
+                </div>
+              </div>
+
+              <div class="dataForm__section">
+                <div class="inputGroup">
+                  <input type="text">
+                  <label>Phone Number</label>
+                </div>
+              </div>
+
+              <div class="dataForm__section">
+                <div class="inputGroup">
+                  <input type="text">
+                  <label>Mobile Phone Number</label>
+                </div>
+              </div>
+              
+              <div class="dataForm__section">
+                <div class="inputGroup">
+                  <input type="email">
+                  <label>City</label>
+                </div>
+              </div>
+
+              <div class="dataForm__section">
+                <div class="inputGroup">
+                  <input type="email">
+                  <label>State/Province/Region</label>
+                </div>
+              </div>
+
+              <div class="dataForm__section">
+                <div class="inputGroup">
+                  <input type="email">
+                  <label>Zip/Postal Code</label>
+                </div>
+              </div>
+
+              <div class="inputGroup">
+                <input type="email">
+                <label>Country</label>
+              </div>
+          
+          </form>
+
+          <div class="buttonPanel">
+            <a class="actionButton">save</a>
+            <a class="actionButton">cancel</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="panelContainer">
+        <div class="formContainer">
+          <h3>Add Shipping Address (#3-B)</h3>
           <form class="actionForm">
             <div class="actionForm__section">
               <div class="actionForm__panel">
-                <input type="text" placeholder="Title">
+                <input type="tableRow__text" placeholder="Customer Name">
               </div>
               <div class="actionForm__panel">
-                <input type="text" placeholder="Author">
+                <input type="tableRow__text" placeholder="Company Name">
               </div>
               <div class="actionForm__panel">
-                <input type="text" placeholder="Image Link">
+                <input type="tableRow__text" placeholder="Street Address Line 1">
+              </div>
+              <div class="actionForm__panel">
+                <input type="tableRow__text" placeholder="Street Address Line 2">
+              </div>
+              <div class="actionForm__panel">
+                <input type="tableRow__text" placeholder="Phone Number">
               </div>
              
             </div>
             <div class="actionForm__section"">
               <div class="actionForm__panel">
-                <textarea name="" cols="10" rows="5" placeholder="Description"></textarea>
+                <input type="tableRow__text" placeholder="City">
+              </div>
+              <div class="actionForm__panel">
+                <input type="tableRow__text" placeholder="State/Province/Region">
+              </div>
+              <div class="actionForm__panel">
+                <input type="tableRow__text" placeholder="Zip / Postal Code">
+              </div>
+              <div class="actionForm__panel">
+                <input type="tableRow__text" placeholder="Country">
+              </div>
+              <div class="actionForm__panel">
+                <input type="tableRow__text" placeholder="Mobile Phone Number">
               </div>
             </div>
           </form>
 
-          <div class="buttonPanel"><a class="actionButton">add book</a></div>
-        </div>
-     
-        <div class="media">
-          <img class="media__figure image" src="./images/the-grapes-of-wrath.jpg" alt="image">
-           <div class="media__body">
-           <h3 class="media__title">The Grapes of Wrath</h3>
-           <div class="media__subtitle">by John Steinbeck</div>
-           <p class="media__description">
-            An epic of the Great Depression chronicles the Dust Bowl migration of the 1930s and tells the story of one Oklahoma farm family, the Joads.
-           </p>
-           <div class="buttonPanel"><a class="actionButton">remove book</a></div>
-          </div>
-        </div>
-        <div class="media">
-          <img class="media__figure image" src="./images/the-grapes-of-wrath.jpg" alt="image">
-           <div class="media__body">
-           <h3 class="media__title">The Grapes of Wrath</h3>
-           <div class="media__subtitle">by John Steinbeck</div>
-           <p class="media__description">
-            An epic of the Great Depression chronicles the Dust Bowl migration of the 1930s and tells the story of one Oklahoma farm family, the Joads.
-           </p>
-           <div class="buttonPanel"><a class="actionButton">remove book</a></div>
-          </div>
-        </div>
-        <div class="media">
-          <img class="media__figure image" src="./images/the-grapes-of-wrath.jpg" alt="image">
-           <div class="media__body">
-           <h3 class="media__title">The Grapes of Wrath</h3>
-           <div class="media__subtitle">by John Steinbeck</div>
-           <p class="media__description">
-            An epic of the Great Depression chronicles the Dust Bowl migration of the 1930s and tells the story of one Oklahoma farm family, the Joads.
-           </p>
-           <div class="buttonPanel"><a class="actionButton">remove book</a></div>
+          <div class="buttonPanel">
+            <a class="actionButton">save</a>
+            <a class="actionButton">cancel</a>
           </div>
         </div>
       </div>
+
+      <div class="panelContainer">
+        <div class="formContainer">
+          <h3>Add Billing Address (#4)</h3>
+          <form class="actionForm">
+            <div class="actionForm__section">
+              <div class="actionForm__panel">
+                <input type="tableRow__text" placeholder="Customer Name">
+              </div>
+              <div class="actionForm__panel">
+                <input type="tableRow__text" placeholder="Company Name">
+              </div>
+              <div class="actionForm__panel">
+                <input type="tableRow__text" placeholder="Street Address Line 1">
+              </div>
+              <div class="actionForm__panel">
+                <input type="tableRow__text" placeholder="Street Address Line 2">
+              </div>
+              <div class="actionForm__panel">
+                <input type="tableRow__text" placeholder="Phone Number">
+              </div>
+             
+            </div>
+            <div class="actionForm__section"">
+              <div class="actionForm__panel">
+                <input type="tableRow__text" placeholder="City">
+              </div>
+              <div class="actionForm__panel">
+                <input type="tableRow__text" placeholder="State/Province/Region">
+              </div>
+              <div class="actionForm__panel">
+                <input type="tableRow__text" placeholder="Zip / Postal Code">
+              </div>
+              <div class="actionForm__panel">
+                <input type="tableRow__text" placeholder="Country">
+              </div>
+              <div class="actionForm__panel">
+                <input type="tableRow__text" placeholder="Mobile Phone Number">
+              </div>
+            </div>
+          </form>
+
+          <div class="buttonPanel">
+            <a class="actionButton">save</a>
+            <a class="actionButton">cancel</a>
+          </div>
+        </div>
+      </div>
+
     </section>
 
 
