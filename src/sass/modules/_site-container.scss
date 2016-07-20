@@ -6,7 +6,7 @@
 	transition: 'opacity #{_duration(menu)} ease';
 	opacity: 1;
 	padding: 0;
-	background-color: #333;
+	background-color: #eee;
 
 	@include respondTo(x-large) {
 		// padding: _size(section-spacing);
