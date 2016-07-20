@@ -30,6 +30,19 @@
   }
 }
 
+.l-panelContainer {
+  display: flex;
+  .l-panel:nth-child(1) {
+    // background-color: red;
+    flex-basis: 66.66666%;
+  }
+  .l-panel:nth-child(2) {
+    // background-color: green;
+    flex-basis: 33.33333%;
+  }
+}
+
+
 .l-footer {
   display: flex;
   flex-direction: column;
