@@ -6,12 +6,21 @@
   flex-direction: column;
 
   &__section {
-    margin-top: 30px;
+    margin-top: 35px;
+    margin-left: 35px;
   }
   input {
     margin-bottom: 8px;
-    font-size: 14px;
-    padding: 5px;
+    // font-size: 14px;
+    // padding: 5px;
+
+    width: 540px;
+    padding: 18px 25px;
+    font-size: 22px;
+    background: #fff;
+    text-transform: uppercase;
+    max-width: 100%;
+    border: 3px solid transparent;
   }
 
   input:focus, input:active {
@@ -32,16 +41,19 @@
     padding-bottom: 10px;
     transform: translateY(-50%);
     font-style: italic;
-    font-size: 14px;
+    // font-size: 14px;
+    font-size: 22px;
     color: #999;
     pointer-events: none;
     transition: all 0.15s ease-out 0s;
   }
 
   .inputGroup input:focus + label,
-  .inputGroup input.has-value + label {
+  .inputGroup input.js-userData + label {
     top: -10px;
-    font-size: 12px;
+    // font-size: 12px;
+    font-size: 22px;
     color: #aaa;
   }
 }
+
