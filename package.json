@@ -6,6 +6,9 @@
     "test": "jest",
     "start": "gulp"
   },
+  "browser": {
+    "chosen": "./src/lib/chosen_v1.6.1/chosen.jquery.js"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {

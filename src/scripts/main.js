@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import 'chosen';
 
 $(function () {
 
@@ -13,6 +14,10 @@ $(function () {
 	    input.addClass('js-userData');
 	  } 
 	});
+
+	$(".chosenSelect").chosen({
+		max_selected_options: 1
+	})
 
 });
 
