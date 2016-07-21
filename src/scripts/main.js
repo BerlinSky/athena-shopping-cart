@@ -21,7 +21,7 @@ $(function () {
 		
 	$('.chosen-container.chosen-container-single').css(
 		{	
-			"width": "500px", 
+			"width": "240px", 
 			"font-size": "18px",
 			"background-color": "#fff",
 			"border": "1px solid #eee"

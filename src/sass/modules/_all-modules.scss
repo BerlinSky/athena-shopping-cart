@@ -27,12 +27,18 @@
 	padding-left: 25px;	
 }
 
+.inputGroup--country {
+	width: calc(620px*0.5-25px);
+}
+
 .inputGroup--state {
-	width: 395px;
+	width: calc(620px*0.3-25px);
+	// background-color: green;
 }
 
 .inputGroup--zip {
-	width: 200px;
+	width: calc(620px*0.2);
+	// background-color: yellow;
 }
 
 
