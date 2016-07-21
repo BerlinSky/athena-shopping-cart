@@ -20,7 +20,12 @@ $(function () {
 	})
 		
 	$('.chosen-container.chosen-container-single').css(
-		{"width": "450px", "font-size": "18px"}
+		{	
+			"width": "500px", 
+			"font-size": "18px",
+			"background-color": "#fff",
+			"border": "1px solid #eee"
+		}
 	);
 
 	$('.chosen-single').css(
