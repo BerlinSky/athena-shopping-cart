@@ -32,94 +32,9 @@
 
     <section class="l-mainContent mainContent">
 
-      <div class="panelContainer">
-        <div class="formContainer">
-          <h3>Shopping Cart Review (#1)</h3>
-          
-          <div class="tableRow tableHeader">
-           <div class="tableRow__text">Image</div>
-           <div class="tableRow__text">Item Description</div>
-           <div class="tableRow__text">Size</div>
-           <div class="tableRow__num">Amount</div>
-          </div>
-
-          <div class="tableRow">
-           <div class="tableRow__text">image</div>
-           <div class="tableRow__text">Summer 2013 Red Tour Tee (JTI57889)</div>
-           <div class="tableRow__text">XL</div>
-           <div class="tableRow__num">7,680</div>
-          </div>
-
-          <div class="tableRow">
-           <div class="tableRow__text">image</div>
-           <div class="tableRow__text">Summer 2013 Red Tour Tee (JTI57889)</div>
-           <div class="tableRow__text">XL</div>
-           <div class="tableRow__num">7,680</div>
-          </div>
-
-          <div class="tableRow">
-           <div class="tableRow__text">image</div>
-           <div class="tableRow__text">Summer 2013 Red Tour Tee (JTI57889)</div>
-           <div class="tableRow__text">XL</div>
-           <div class="tableRow__num">7,680</div>
-          </div> 
-
-        </div>
-
-        <div class="buttonPanel">
-          <a class="actionButton">check out</a>
-        </div>
-      </div>
-
-      <div class="panelContainer">
-        <div class="formContainer">
-          <h3>Review Shipping Address (#2)</h3>
-          
-          <div class="tableRow tableHeader">
-           <div class="tableRow__text">Billing Address</div>
-           <div class="tableRow__text">Shipping Address</div>
-          </div>
-
-          <div class="tableRow">
-           <div class="tableRow__text">521 Broaway</div>
-           <div class="tableRow__text">353 Mission Street</div>
-          </div>
-
-          <div class="tableRow">
-           <div class="tableRow__text">Apt #101</div>
-           <div class="tableRow__text"></div>
-          </div>
-
-          <div class="tableRow">
-           <div class="tableRow__text">San Francisco</div>
-           <div class="tableRow__text">Daily City</div>
-          </div> 
-
-          <div class="tableRow">
-           <div class="tableRow__text">CA</div>
-           <div class="tableRow__text">CA</div>
-          </div> 
-
-          <div class="tableRow">
-           <div class="tableRow__text">94121</div>
-           <div class="tableRow__text">94321</div>
-          </div> 
-
-          <div class="tableRow">
-           <div class="tableRow__text">United States</div>
-           <div class="tableRow__text">United States</div>
-          </div> 
-
-        </div>
-
-        <div class="buttonPanel">
-          <a class="actionButton">check out</a>
-        </div>
-      </div>
-
       <div class="l-panelContainer panelContainer">
-        <div class="l-panel formContainer">
-          <h3>4 Shipping Address</h3>
+        <div class="l-panel formContainer cartSteps__formContainer">
+          <div class="stepTitle">4 &nbsp;&nbsp; Shipping Address</div>
 
           <form class="dataForm">
             <div class="dataForm__section">
@@ -160,154 +75,57 @@
               <div class="dataForm__section">
                 <div class="inputGroup">
                   <input type="text">
-                  <label>Mobile Phone Number</label>
-                </div>
-              </div>
-              
-              <div class="dataForm__section">
-                <div class="inputGroup">
-                  <input type="email">
                   <label>City</label>
                 </div>
               </div>
 
               <div class="dataForm__section">
                 <div class="inputGroup">
-                  <input type="email">
+                  <input type="text">
+                  <label>Country</label>
+                </div>
+              </div>
+
+              <div class="dataForm__section">
+                <div class="inputGroup">
+                  <input type="text">
                   <label>State/Province/Region</label>
                 </div>
               </div>
 
               <div class="dataForm__section">
                 <div class="inputGroup">
-                  <input type="email">
+                  <input type="text">
                   <label>Zip/Postal Code</label>
                 </div>
               </div>
 
-              <div class="dataForm__section">
-                <div class="inputGroup">
-                  <input type="email">
-                  <label>Country</label>
-                </div>
+              <div class="dataForm__buttonPanel">
+                <a class="actionButton">next</a>
               </div>
-          
           </form>
 
-          <div class="buttonPanel">
-            <a class="actionButton">save</a>
-            <a class="actionButton">cancel</a>
+          <div class="stepTitle">5 &nbsp;&nbsp; Payment Information</div>
+          <div class="stepTitle">6 &nbsp;&nbsp; Review Order</div>
+          <div class="stepTitle">7 &nbsp;&nbsp; Invoice</div>
+
+        </div>
+
+        <div class="l-panel cartStepsContainer">
+          <div class="cartSteps">
+            <div class="cartSteps__title">Your Checkout Process</div>
+            <ul class="cartSteps__list">
+              <li>Review Cart</li>
+              <li>Review Address(es)</li>
+              <li>Billing Address</li>
+              <li>Shipping Address</li>
+              <li>Payment Information</li>
+              <li>Review Order</li>
+              <li>Invoice</li>
+            </ul>
           </div>
         </div>
 
-        <div class="l-panel">
-          Your Checkout Process
-          <ul>
-            <li>Review Cart</li>
-            <li>Review Address(es)</li>
-            <li>Billing Address</li>
-            <li>Shipping Address</li>
-            <li>Payment Information</li>
-            <li>Review Order</li>
-            <li>Invoice</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="panelContainer">
-        <div class="formContainer">
-          <h3>Add Shipping Address (#3-B)</h3>
-          <form class="actionForm">
-            <div class="actionForm__section">
-              <div class="actionForm__panel">
-                <input type="tableRow__text" placeholder="Customer Name">
-              </div>
-              <div class="actionForm__panel">
-                <input type="tableRow__text" placeholder="Company Name">
-              </div>
-              <div class="actionForm__panel">
-                <input type="tableRow__text" placeholder="Street Address Line 1">
-              </div>
-              <div class="actionForm__panel">
-                <input type="tableRow__text" placeholder="Street Address Line 2">
-              </div>
-              <div class="actionForm__panel">
-                <input type="tableRow__text" placeholder="Phone Number">
-              </div>
-             
-            </div>
-            <div class="actionForm__section"">
-              <div class="actionForm__panel">
-                <input type="tableRow__text" placeholder="City">
-              </div>
-              <div class="actionForm__panel">
-                <input type="tableRow__text" placeholder="State/Province/Region">
-              </div>
-              <div class="actionForm__panel">
-                <input type="tableRow__text" placeholder="Zip / Postal Code">
-              </div>
-              <div class="actionForm__panel">
-                <input type="tableRow__text" placeholder="Country">
-              </div>
-              <div class="actionForm__panel">
-                <input type="tableRow__text" placeholder="Mobile Phone Number">
-              </div>
-            </div>
-          </form>
-
-          <div class="buttonPanel">
-            <a class="actionButton">save</a>
-            <a class="actionButton">cancel</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="panelContainer">
-        <div class="formContainer">
-          <h3>Add Billing Address (#4)</h3>
-          <form class="actionForm">
-            <div class="actionForm__section">
-              <div class="actionForm__panel">
-                <input type="tableRow__text" placeholder="Customer Name">
-              </div>
-              <div class="actionForm__panel">
-                <input type="tableRow__text" placeholder="Company Name">
-              </div>
-              <div class="actionForm__panel">
-                <input type="tableRow__text" placeholder="Street Address Line 1">
-              </div>
-              <div class="actionForm__panel">
-                <input type="tableRow__text" placeholder="Street Address Line 2">
-              </div>
-              <div class="actionForm__panel">
-                <input type="tableRow__text" placeholder="Phone Number">
-              </div>
-             
-            </div>
-            <div class="actionForm__section"">
-              <div class="actionForm__panel">
-                <input type="tableRow__text" placeholder="City">
-              </div>
-              <div class="actionForm__panel">
-                <input type="tableRow__text" placeholder="State/Province/Region">
-              </div>
-              <div class="actionForm__panel">
-                <input type="tableRow__text" placeholder="Zip / Postal Code">
-              </div>
-              <div class="actionForm__panel">
-                <input type="tableRow__text" placeholder="Country">
-              </div>
-              <div class="actionForm__panel">
-                <input type="tableRow__text" placeholder="Mobile Phone Number">
-              </div>
-            </div>
-          </form>
-
-          <div class="buttonPanel">
-            <a class="actionButton">save</a>
-            <a class="actionButton">cancel</a>
-          </div>
-        </div>
       </div>
 
     </section>
