@@ -11127,6 +11127,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 	(0, _jquery2.default)(".chosenSelect").chosen({
 		max_selected_options: 1
 	});
+
+	(0, _jquery2.default)('.chosen-container.chosen-container-single').css({ "width": "450px", "font-size": "18px" });
+
+	(0, _jquery2.default)('.chosen-single').css({ "border": 0, "border-radius": 0 });
 });
 
 },{"chosen":2,"jquery":1}]},{},[3])
