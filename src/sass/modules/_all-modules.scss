@@ -19,6 +19,68 @@
 @import "./shopping-cart/cart";
 @import "./chosen/chosen";
 
+.payment__Section {
+	// background-color: yellow;
+}
+
+.cardContainer {
+	display: flex;
+	flex-direction: column;
+	width: 620px;
+
+	.cardListPanel {
+		// border: 1px solid green;
+		padding: 10px 15px 10px 5px;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.cardNumberPanel {
+		// border: 1px solid orange;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&__cardNumber {
+			position: relative;
+			.inputGroup {
+				width: calc(620px - 20px);
+			}
+		}
+
+		&__cardImage {
+			position: absolute;
+			left: calc(620px - 20px - 60px);;
+			top: 15px;
+			z-index: 20;
+		}
+	}
+
+	.expDateAndCVCodePanel {
+		// border: 1px solid crimson;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&__expDate{
+			// flex-basis: 150px;
+			.inputGroup {
+				width: calc(620px * 0.7 - 25px);
+			}
+		}
+
+		&__cvCode {
+			// flex-basis: 150px;
+			.inputGroup {
+				width: calc(620px * 0.3 - 25px);
+
+			}
+		}
+	}
+}
+
 .dataForm__section--combo {
 	display: flex;
 }

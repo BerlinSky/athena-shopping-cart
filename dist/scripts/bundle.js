@@ -11111,10 +11111,15 @@ require('chosen');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// import 'card';
+
 (0, _jquery2.default)(function () {
 
-	(0, _jquery2.default)('.dataForm__section .inputGroup input').focusout(function (event) {
+	// $('form').card({
+	//    container: '.card-wrapper', // *required* 
+	// });
 
+	(0, _jquery2.default)('.dataForm__section .inputGroup input').focusout(function (event) {
 		var input = (0, _jquery2.default)(event.target);
 		var textVal = input.val();
 		if (textVal === "") {

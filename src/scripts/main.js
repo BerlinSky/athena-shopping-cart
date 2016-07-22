@@ -1,10 +1,14 @@
 import $ from 'jquery';
 import 'chosen';
+// import 'card';
 
 $(function () {
 
-	$('.dataForm__section .inputGroup input').focusout((event) => {
+	// $('form').card({
+ //    container: '.card-wrapper', // *required* 
+	// });
 
+	$('.dataForm__section .inputGroup input').focusout((event) => {
 		const input = $(event.target);
 	  const textVal = input.val();
 	  if(textVal === "") {
