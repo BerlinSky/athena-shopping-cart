@@ -19,8 +19,12 @@
 @import "./shopping-cart/cart";
 @import "./chosen/chosen";
 
+.dataForm__section--combo {
+	display: flex;
+}
+
 .dropdownPanel {
-	width: 620px;
+	// width: 620px;
 	background-color: #fff;
 	height: 70px;
 	padding-top: 30px;	
@@ -28,17 +32,25 @@
 }
 
 .inputGroup--country {
-	width: calc(620px*0.5-25px);
+	width: calc(620px*0.45-25px);
+	// border: 1px solid red;
 }
 
 .inputGroup--state {
-	width: calc(620px*0.3-25px);
+	width: calc(620px*0.35-25px);
 	// background-color: green;
+	// border: 1px solid green;
 }
 
 .inputGroup--zip {
-	width: calc(620px*0.2);
-	// background-color: yellow;
+	width: calc(620px*0.2125);
+	height: 70px;
+	margin-top: 0;
+	background-color: #fff;
+	// margin-bottom: 10px;
+	// padding-top: 0;	
+	// padding-left: 25px;
+	// border: 1px solid yellow;
 }
 
 

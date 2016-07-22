@@ -11124,12 +11124,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 		}
 	});
 
-	(0, _jquery2.default)(".chosenSelect").chosen({
-		max_selected_options: 1
+	(0, _jquery2.default)(".js-selectCountry").chosen({
+		max_selected_options: 1,
+		width: "200px"
+	});
+
+	(0, _jquery2.default)(".js-selectState").chosen({
+		max_selected_options: 1,
+		width: "150px"
 	});
 
 	(0, _jquery2.default)('.chosen-container.chosen-container-single').css({
-		"width": "240px",
+		// "width": "240px", 
 		"font-size": "18px",
 		"background-color": "#fff",
 		"border": "1px solid #eee"
