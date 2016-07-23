@@ -20,13 +20,42 @@
 @import "./shopping-cart/card";
 @import "./chosen/chosen";
 
+.test1 {
+	border: 1px solid red;
+	flex-basis: 65%;
+}
+
 .cartItemImage {
-	height: 180px;
-	width: 100px;
+	// background-color: crimson;
+
+	height: 90px;
+	width: 50px;
 	img {
 		width: 100%;
 		height: auto;
 	}
+}
+
+.tableRow__image {
+	// background-color: green;
+}
+
+.tableRow__headerText {
+	font-size: 16px;
+	text-transform: uppercase;
+  font-weight: 700;
+}
+
+.tableRow__bodyText {
+	padding: 5px;
+	font-size: 14px;
+  font-weight: 400;
+}
+
+.tableRow__bodyNum {
+	padding: 5px;
+	font-size: 14px;
+  font-weight: 400;
 }
 
 
