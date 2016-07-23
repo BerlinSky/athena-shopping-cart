@@ -9,10 +9,19 @@
     margin-top: 15px;
     // margin-left: 35px;
     // border: 3px solid transparent;
+    // border: 1px solid blue;
+    &--combo {
+      display: flex;
+    }
   }
 
   &__buttonPanel {
     margin-top: 25px;
+  }
+
+  .dataInput {
+    color: red;
+    width: 100%;
   }
 
   input {
@@ -20,7 +29,7 @@
     // font-size: 14px;
     // padding: 5px;
     border: 0;
-    width: 620px;
+    // width: 620px;
     padding: 25px 25px 10px;
     font-size: 18px;
     text-transform: uppercase;
@@ -36,9 +45,22 @@
   }
 
   .inputGroup {
-    display: inline-block;
-    margin-right: 20px;
     position: relative;
+
+    &--country {
+      width: 45%;
+    }
+
+    &--state {
+      width: 35%;
+    }
+
+    &--zip {
+      width: 20%;
+      height: 70px;
+      margin-top: 0;
+      background-color: #fff;
+    }
   }
 
   .inputGroup label {
@@ -67,5 +89,14 @@
     font-size: 16px;
     color: #aaa;
   }
+
+  .dropdownPanel {
+    background-color: #fff;
+    height: 70px;
+    padding-top: 30px;  
+    padding-left: 25px; 
+  }
 }
+
+
 
