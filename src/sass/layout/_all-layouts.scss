@@ -35,13 +35,20 @@
   .l-panel:nth-child(1) {
     // background-color: red;
     flex-basis: 66.66666%;
+
+    @include respondTo(medium) {
+      flex-basis: 100%;
+    }
   }
   .l-panel:nth-child(2) {
     // background-color: green;
     flex-basis: 33.33333%;
+
+    @include respondTo(medium) {
+      flex-basis: 0;
+    }
   }
 }
-
 
 .l-footer {
   display: flex;

@@ -9,30 +9,85 @@
 
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		// align-items: center;
+
+	  flex-direction: column;
+  	align-items: flex-start;
+
+	  &__title {
+	  	flex-basis: 100%;
+	  }
+
+	  &__images {
+	  	flex-basis: 100%;
+	  	display: flex;
+	  	justify-content: flex-start;
+	  }
+
+		@include respondTo(medium) {
+			flex-direction: row;
+			align-items: center;
+
+			&__title {
+				flex-basis: 40%;
+			}
+
+			&__images {
+				flex-basis: 60%;
+				display: flex;
+				justify-content: flex-end;
+			}
+		}
+
+		@include respondTo(large) {
+			flex-direction: row;
+			align-items: center;
+
+			&__title {
+				flex-basis: 40%;
+			}
+
+			&__images {
+				flex-basis: 60%;
+				display: flex;
+				justify-content: flex-end;
+			}
+		}
+
+		@include respondTo(x-large) {
+			flex-direction: row;
+			align-items: center;
+
+			&__title {
+				flex-basis: 40%;
+			}
+
+			&__images {
+				flex-basis: 60%;
+				display: flex;
+				justify-content: flex-end;
+			}
+		}
 	}
 
 	.cardNumberPanel {
 		// border: 1px solid orange;
 
 		display: flex;
-		justify-content: space-between;
+		// justify-content: space-between;
 		align-items: center;
 
 		&__cardNumber {
-			flex-basis: 100%;
-			position: relative;
+			// flex-basis: 85%;
+			flex-basis: 40%;
+
 			.inputGroup {
-				// width: calc(620px - 20px);
 				width: 100%;
 			}
 		}
 
 		&__cardImage {
-			position: absolute;
-			left: calc(620px - 20px - 85px);;
-			top: 12px;
-			z-index: 20;
+			flex-basis: 10%;
 
 			.credit {
 				display: none;
@@ -41,29 +96,81 @@
 				}
 			}
 		}
+
+		@include respondTo(small) {
+			justify-content: flex-start;
+
+			&__cardNumber {
+				flex-basis: 50%;
+			}
+
+		// 	&__cardImage {
+		// 		flex-basis: 10%;
+		// 	}
+		}	
+
+		@include respondTo(medium) {
+			&__cardNumber {
+				flex-basis: 75%;
+			}
+
+			&__cardImage {
+				flex-basis: 5%;
+			}
+		}
+
+		@include respondTo(large) {
+			&__cardNumber {
+				flex-basis: 90%;
+			}
+
+			&__cardImage {
+				flex-basis: 5%;
+			}
+		}
+
+		@include respondTo(x-large) {
+			&__cardNumber {
+				flex-basis: 90%;
+			}
+
+			&__cardImage {
+				flex-basis: 5%;
+			}
+		}
 	}
 
 	.expDateAndCVCodePanel {
 		// border: 1px solid crimson;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
 
-		&__expDate{
-			flex-basis: 70%;
-			margin-right: 25px;
+	  flex-direction: column;
+  	align-items: flex-start;
 
-			.inputGroup {
-				// width: calc(620px * 0.7 - 25px);
+	  &__expDate {
+	  	flex-basis: 100%;
+	  	width: 100%;
+	  }
+
+	  &__cvCode {
+	  	flex-basis: 100%;
+	  	width: 100%;
+	  }
+
+		@include respondTo(x-large) {
+		  flex-direction: row;
+			align-items: center;
+
+			&__expDate{
+				flex-basis: 70%;
+				margin-right: 25px;
+			}
+
+			&__cvCode {
+				flex-basis: 30%;
 			}
 		}
-
-		&__cvCode {
-			flex-basis: 30%;
-			.inputGroup {
-				// width: calc(620px * 0.3 - 25px);
-
-			}
-		}
+	
 	}
 }
