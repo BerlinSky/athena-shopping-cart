@@ -11111,13 +11111,33 @@ require('chosen');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import 'card';
-
 (0, _jquery2.default)(function () {
 
-	// $('form').card({
-	//    container: '.card-wrapper', // *required* 
-	// });
+	(0, _jquery2.default)('.js-credit--default').css({ "display": "block" });
+
+	var cleave = new Cleave('.js-dataInput--cardNum', {
+		creditCard: true,
+		onCreditCardTypeChanged: function onCreditCardTypeChanged(type) {
+			console.log(type);
+
+			if (type === 'unknown') {
+				dsiplayCardImages("default");
+			} else {
+				dsiplayCardImages(type);
+			}
+		}
+	});
+
+	function dsiplayCardImages(type) {
+		(0, _jquery2.default)('.js-credit--amex').hide();
+		(0, _jquery2.default)('.js-credit--visa').hide();
+		(0, _jquery2.default)('.js-credit--mastercard').hide();
+		(0, _jquery2.default)('.js-credit--discover').hide();
+		(0, _jquery2.default)('.js-credit--default').hide();
+
+		var cardType = '.js-credit--' + type;
+		(0, _jquery2.default)(cardType).show();
+	}
 
 	(0, _jquery2.default)('.dataForm__section .inputGroup input').focusout(function (event) {
 		var input = (0, _jquery2.default)(event.target);

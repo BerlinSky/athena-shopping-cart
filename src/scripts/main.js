@@ -1,12 +1,34 @@
 import $ from 'jquery';
 import 'chosen';
-// import 'card';
 
 $(function () {
 
-	// $('form').card({
- //    container: '.card-wrapper', // *required* 
-	// });
+  $('.js-credit--default').css({ "display": "block" });
+
+	const cleave = new Cleave('.js-dataInput--cardNum', {
+    creditCard: true,
+    onCreditCardTypeChanged: function (type) {
+      console.log(type);
+
+      if (type === 'unknown') {
+	      dsiplayCardImages("default");
+      }
+      else {
+	      dsiplayCardImages(type);
+      }
+    }
+	});
+
+	function dsiplayCardImages(type) {
+    $('.js-credit--amex').hide();
+    $('.js-credit--visa').hide();
+    $('.js-credit--mastercard').hide();
+    $('.js-credit--discover').hide();
+		$('.js-credit--default').hide();
+
+		const cardType = '.js-credit--' + type;
+		$(cardType).show();
+	}
 
 	$('.dataForm__section .inputGroup input').focusout((event) => {
 		const input = $(event.target);

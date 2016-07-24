@@ -6,6 +6,9 @@
     "test": "jest",
     "start": "gulp"
   },
+  "browserify": {
+    "transform": [ "browserify-shim" ]
+  },
   "browser": {
     "chosen": "./src/lib/chosen_v1.6.1/chosen.jquery.js"
   },
@@ -38,5 +41,8 @@
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "browserify-shim": "^3.8.12",
+    "cleave.js": "^0.5.0"
+  }
 }
