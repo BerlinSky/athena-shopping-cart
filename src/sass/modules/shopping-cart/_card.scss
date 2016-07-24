@@ -80,6 +80,7 @@
 		&__cardNumber {
 			// flex-basis: 85%;
 			flex-basis: 40%;
+			margin-right: 5px;
 
 			.inputGroup {
 				width: 100%;
@@ -103,10 +104,6 @@
 			&__cardNumber {
 				flex-basis: 50%;
 			}
-
-		// 	&__cardImage {
-		// 		flex-basis: 10%;
-		// 	}
 		}	
 
 		@include respondTo(medium) {
