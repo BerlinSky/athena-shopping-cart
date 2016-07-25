@@ -11883,7 +11883,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 	(0, _jquery2.default)('.js-credit--default').css({ "display": "block" });
 
-	var cleave = new _cleave2.default('.js-dataInput--cardNum', {
+	var cleaveCardNum = new _cleave2.default('.js-dataInput--cardNum', {
 		creditCard: true,
 		onCreditCardTypeChanged: function onCreditCardTypeChanged(type) {
 			console.log(type);
@@ -11894,6 +11894,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 				dsiplayCardImages(type);
 			}
 		}
+	});
+
+	var cleaeveCardDate = new _cleave2.default('.js-dataInput--cardExpDate', {
+		date: true,
+		datePattern: ['m', 'Y'],
+		delimiter: '/'
 	});
 
 	function dsiplayCardImages(type) {

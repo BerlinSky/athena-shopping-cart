@@ -7,7 +7,7 @@ $(function () {
 
   $('.js-credit--default').css({ "display": "block" });
 
-	const cleave = new Cleave('.js-dataInput--cardNum', {
+	const cleaveCardNum = new Cleave('.js-dataInput--cardNum', {
     creditCard: true,
     onCreditCardTypeChanged: function (type) {
       console.log(type);
@@ -19,6 +19,12 @@ $(function () {
 	      dsiplayCardImages(type);
       }
     }
+	});
+
+	const cleaeveCardDate = new Cleave('.js-dataInput--cardExpDate', {
+    date: true,
+    datePattern: ['m', 'Y'],
+    delimiter: '/'
 	});
 
 	function dsiplayCardImages(type) {
