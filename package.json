@@ -7,7 +7,12 @@
     "start": "gulp"
   },
   "browserify": {
-    "transform": [ "browserify-shim" ]
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "./node_modules/jquery/dist/jquery.js": "$"
   },
   "browser": {
     "chosen": "./src/lib/chosen_v1.6.1/chosen.jquery.js"
@@ -23,6 +28,7 @@
     "babelify": "^7.2.0",
     "browser-sync": "^2.11.2",
     "browserify": "^12.0.1",
+    "browserify-shim": "^3.8.12",
     "eslint": "^2.7.0",
     "exorcist": "^0.4.0",
     "gulp": "^3.9.0",

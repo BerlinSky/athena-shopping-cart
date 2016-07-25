@@ -39,8 +39,8 @@
             <div class="dataForm__section">
               <div class="cardContainer">
                 <div class="cardListPanel">
-                  <div>Accepeted Cards</div>
-                  <div>
+                  <div class="cardListPanel__title">Accepeted Cards:</div>
+                  <div class="cardListPanel__images">
                     <img src="./images/cards/amex.png" alt="">
                     <img src="./images/cards/visa.png" alt="">
                     <img src="./images/cards/mastercard.png" alt="">
@@ -51,16 +51,16 @@
                 <div class="cardNumberPanel">
                   <div class="cardNumberPanel__cardNumber">
                     <div class="inputGroup">
-                      <input class="dataInput" type="text">
+                      <input class="dataInput js-dataInput--cardNum" type="text">
                       <label>* Card Number</label>
                     </div>
-                    <div class="cardNumberPanel__cardImage">
-                      <img class="credit credit--default" src="./images/cards/credit.png">
-                      <img class="credit credit--amex" src="./images/cards/amex.png">
-                      <img class="credit credit--visa" src="./images/cards/visa.png">
-                      <img class="credit credit--master" src="./images/cards/mastercard.png">
-                      <img class="credit credit--discover" src="./images/cards/discover.png">
-                    </div>
+                  </div>
+                  <div class="cardNumberPanel__cardImage">
+                    <img class="credit js-credit--default" src="./images/cards/credit.png">
+                    <img class="credit js-credit--amex" src="./images/cards/amex.png">
+                    <img class="credit js-credit--visa" src="./images/cards/visa.png">
+                    <img class="credit js-credit--mastercard" src="./images/cards/mastercard.png">
+                    <img class="credit js-credit--discover" src="./images/cards/discover.png">
                   </div>
                 </div>
 
@@ -131,6 +131,7 @@
 
   </div>
 
+  <script src="scripts/cleave.js"></script>
   <script src="scripts/bundle.js"></script>
 
 </body>
