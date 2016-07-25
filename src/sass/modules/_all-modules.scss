@@ -20,11 +20,6 @@
 @import "./shopping-cart/card";
 @import "./select2/select";
 
-// .test1 {
-// 	border: 1px solid red;
-// 	flex-basis: 65%;
-// }
-
 .cartItemImage {
 	// background-color: crimson;
 
@@ -38,6 +33,10 @@
 
 .tableRow__image {
 	// background-color: green;
+}
+
+.tableRow__image--component {
+	padding-left: 20px;
 }
 
 .tableRow__headerText {
