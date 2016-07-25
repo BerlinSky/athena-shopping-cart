@@ -4,24 +4,24 @@
   flex-grow: 0;
   flex-wrap: nowrap;
 
-  &__column_1 {
-    flex-basis: 10%;
-  } 
-
-  &__column_2 {
+  &__column--6x {
     // background-color: red;
-    flex-basis: 45%;
+    flex-basis: 60%;
   }
 
+  &__column--2x {
+    flex-basis: 20%;
+  } 
+
   &__column--default {
-    flex-basis: 15%;
+    flex-basis: 10%;
   }
 
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 
-  border: 1px solid blue;
+  // border: 1px solid blue;
 
   &__text {
     flex-grow: 1;
