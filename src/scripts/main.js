@@ -1,4 +1,6 @@
 import $ from 'jquery';
+import Cleave from 'cleave.js';
+// require('cleave.js/dist/addons/cleave-phone.{country}');
 import 'chosen';
 
 $(function () {
