@@ -16375,6 +16375,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 	(0, _jquery2.default)(".js-selectState").select2();
 
+	(0, _jquery2.default)(".js-selectItemSize").select2({
+		minimumResultsForSearch: Infinity
+	});
+
 	// $(".js-selectCountry").chosen({
 	// 	max_selected_options: 1,
 	// 	width: "200px"

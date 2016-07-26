@@ -59,7 +59,10 @@ $(function () {
 
 	$(".js-selectState").select2();
 
-	
+	$(".js-selectItemSize").select2({
+		minimumResultsForSearch: Infinity
+	});
+
 
 
 	// $(".js-selectCountry").chosen({
