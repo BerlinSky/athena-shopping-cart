@@ -20,17 +20,9 @@
 @import "./shopping-cart/card";
 @import "./select2/select";
 
-.select2-selection .select2-selection--single {
-	color: red !important;
-	// background-color: yellow;
-}
-
-.select2-selection .select2-selection--single {
-  padding:6px;
-  height: 37px;
-  width: 148px; 
-  font-size: 1.2em;  
-  position: relative;
+span.select2-container--open .select2-results__options .select2-results__option {
+  font-size: 14px;
+  line-height: 12px;
 }
 
 .cartItemImage {
