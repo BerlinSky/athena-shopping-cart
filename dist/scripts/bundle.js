@@ -16386,8 +16386,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 		minimumResultsForSearch: Infinity
 	});
 });
-// require('cleave.js/dist/addons/cleave-phone.{country}');
-// import 'chosen';
 
 },{"cleave.js":1,"jquery":8,"select2":9}]},{},[10])
 //# sourceMappingURL=bundle.js.map

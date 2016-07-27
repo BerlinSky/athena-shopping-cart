@@ -1,7 +1,5 @@
 import $ from 'jquery';
 import Cleave from 'cleave.js';
-// require('cleave.js/dist/addons/cleave-phone.{country}');
-// import 'chosen';
 import Select2 from 'select2';
 
 $(function () {
