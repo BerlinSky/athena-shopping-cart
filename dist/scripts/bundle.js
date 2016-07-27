@@ -16345,8 +16345,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 	if ((0, _jquery2.default)('.js-dataInput--cardExpDate').length > 0) {
 		var cleaeveCardDate = new _cleave2.default('.js-dataInput--cardExpDate', {
 			date: true,
-			datePattern: ['m', 'Y'],
+			datePattern: ['m', 'y'],
 			delimiter: '/'
+		});
+	}
+
+	if ((0, _jquery2.default)('.js-dataInput--cardCVCode').length > 0) {
+		var cleaeveCardCvCode = new _cleave2.default('.js-dataInput--cardCVCode', {
+			numeral: true,
+			delimiter: ''
 		});
 	}
 

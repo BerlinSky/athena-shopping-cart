@@ -28,8 +28,15 @@ $(function () {
   if ($('.js-dataInput--cardExpDate').length > 0) { 
 		const cleaeveCardDate = new Cleave('.js-dataInput--cardExpDate', {
 	    date: true,
-	    datePattern: ['m', 'Y'],
+	    datePattern: ['m', 'y'],
 	    delimiter: '/'
+		});
+	}
+
+	if ($('.js-dataInput--cardCVCode').length > 0) { 
+		const cleaeveCardCvCode = new Cleave('.js-dataInput--cardCVCode', {
+	    numeral: true,
+	    delimiter: ''
 		});
 	}
 
