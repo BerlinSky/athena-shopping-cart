@@ -69,32 +69,6 @@ $(function () {
 	$(".js-selectItemSize").select2({
 		minimumResultsForSearch: Infinity
 	});
-
-
-
-	// $(".js-selectCountry").chosen({
-	// 	max_selected_options: 1,
-	// 	width: "200px"
-	// })
-
-	// $(".js-selectState").chosen({
-	// 	max_selected_options: 1,
-	// 	width: "150px"
-	// })
-		
-	// $('.chosen-container.chosen-container-single').css(
-	// 	{	
-	// 		// "width": "240px", 
-	// 		"font-size": "18px",
-	// 		"background-color": "#fff",
-	// 		"border": "1px solid #eee"
-	// 	}
-	// );
-
-	// $('.chosen-single').css(
-	// 	{"border": 0, "border-radius": 0}
-	// );
-
 });
 
   
