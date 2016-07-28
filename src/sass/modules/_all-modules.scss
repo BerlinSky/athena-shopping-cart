@@ -20,6 +20,10 @@
 @import "./shopping-cart/card";
 @import "./select2/select";
 
+.dimImage {
+	opacity: 0.3;
+}
+
 span.select2-container--open .select2-results__options .select2-results__option {
   font-size: 14px;
   line-height: 12px;

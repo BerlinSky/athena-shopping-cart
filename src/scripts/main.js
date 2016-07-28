@@ -14,7 +14,7 @@ $(function () {
 		    console.log(type);
 
 		    if (type === 'unknown') {
-		      dsiplayCardImages("default");
+		      dimCardImages(false);
 		    }
 		    else {
 		      dsiplayCardImages(type);
@@ -38,15 +38,26 @@ $(function () {
 		});
 	}
 
+	function dimCardImages(dimFlag) {
+		if (dimFlag) {
+			$('.js-credit--amex').addClass('dimImage');
+			$('.js-credit--visa').addClass('dimImage');
+			$('.js-credit--mastercard').addClass('dimImage');
+			$('.js-credit--discover').addClass('dimImage');
+		}
+		else {
+	    $('.js-credit--amex').removeClass('dimImage');
+	    $('.js-credit--visa').removeClass('dimImage');
+	    $('.js-credit--mastercard').removeClass('dimImage');
+	    $('.js-credit--discover').removeClass('dimImage');
+		}
+  }
+
 	function dsiplayCardImages(type) {
-    $('.js-credit--amex').hide();
-    $('.js-credit--visa').hide();
-    $('.js-credit--mastercard').hide();
-    $('.js-credit--discover').hide();
-		$('.js-credit--default').hide();
+    dimCardImages(true)
 
 		const cardType = '.js-credit--' + type;
-		$(cardType).show();
+		$(cardType).removeClass('dimImage');
 	}
 
 	$('.dataForm__section .inputGroup input').focusout((event) => {
