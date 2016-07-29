@@ -20,12 +20,27 @@
 @import "./shopping-cart/card";
 @import "./select2/select";
 
+.dataForm__buttonPanel--secondary {
+	margin-top: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.actionButton--bordered {
+	border: 1px solid;
+
+	&:hover {
+	  border-bottom-color: inherit;
+	}
+}
+
 .miniCart {
 	// background-color: #fff;
 	border-left: 1px solid #999;
 	padding: 15px;
 	color: #646464;
 	margin-left: auto;
+	margin-right: 20%;
 	font-size: .8em;
 	font-weight: 400;
 
@@ -73,12 +88,20 @@
 			text-transform: uppercase;
 			font-weight: 700;
 		  font-size: 16px;
+			border-bottom: 1px solid #999;
+			padding-bottom: 5px;
+			margin-bottom: 10px;
+		}
+
+		.miniCart__tableRow--footer {
+			text-transform: uppercase;
+			font-weight: 700;
+		  font-size: 16px;
+			border-top: 1px solid #999;
+			margin-top: 10px;
+			padding-top: 5px;
 		}
 	}
-}
-
-.dimImage {
-	opacity: 0.3;
 }
 
 span.select2-container--open .select2-results__options .select2-results__option {
@@ -86,42 +109,10 @@ span.select2-container--open .select2-results__options .select2-results__option 
   line-height: 12px;
 }
 
-.cartItemImage {
-	// background-color: crimson;
 
-	height: 90px;
-	width: 50px;
-	img {
-		width: 100%;
-		height: auto;
-	}
-}
 
-.tableRow__image {
-	// background-color: green;
-}
 
-.tableRow__image--component {
-	padding-left: 20px;
-}
 
-.tableRow__headerText {
-	font-size: 16px;
-	text-transform: uppercase;
-  font-weight: 700;
-}
-
-.tableRow__bodyText {
-	padding: 5px;
-	font-size: 14px;
-  font-weight: 400;
-}
-
-.tableRow__bodyNum {
-	padding: 5px;
-	font-size: 14px;
-  font-weight: 400;
-}
 
 
 

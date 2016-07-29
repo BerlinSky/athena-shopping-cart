@@ -25,3 +25,18 @@
 	  }
 	}
 }
+
+.cartItemImage {
+	// background-color: crimson;
+	height: 90px;
+	width: 50px;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.dimImage {
+	opacity: 0.3;
+}
+

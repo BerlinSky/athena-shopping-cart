@@ -57,3 +57,29 @@
   }
 }
 
+.tableRow__image--component {
+  padding-left: 20px;
+}
+
+.tableRow__headerText {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.tableRow__bodyText {
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.tableRow__bodyNum {
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.tableRow__image {
+  // background-color: green;
+}
+
