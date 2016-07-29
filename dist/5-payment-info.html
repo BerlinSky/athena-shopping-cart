@@ -32,13 +32,13 @@
     <section class="l-mainContent mainContent">
 
       <div class="l-panelContainer panelContainer">
-        <div class="l-panel formContainer formContainer--spaceOnRight formContainer--noButtomBorder">
+        <div class="l-panel formContainer formContainer--smallSpaceOnRight formContainer--noButtomBorder">
           <div class="stepTitle">5 &nbsp;&nbsp; Payment Information</div>
 
           <form class="dataForm">
             <div class="dataForm__section">
               <div class="cardContainer">
-                <div class="cardListPanel">
+                <!-- <div class="cardListPanel">
                   <div class="cardListPanel__title">Accepted Cards:</div>
                   <div class="cardListPanel__images">
                     <img class="credit js-credit--amex" src="./images/cards/amex.png" alt=""">
@@ -46,7 +46,7 @@
                     <img class="credit js-credit--mastercard" src="./images/cards/mastercard.png" alt="">
                     <img class="credit js-credit--discover" src="./images/cards/discover.png" alt="">
                   </div>
-                </div>
+                </div> -->
 
                 <div class="cardNumberPanel">
                   <div class="cardNumberPanel__cardNumber">
@@ -64,10 +64,17 @@
                   <div class="expDateAndCVCodePanel__cvCode">
                     <div class="inputGroup">
                       <input class="dataInput js-dataInput--cardCVCode" type="text">
-                      <label>CVV 
+                      <label>CVV</label>
+                      <div class="cvvHelp">
                         <a href="http://google.com"><i class="fa fa-question-circle-o"></i></a>
-                      </label>
+                      </div>
                     </div>
+                  </div>
+                  <div class="cardListPanel__images">
+                    <img class="credit js-credit--amex" src="./images/cards/amex.png" alt=""">
+                    <img class="credit js-credit--visa" src="./images/cards/visa.png" alt="">
+                    <img class="credit js-credit--mastercard" src="./images/cards/mastercard.png" alt="">
+                    <img class="credit js-credit--discover" src="./images/cards/discover.png" alt="">
                   </div>
                 </div>
               </div>
@@ -147,7 +154,7 @@
               <div class="dataForm__buttonPanel dataForm__buttonPanel--secondary">
                 <a class="actionButton actionButton--bordered">have a cooupon code</a>
               </div>
-             
+
             </div>
           </div>
 
