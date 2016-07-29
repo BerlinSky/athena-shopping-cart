@@ -61,6 +61,19 @@
       margin-top: 0;
       background-color: #fff;
     }
+
+    .dataInput--secondary {
+      padding: 5px;
+      font-size: 14px;
+    }
+
+    .inputGroup label.dataLabel--secondary {
+      font-size: 14px;
+    }
+
+    .dataInput--bordered {
+      border: 1px solid #999;
+    }
   }
 
   .inputGroup label {
