@@ -4,6 +4,14 @@ import Select2 from 'select2';
 
 $(function () {
 
+	$('.js-couponCodeInput').hide();
+
+	$('.js-couponCodeButton').click(function( event ) {
+		$(event.target).hide();
+		$('.js-couponCodeInput').show();
+	});
+	
+
   $('.js-credit--default').css({ "display": "block" });
 
   if ($('.js-dataInput--cardNum').length > 0) { 

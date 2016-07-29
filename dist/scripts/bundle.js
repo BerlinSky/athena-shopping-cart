@@ -16324,6 +16324,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 (0, _jquery2.default)(function () {
 
+	(0, _jquery2.default)('.js-couponCodeInput').hide();
+
+	(0, _jquery2.default)('.js-couponCodeButton').click(function (event) {
+		(0, _jquery2.default)(event.target).hide();
+		(0, _jquery2.default)('.js-couponCodeInput').show();
+	});
+
 	(0, _jquery2.default)('.js-credit--default').css({ "display": "block" });
 
 	if ((0, _jquery2.default)('.js-dataInput--cardNum').length > 0) {
