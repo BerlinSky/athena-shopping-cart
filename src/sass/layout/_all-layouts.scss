@@ -32,6 +32,11 @@
 
 .l-panelContainer {
   display: flex;
+
+  .l-panel-fullWidth {
+    flex-basis: 100%;
+  }
+
   .l-panel:nth-child(1) {
     // background-color: red;
     flex-basis: 66.66666%;
