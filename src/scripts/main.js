@@ -79,7 +79,7 @@ $(function () {
 	  } 
 	});
 
-	$(".js-selectCountry").select2();
+	$(".js-selectCountry").select2({ width: '100%' });
 
 	$(".js-selectState").select2();
 
