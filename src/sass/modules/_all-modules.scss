@@ -20,6 +20,47 @@
 @import "./shopping-cart/card";
 @import "./select2/select";
 
+.cardIcon {
+	// display: inline-block;
+  // height: calc(74px * .5);
+  // height: 42px;
+  // width: 100%;
+  // background-size: 50% 50%;
+  // margin-right: 6px;
+  // float: left;
+	// flex-basis: 25%;
+	// height: 50px;
+	// width: 70px;
+ //  background-size: 87%;
+	// height: 25px;
+	// margin-right: 10px;
+	// border: 1px solid;
+
+	&__amex {
+	  width: 60px;
+	  height: 37px;
+	  padding-right: 10px;
+	}
+
+	&__visa {
+		width: 60px;
+	  height: 37px;
+	  padding-right: 10px;
+	}
+
+	&__mastercard {
+		width: 60px;
+	  height: 37px;
+	  padding-right: 10px;
+	}
+
+	&__discover {
+		width: 60px;
+	  height: 37px;
+	  padding-right: 10px;
+	}
+}
+
 
 .cvvHelp {
 	position: absolute;

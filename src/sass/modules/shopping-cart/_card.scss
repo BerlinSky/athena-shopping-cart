@@ -4,15 +4,13 @@
 	// width: 620px;
 
 	.cardListPanel {
-		// border: 1px solid green;
-		padding: 10px 0 10px 5px;
-
 		display: flex;
-		justify-content: space-between;
-		// align-items: center;
-
 	  flex-direction: column;
   	align-items: flex-start;
+
+		height: 60px;
+		width: 320px;
+		padding: 0;
 
 	  &__title {
 	  	flex-basis: 100%;
@@ -132,7 +130,7 @@
 
 		@include respondTo(x-large) {
 			&__cardNumber {
-				flex-basis: 35%;
+				flex-basis: 200px;
 			}
 
 			&__cardImage {
@@ -164,13 +162,13 @@
 			align-items: center;
 
 			&__expDate{
-				flex-basis: 20%;
+				flex-basis: 90px;
 				margin-right: 5px;
 				// margin-right: 25px;
 			}
 
 			&__cvCode {
-				flex-basis: 15%;
+				flex-basis: 85px;
 				margin-right: 5px;
 			}
 		}
