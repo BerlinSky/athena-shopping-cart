@@ -48,16 +48,16 @@ $(function () {
 
 	function dimCardImages(dimFlag) {
 		if (dimFlag) {
-			$('.js-credit--amex').addClass('dimImage');
-			$('.js-credit--visa').addClass('dimImage');
-			$('.js-credit--mastercard').addClass('dimImage');
-			$('.js-credit--discover').addClass('dimImage');
+			$('.js-credit--amex').addClass('js-cardIcon__mask');
+			$('.js-credit--visa').addClass('js-cardIcon__mask');
+			$('.js-credit--mastercard').addClass('js-cardIcon__mask');
+			$('.js-credit--discover').addClass('js-cardIcon__mask');
 		}
 		else {
-	    $('.js-credit--amex').removeClass('dimImage');
-	    $('.js-credit--visa').removeClass('dimImage');
-	    $('.js-credit--mastercard').removeClass('dimImage');
-	    $('.js-credit--discover').removeClass('dimImage');
+	    $('.js-credit--amex').removeClass('js-cardIcon__mask');
+	    $('.js-credit--visa').removeClass('js-cardIcon__mask');
+	    $('.js-credit--mastercard').removeClass('js-cardIcon__mask');
+	    $('.js-credit--discover').removeClass('js-cardIcon__mask');
 		}
   }
 
@@ -65,7 +65,7 @@ $(function () {
     dimCardImages(true)
 
 		const cardType = '.js-credit--' + type;
-		$(cardType).removeClass('dimImage');
+		$(cardType).removeClass('js-cardIcon__mask');
 	}
 
 	$('.dataForm__section .inputGroup input').focusout((event) => {

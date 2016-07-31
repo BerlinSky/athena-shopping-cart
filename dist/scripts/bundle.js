@@ -16366,15 +16366,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 	function dimCardImages(dimFlag) {
 		if (dimFlag) {
-			(0, _jquery2.default)('.js-credit--amex').addClass('dimImage');
-			(0, _jquery2.default)('.js-credit--visa').addClass('dimImage');
-			(0, _jquery2.default)('.js-credit--mastercard').addClass('dimImage');
-			(0, _jquery2.default)('.js-credit--discover').addClass('dimImage');
+			(0, _jquery2.default)('.js-credit--amex').addClass('js-cardIcon__mask');
+			(0, _jquery2.default)('.js-credit--visa').addClass('js-cardIcon__mask');
+			(0, _jquery2.default)('.js-credit--mastercard').addClass('js-cardIcon__mask');
+			(0, _jquery2.default)('.js-credit--discover').addClass('js-cardIcon__mask');
 		} else {
-			(0, _jquery2.default)('.js-credit--amex').removeClass('dimImage');
-			(0, _jquery2.default)('.js-credit--visa').removeClass('dimImage');
-			(0, _jquery2.default)('.js-credit--mastercard').removeClass('dimImage');
-			(0, _jquery2.default)('.js-credit--discover').removeClass('dimImage');
+			(0, _jquery2.default)('.js-credit--amex').removeClass('js-cardIcon__mask');
+			(0, _jquery2.default)('.js-credit--visa').removeClass('js-cardIcon__mask');
+			(0, _jquery2.default)('.js-credit--mastercard').removeClass('js-cardIcon__mask');
+			(0, _jquery2.default)('.js-credit--discover').removeClass('js-cardIcon__mask');
 		}
 	}
 
@@ -16382,7 +16382,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 		dimCardImages(true);
 
 		var cardType = '.js-credit--' + type;
-		(0, _jquery2.default)(cardType).removeClass('dimImage');
+		(0, _jquery2.default)(cardType).removeClass('js-cardIcon__mask');
 	}
 
 	(0, _jquery2.default)('.dataForm__section .inputGroup input').focusout(function (event) {
