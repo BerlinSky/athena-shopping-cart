@@ -34,6 +34,7 @@
 	  height: 37px;
 	  padding-right: 10px;
 	}
+	
 
 	&__mastercard {
 		width: 60px;
@@ -47,15 +48,15 @@
 	  padding-right: 10px;
 	}
 
-	.js-cardIcon__mask {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 50px;
-	  height: 37px;
-		background-color: #000;
-		opacity: .8;
-	}
+	// .js-cardIcon__mask {
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	width: 50px;
+	//   height: 37px;
+	// 	background-color: #666;
+	// 	opacity: .8;
+	// }
 }
 
 

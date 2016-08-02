@@ -15,6 +15,8 @@ $(function () {
   $('.js-credit--default').css({ "display": "block" });
 
   if ($('.js-dataInput--cardNum').length > 0) { 
+  	dimCardImages(false);
+
     // it exists 
 		const cleaveCardNum = new Cleave('.js-dataInput--cardNum', {
 		  creditCard: true,
@@ -48,16 +50,24 @@ $(function () {
 
 	function dimCardImages(dimFlag) {
 		if (dimFlag) {
-			$('.js-credit--amex').addClass('js-cardIcon__mask');
-			$('.js-credit--visa').addClass('js-cardIcon__mask');
-			$('.js-credit--mastercard').addClass('js-cardIcon__mask');
-			$('.js-credit--discover').addClass('js-cardIcon__mask');
+			$('.js-credit--amex').hide();
+			$('.js-credit--amex-mask').show();
+			$('.js-credit--visa').hide();
+			$('.js-credit--visa-mask').show();
+			$('.js-credit--mastercard').hide();
+			$('.js-credit--mastercard-mask').show();
+			$('.js-credit--discover').hide();
+			$('.js-credit--discover-mask').show();
 		}
 		else {
-	    $('.js-credit--amex').removeClass('js-cardIcon__mask');
-	    $('.js-credit--visa').removeClass('js-cardIcon__mask');
-	    $('.js-credit--mastercard').removeClass('js-cardIcon__mask');
-	    $('.js-credit--discover').removeClass('js-cardIcon__mask');
+			$('.js-credit--amex').show();
+			$('.js-credit--amex-mask').hide();
+			$('.js-credit--visa').show();
+			$('.js-credit--visa-mask').hide();
+			$('.js-credit--mastercard').show();
+			$('.js-credit--mastercard-mask').hide();
+			$('.js-credit--discover').show();
+			$('.js-credit--discover-mask').hide();
 		}
   }
 
@@ -65,7 +75,9 @@ $(function () {
     dimCardImages(true)
 
 		const cardType = '.js-credit--' + type;
-		$(cardType).removeClass('js-cardIcon__mask');
+		const cardTypeMask = '.js-credit--' + type + '-mask';
+		$(cardType).show();
+		$(cardTypeMask).hide();
 	}
 
 	$('.dataForm__section .inputGroup input').focusout((event) => {

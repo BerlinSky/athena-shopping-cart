@@ -16334,8 +16334,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 	(0, _jquery2.default)('.js-credit--default').css({ "display": "block" });
 
 	if ((0, _jquery2.default)('.js-dataInput--cardNum').length > 0) {
-		dimCardImages(false);
-
 		// it exists 
 		var cleaveCardNum = new _cleave2.default('.js-dataInput--cardNum', {
 			creditCard: true,
@@ -16368,23 +16366,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 	function dimCardImages(dimFlag) {
 		if (dimFlag) {
-			(0, _jquery2.default)('.js-credit--amex').hide();
-			(0, _jquery2.default)('.js-credit--amex-mask').show();
-			(0, _jquery2.default)('.js-credit--visa').hide();
-			(0, _jquery2.default)('.js-credit--visa-mask').show();
-			(0, _jquery2.default)('.js-credit--mastercard').hide();
-			(0, _jquery2.default)('.js-credit--mastercard-mask').show();
-			(0, _jquery2.default)('.js-credit--discover').hide();
-			(0, _jquery2.default)('.js-credit--discover-mask').show();
+			(0, _jquery2.default)('.js-credit--amex').addClass('js-cardIcon__mask');
+			(0, _jquery2.default)('.js-credit--visa').addClass('js-cardIcon__mask');
+			(0, _jquery2.default)('.js-credit--mastercard').addClass('js-cardIcon__mask');
+			(0, _jquery2.default)('.js-credit--discover').addClass('js-cardIcon__mask');
 		} else {
-			(0, _jquery2.default)('.js-credit--amex').show();
-			(0, _jquery2.default)('.js-credit--amex-mask').hide();
-			(0, _jquery2.default)('.js-credit--visa').show();
-			(0, _jquery2.default)('.js-credit--visa-mask').hide();
-			(0, _jquery2.default)('.js-credit--mastercard').show();
-			(0, _jquery2.default)('.js-credit--mastercard-mask').hide();
-			(0, _jquery2.default)('.js-credit--discover').show();
-			(0, _jquery2.default)('.js-credit--discover-mask').hide();
+			(0, _jquery2.default)('.js-credit--amex').removeClass('js-cardIcon__mask');
+			(0, _jquery2.default)('.js-credit--visa').removeClass('js-cardIcon__mask');
+			(0, _jquery2.default)('.js-credit--mastercard').removeClass('js-cardIcon__mask');
+			(0, _jquery2.default)('.js-credit--discover').removeClass('js-cardIcon__mask');
 		}
 	}
 
@@ -16392,9 +16382,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 		dimCardImages(true);
 
 		var cardType = '.js-credit--' + type;
-		var cardTypeMask = '.js-credit--' + type + '-mask';
-		(0, _jquery2.default)(cardType).show();
-		(0, _jquery2.default)(cardTypeMask).hide();
+		(0, _jquery2.default)(cardType).removeClass('js-cardIcon__mask');
 	}
 
 	(0, _jquery2.default)('.dataForm__section .inputGroup input').focusout(function (event) {
