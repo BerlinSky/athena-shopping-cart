@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <title>athena</title>
+
+  <meta charset="utf-8" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+  <!--Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <link rel="stylesheet" href="styles/font-awesome.min.css">
+
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  
+  <div class="l-siteContainer siteContainer">
+
+    <section class="l-siteBanner siteBanner">
+      <div>
+        <div class="siteBanner__intro">My Favorite Artist</div>
+        <div class="siteBanner__info">Site Banner Place Holder</div>
+      </div>
+    </section>
+
+    <section class="l-mainContent mainContent">
+
+      <div class="l-panelContainer panelContainer">
+        <div class="l-panel formContainer formContainer--spaceOnRight formContainer--noButtomBorder">
+          <div class="stepTitle">&nbsp;&nbsp; Payment Information</div>
+
+          <form class="dataForm">
+            <div class="dataForm__section">
+              <div class="cardContainer">
+                <div class="cardListPanel cardListPanel__iconList">
+                  <div class="cardIcon">
+                    <img class="cardIcon__amex js-credit--amex" src="./images/cards/amex2.png" />
+                    <img class="cardIcon__amex js-credit--amex-mask" src="./images/cards/amex2-grey.png" />
+                  </div>
+                  <div class="cardIcon">
+                    <img class="cardIcon__visa js-credit--visa" src="./images/cards/visa2.png" />
+                    <img class="cardIcon__visa js-credit--visa-mask" src="./images/cards/visa2-grey.png" />
+                  </div>
+                  <div class="cardIcon">
+                    <img class="cardIcon__mastercard js-credit--mastercard" src="./images/cards/mastercard2.png" />
+                    <img class="cardIcon__mastercard js-credit--mastercard-mask" src="./images/cards/mastercard2-grey.png" />
+                  </div>
+                  <div class="cardIcon">
+                    <img class="cardIcon__discover js-credit--discover" src="./images/cards/discover2.png" />
+                    <img class="cardIcon__discover js-credit--discover-mask" src="./images/cards/discover2-grey.png" />
+                  </div>
+
+                </div>
+
+                <div class="cardNumberPanel">
+                  <div class="cardNumberPanel__cardNumber">
+                    <div class="inputGroup">
+                      <input class="dataInput js-dataInput--cardNum" type="text">
+                      <label>Card Number</label>
+                    </div>
+                  </div>
+                  <div class="expDateAndCVCodePanel__expDate">
+                    <div class="inputGroup">
+                      <input class="dataInput js-dataInput--cardExpDate" type="text">
+                      <label>MM/YY</label>
+                    </div>
+                  </div>
+                  <div class="expDateAndCVCodePanel__cvCode">
+                    <div class="inputGroup">
+                      <input class="dataInput js-dataInput--cardCVCode" type="text">
+                      <label>CVV</label>
+                      <div class="cvvHelp">
+                        <a href="http://google.com"><i class="fa fa-question-circle-o"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dataForm__buttonPanel">
+              <a class="actionButton" href="7-invoice.html">next</a>
+            </div>
+          </form>
+
+          <div class="formContainer">
+            <div class="tableRow tableHeader">
+             <div class=" tableRow__column--5x tableRow__headerText">
+              <div>Billing Address</div>
+              <a class="actionButton" href="3-billing-address.html">Edit</a>
+             </div>
+             <div class=" tableRow__column--5x tableRow__headerText">
+              <div>Shipping Address</div>
+              <a class="actionButton" href="4-shipping-address.html">Edit</a>
+             </div>
+            </div>
+
+            <div class="tableRow">
+              <div class="tableRow__column--5x tableRow__bodyText">355 Mission Street</div>
+              <div class="tableRow__column--5x tableRow__bodyText">555 Peachtree Blvd</div>
+            </div>
+
+            <div class="tableRow">
+              <div class="tableRow__column--5x tableRow__bodyText">Apt #201</div>
+              <div class="tableRow__column--5x tableRow__bodyText"></div>
+            </div>
+
+            <div class="tableRow">
+              <div class="tableRow__column--5x tableRow__bodyText">San Francisco</div>
+              <div class="tableRow__column--5x tableRow__bodyText">Vancouver</div>
+            </div>
+
+            <div class="tableRow">
+              <div class="tableRow__column--5x tableRow__bodyText">CA 94666</div>
+              <div class="tableRow__column--5x tableRow__bodyText">BC V6E 2M6</div>
+            </div>
+
+            <div class="tableRow">
+              <div class="tableRow__column--5x tableRow__bodyText">United States</div>
+              <div class="tableRow__column--5x tableRow__bodyText">Canada</div>
+            </div> 
+
+            <div class="dataForm__buttonPanel">
+              <a class="actionButton" href="path-1-2-invoice.html">next</a>
+            </div> 
+          </div>
+          
+          <div class="stepTitle">&nbsp;&nbsp; Invoice</div>
+
+        </div>
+
+        <div class="l-panel cartStepsContainer">
+          <div class="miniCart">
+            <div class="miniCatd__title">Mini Cart</div>
+            <div class="miniCart__table">
+              <div class="miniCart__tableRow miniCart__tableRow--header">
+                <div class="miniCart__Column">Membership</div>
+                <div class="miniCart__Column"></div>
+              </div>
+              <div class="miniCart__tableRow">
+                <div class="miniCart__Column ">Summer 2013 Metropolitan Book Tour (NYC2013)</div>
+                <div class="miniCart__Column">
+                </div>
+              </div>
+              <div class="miniCart__tableRow">
+                <div class="miniCart__Column miniCart__Column--subItem">Winter 2016 West Coast Book Tour (LAC2016)</div>
+                <div class="miniCart__Column">
+                  <select class="js-selectItemSize">
+                    <option value="0">XXS</option>
+                    <option selected value="1">XS</option>
+                    <option value="2">S</option>
+                    <option value="3">M</option>
+                    <option value="4">L</option>
+                    <option value="5">XL</option>
+                    <option value="6">XXL</option>
+                  </select>
+                </div>
+              </div> 
+              <div class="miniCart__tableRow">
+                <div class="miniCart__Column miniCart__Column--subItem">Winter 2016 West Coast Book Tour (LAC2016)</div>
+                <div class="miniCart__Column">
+                  <select class="js-selectItemSize">
+                    <option value="0">XXS</option>
+                    <option value="1">XS</option>
+                    <option value="2">S</option>
+                    <option value="3">M</option>
+                    <option selected value="4">L</option>
+                    <option value="5">XL</option>
+                    <option value="6">XXL</option>
+                  </select>
+                </div>
+              </div> 
+              <div class="miniCart__tableRow">
+                <div class="miniCart__Column miniCart__Column--subItem">Winter 2016 West Coast Book Tour (LAC2016)</div>
+                <div class="miniCart__Column">
+                  <select class="js-selectItemSize">
+                    <option value="0">XXS</option>
+                    <option value="1">XS</option>
+                    <option selected value="2">S</option>
+                    <option value="3">M</option>
+                    <option value="4">L</option>
+                    <option value="5">XL</option>
+                    <option value="6">XXL</option>
+                  </select>
+                </div>
+              </div>
+              <div class="miniCart__tableRow miniCart__tableRow--footer">
+                <div class="miniCart__Column"></div>
+                <div class="miniCart__Column">US$ 89.55</div>
+              </div>
+
+              <div class="dataForm__buttonPanel dataForm__buttonPanel--secondary">
+                <a class="actionButton actionButton--bordered">coupon code</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="cartSteps">
+            <div class="cartSteps__title">Your Checkout Process</div>
+            <ul class="cartSteps__list">
+              <li>Review Cart</li>
+              <li>Review Address(es)</li>
+              <li>Billing Address</li>
+              <li>Shipping Address</li>
+              <li>Payment Information</li>
+              <li>Review Order</li>
+              <li>Invoice</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="l-footer footer">
+    
+      <div class="footerPanel footerPanel__links">
+        <div class="footerPanel__item footerPanel__item--default copyright"><a href="">Help</a></div>
+        <div class="footerPanel__item footerPanel__item--default copyright"><a href="">Newsletter</a></div>
+        <div class="footerPanel__item footerPanel__item--default copyright"><a href="">Terms of Use</a></div>
+        <div class="footerPanel__item footerPanel__item--default copyright">Privacy Policy</div>
+      </div>  
+      <div class="footerPanel footerPanel__links">
+        <div class="footerPanel__item footerPanel__item--default copyright">Copyright ©2016 The Fine Arist</div>
+      </div> 
+
+    </footer>
+
+  </div>
+
+  <script src="scripts/bundle.js"></script>
+
+</body>
+
+</html>
