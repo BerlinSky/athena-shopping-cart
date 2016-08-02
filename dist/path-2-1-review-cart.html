@@ -32,9 +32,8 @@
     <section class="l-mainContent mainContent">
     
       <div class="l-panelContainer panelContainer">
-        <div class="l-panel-fullWidth formContainer formContainer--noButtomBorder">
-
-          <div class="stepTitle">&nbsp;&nbsp; Invoice</div>
+        <div class="l-panel formContainer formContainer--noButtomBorder formContainer--smallSpaceOnRight">
+          <div class="stepTitle">&nbsp;&nbsp; Review Cart</div>
 
           <div class="formContainer">
             <div class="tableRow tableHeader">
@@ -63,7 +62,15 @@
               </div>
               <div class="tableRow__column--6x tableRow__bodyText">Nightrain T-Shirt (GNRFF016)</div>
               <div class=" tableRow__column--2x tableRow__bodyText">
-                  XXL
+                <select class="js-selectItemSize">
+                  <option value="0">XXS</option>
+                  <option value="1">XS</option>
+                  <option value="2">S</option>
+                  <option value="3">M</option>
+                  <option value="4">L</option>
+                  <option value="5">XL</option>
+                  <option selected value="6">XXL</option>
+                </select>
               </div>
               <div class="tableRow__num tableRow__bodyNum">US$ 0.00</div>
              </div>
@@ -76,6 +83,15 @@
               </div>
               <div class="tableRow__column--6x tableRow__bodyText">Nightrain Fan Club Premium Membership (GNRFPN16)</div>
               <div class=" tableRow__column--2x tableRow__bodyText">
+                <select class="js-selectItemSize">
+                  <option value="0">XXS</option>
+                  <option value="1">XS</option>
+                  <option selected value="2">S</option>
+                  <option value="3">M</option>
+                  <option value="4">L</option>
+                  <option value="5">XL</option>
+                  <option value="6">XXL</option>
+                </select>
               </div>
               <div class="tableRow__num tableRow__bodyNum">US$ 85.00</div>
              </div>
@@ -88,7 +104,15 @@
               </div>
               <div class="tableRow__column--6x tableRow__bodyText">WNightrain Premium Membership Hoodie (GNRF7833)</div>
               <div class=" tableRow__column--2x tableRow__bodyText">
-                XL
+                <select class="js-selectItemSize">
+                  <option value="0">XXS</option>
+                  <option value="1">XS</option>
+                  <option value="2">S</option>
+                  <option value="3">M</option>
+                  <option value="4">L</option>
+                  <option selected value="5">XL</option>
+                  <option value="6">XXL</option>
+                </select>
               </div>
               <div class="tableRow__num tableRow__bodyNum">US$ 0.00</div>
             </div>
@@ -103,44 +127,58 @@
               </div>
               <div class="tableRow__num tableRow__bodyNum">US$ 85.00</div>
             </div>
-          </div>
 
-          <div class="formContainer">
-            <div class="tableRow tableHeader">
-             <div class=" tableRow__column--5x tableRow__headerText">Billing Address</div>
-             <div class=" tableRow__column--5x tableRow__headerText">Shipping Address</div>
+            <div class="tableRow tableRow--tall">
+              <div class="tableRow__column--2x">
+                <form class="dataForm">
+                  <div class="inputGroup js-couponCodeInput">
+                    <input class="dataInput dataInput--secondary dataInput--bordered" type="text">
+                    <label class="dataLabel--secondary"></label>
+                  </div>
+                  <a class="actionButton js-couponCodeButton">Coupon Code</a>
+                </form>
+              </div>
+              <div class="tableRow__column--2x tableRow__bodyText">
+                <div class="dataForm__buttonPanel dataForm__buttonPanel--tertiary js-couponCodeInput">
+                  <a class="actionButton">Apply Coupon</a>
+                </div>
+              </div>
+              <div class=" tableRow__column--2x tableRow__bodyText">
+              </div>
+              <div class="tableRow__num tableRow__bodyNum">
+              </div>
             </div>
 
-            <div class="tableRow">
-              <div class="tableRow__column--5x tableRow__bodyText">355 Mission Street</div>
-              <div class="tableRow__column--5x tableRow__bodyText">555 Peachtree Blvd</div>
-            </div>
-
-            <div class="tableRow">
-              <div class="tableRow__column--5x tableRow__bodyText">Apt #201</div>
-              <div class="tableRow__column--5x tableRow__bodyText"></div>
-            </div>
-
-            <div class="tableRow">
-              <div class="tableRow__column--5x tableRow__bodyText">San Francisco</div>
-              <div class="tableRow__column--5x tableRow__bodyText">Vancouver</div>
-            </div>
-
-            <div class="tableRow">
-              <div class="tableRow__column--5x tableRow__bodyText">CA 94666</div>
-              <div class="tableRow__column--5x tableRow__bodyText">BC V6E 2M6</div>
-            </div>
-
-            <div class="tableRow">
-              <div class="tableRow__column--5x tableRow__bodyText">United States</div>
-              <div class="tableRow__column--5x tableRow__bodyText">Canada</div>
+            <div class="dataForm__buttonPanel">
+              <a class="actionButton" href="path-1-1-payment-info.html">next</a>
             </div> 
-
           </div>
+
+          <!-- <div class="stepTitle">2 &nbsp;&nbsp; Review Address(es)</div>
+          <div class="stepTitle">3 &nbsp;&nbsp; Billing Address</div>
+          <div class="stepTitle">4 &nbsp;&nbsp; Shipping Address</div>
+          <div class="stepTitle">5 &nbsp;&nbsp; Review Order</div>
+          <div class="stepTitle">6 &nbsp;&nbsp; Payment Information</div>
+          <div class="stepTitle">7 &nbsp;&nbsp; Invoice</div> -->
 
         </div>
-      </div>
 
+        <div class="l-panel cartStepsContainer">
+          <div class="cartSteps">
+            <div class="cartSteps__title">Your Checkout Process</div>
+            <ul class="cartSteps__list">
+              <li>Review Cart</li>
+              <li>Review Address(es)</li>
+              <li>Billing Address</li>
+              <li>Shipping Address</li>
+              <li>Review Order</li>
+              <li>Payment Information</li>
+              <li>Invoice</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <footer class="l-footer footer">
