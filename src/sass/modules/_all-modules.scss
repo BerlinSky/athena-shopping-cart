@@ -20,60 +20,58 @@
 @import "./shopping-cart/card";
 @import "./select2/select";
 
-.l-overall {
-  background-color: green;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
+// mini-grid system 
 
-  h1 {
-  	color: #fff;
-  	font-weight: 700;
-  	text-align: center;
+$breakpoints: (
+  xs: 32rem,
+  sm: 48rem,
+  md: 72rem,
+  lg: 96rem,
+  xl: 102rem,
+  xx: 120rem
+);
+
+@mixin break($size) {  
+  @media (min-width: map-get($breakpoints, $size)) {
+    @content;
   }
-} 
+}
 
-.l-top {
-  background-color: #000;
-  flex: 0 0 auto;
-  width: 100%;
-} 
+$items: 12;
 
-.l-middle {
-  background-color: red;
-  flex: 0 0 auto;
-  width: 100%;
-
-  img {
-  	height: auto;
-  	width: 150px;
-  	margin-left: calc(50% - 75px);
-  }
-} 
-
-.l-bottom {
-  background-color: yellow;
-  padding: 10px;
-
-  flex: 1 1 70%;
-  width: 100%;
-
+// grid container
+.l-grid__row {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  margin-bottom: 1rem;
+
+  background-color: blue;
 }
 
-.l-topFooter {
-  background-color: darkblue;
-  flex: 1 1 90%;
+// grid item
+.l-grid__column {
+  padding: 0.5rem;
+  
+  &:nth-child(even) {
+    background-color: #eee;
+  }
+  
+  &:nth-child(odd) {
+    background-color: #ddd;
+  }
 }
 
-.l-bottomFooter {
-  background-color: #000;
-  flex: 1 1 10%;
+// loop over the breakpoints
+@each $key, $value in $breakpoints {
+  @for $i from 1 through $items {
+    .l-grid__span--#{$key}-#{$i} {
+      flex: 0 0 100%;
+      @include break($key) {
+        flex: 0 0 #{$i / $items * 100%};
+      }
+    }
+  }
 }
-
 
 .cardIcon {
 	position: relative;
@@ -113,7 +111,6 @@
 	// 	opacity: .8;
 	// }
 }
-
 
 .cvvHelp {
 	position: absolute;
