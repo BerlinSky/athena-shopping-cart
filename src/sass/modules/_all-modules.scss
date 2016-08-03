@@ -20,6 +20,61 @@
 @import "./shopping-cart/card";
 @import "./select2/select";
 
+.l-overall {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+
+  h1 {
+  	color: #fff;
+  	font-weight: 700;
+  	text-align: center;
+  }
+} 
+
+.l-top {
+  background-color: #000;
+  flex: 0 0 auto;
+  width: 100%;
+} 
+
+.l-middle {
+  background-color: red;
+  flex: 0 0 auto;
+  width: 100%;
+
+  img {
+  	height: auto;
+  	width: 150px;
+  	margin-left: calc(50% - 75px);
+  }
+} 
+
+.l-bottom {
+  background-color: yellow;
+  padding: 10px;
+
+  flex: 1 1 70%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.l-topFooter {
+  background-color: darkblue;
+  flex: 1 1 90%;
+}
+
+.l-bottomFooter {
+  background-color: #000;
+  flex: 1 1 10%;
+}
+
+
 .cardIcon {
 	position: relative;
 
