@@ -40,16 +40,15 @@ $breakpoints: (
 $items: 16;
 
 // grid container
-.l-grid__row {
+.l-grid__container {
   display: flex;
   flex-flow: row wrap;
   margin-bottom: 1rem;
 
-  background-color: blue;
+  // background-color: blue;
 }
 
-// grid item
-.l-grid__column {
+.l-grid {
   padding: 0.5rem;
 }
 
