@@ -51,14 +51,6 @@ $items: 16;
 // grid item
 .l-grid__column {
   padding: 0.5rem;
-  
-  &:nth-child(even) {
-    background-color: #eee;
-  }
-  
-  &:nth-child(odd) {
-    background-color: #ddd;
-  }
 }
 
 // loop over the breakpoints
