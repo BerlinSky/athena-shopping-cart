@@ -11,7 +11,6 @@ $(function () {
 		$('.js-couponCodeInput').show();
 	});
 	
-
   $('.js-credit--default').css({ "display": "block" });
 
   if ($('.js-dataInput--cardNum').length > 0) { 

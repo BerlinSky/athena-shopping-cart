@@ -23,7 +23,7 @@
 // mini-grid system 
 
 $breakpoints: (
-  xs: 32rem,
+  xs: 20rem,   // 320px
   sm: 48rem,
   md: 72rem,
   lg: 96rem,
@@ -37,7 +37,7 @@ $breakpoints: (
   }
 }
 
-$items: 12;
+$items: 16;
 
 // grid container
 .l-grid__row {
