@@ -77,7 +77,11 @@
 }
 
 .tableRow__image--component {
-  padding-left: 30px;
+  padding-left: 0;
+
+  @inclue break(md) {
+    padding-left: 30px;
+  }
 }
 
 .tableRow__headerText {

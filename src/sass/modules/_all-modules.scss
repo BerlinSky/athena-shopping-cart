@@ -66,6 +66,29 @@ $columns: 16;
 	}
 }
 
+.desktopOnly--block {
+	display: none;
+	@include break(sm) {
+		display: block;
+	}
+}
+
+.cart__itemSizePanel {
+	ul {
+	  overflow: auto;
+	  list-style-type: none;
+
+	  display: flex;
+	  justify-content: center;
+	}
+	 
+	li {
+	  margin-right: 5px;
+	  border: 1px solid #aaa;
+	  padding: 5px 10px 5px 10px;
+	}
+}
+
 .cardIcon {
 	position: relative;
 
