@@ -73,6 +73,13 @@ $columns: 16;
 	}
 }
 
+.mobileOnly--block {
+	display: block;
+	@include break(sm) {
+		display: none;
+	}
+}
+
 .cart__itemSizePanel {
 	ul {
 	  overflow: auto;
