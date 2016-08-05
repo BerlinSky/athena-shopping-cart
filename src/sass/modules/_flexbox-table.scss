@@ -1,8 +1,12 @@
 .tableRow {
   display: flex;
-  flex-direction: row;
   flex-grow: 0;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @include break(sm) {
+    flex-wrap: nowrap;
+  }
 
   &__column--6x {
     // background-color: red;
@@ -95,6 +99,7 @@
 }
 
 .tableRow__image {
-  // background-color: green;
+  background-color: green;
+  order: 1;
 }
 

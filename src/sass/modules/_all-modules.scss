@@ -49,6 +49,13 @@ $items: 16;
   }
 }
 
+$columns: 16;
+@for $i from 1 through $columns {
+	.tableColumn__order--#{$i} {
+		order: #{$i};
+	}
+}
+
 .desktopOnly--text {
 	display: none;
 	@include break(sm) {
