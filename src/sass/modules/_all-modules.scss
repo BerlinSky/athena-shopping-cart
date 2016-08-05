@@ -41,8 +41,9 @@ $items: 16;
 @each $key, $value in $breakpoints {
   @for $i from 1 through $items {
     .l-grid__span--#{$key}-#{$i} {
-      flex: 0 0 100%;
+      // flex: 0 0 100%;
       @include break($key) {
+	      // @debug #{$i / $items * 100%}; 
         flex: 0 0 #{$i / $items * 100%};
       }
     }

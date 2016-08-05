@@ -4,7 +4,7 @@
   flex-direction: row;
   flex-wrap: wrap;
 
-  @include break(sm) {
+  @include break(md) {
     flex-wrap: nowrap;
   }
 
@@ -84,6 +84,13 @@
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.tableRow__headerNum {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: right;
 }
 
 .tableRow__bodyText {
