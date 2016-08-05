@@ -22,21 +22,6 @@
 
 // mini-grid system 
 
-$breakpoints: (
-  xs: 20rem,   // 320px
-  sm: 48rem,
-  md: 72rem,
-  lg: 96rem,
-  xl: 102rem,
-  xx: 120rem
-);
-
-@mixin break($size) {  
-  @media (min-width: map-get($breakpoints, $size)) {
-    @content;
-  }
-}
-
 $items: 16;
 
 // grid container
@@ -62,6 +47,13 @@ $items: 16;
       }
     }
   }
+}
+
+.desktopOnly--text {
+	display: none;
+	@include break(sm) {
+		display: inline;
+	}
 }
 
 .cardIcon {

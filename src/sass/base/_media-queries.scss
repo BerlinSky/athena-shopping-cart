@@ -1,3 +1,18 @@
+$breakpoints: (
+  xs: 20rem,   // 320px
+  sm: 48rem,
+  md: 78rem,
+  lg: 96rem,
+  xl: 102rem,
+  xx: 120rem
+);
+
+@mixin break($size) {  
+  @media (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
 $break-xsmall: 320px;
 $break-small: 500px;
 $break-medium: 768px;
