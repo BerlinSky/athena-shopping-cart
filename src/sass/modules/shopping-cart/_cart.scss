@@ -30,7 +30,12 @@
 .cartItemImage {
 	// background-color: crimson;
 	height: auto;
-	width: 50px;
+	width: 40px;
+
+	@include break(sm) {
+		width: 50px;
+	}
+
 	img {
 		width: 100%;
 		height: auto;
