@@ -130,5 +130,23 @@
   }
 }
 
+.dataForm__buttonPanel--secondary {
+  margin-top: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
+.dataForm__buttonPanel--tertiary {
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.actionButton--bordered {
+  border: 1px solid;
+
+  &:hover {
+    border-bottom-color: inherit;
+  }
+}
 
