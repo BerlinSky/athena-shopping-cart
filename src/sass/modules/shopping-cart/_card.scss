@@ -1,177 +1,113 @@
-.cardContainer {
+.cardListPanel {
 	display: flex;
-	flex-direction: column;
-	// width: 620px;
+	justify-content: flex-start;
+	padding: 0;
 
-	.cardListPanel {
-		display: flex;
-	  flex-direction: column;
-  	align-items: flex-start;
+  &__title {
+  	flex-basis: 100%;
+  }
 
-		height: 60px;
-		width: 320px;
-		padding: 0;
+  &__images {
+  	flex-basis: 100%;
+  	display: flex;
+  	justify-content: flex-start;
 
-	  &__title {
-	  	flex-basis: 100%;
-	  }
+  	background-color: #fff;
+	  padding: 11px 5px 11px 5px;
+  }
 
-	  &__images {
-	  	flex-basis: 100%;
-	  	display: flex;
-	  	justify-content: flex-start;
+	// @include respondTo(medium) {
+	// 	flex-direction: row;
+	// 	align-items: center;
 
-	  	background-color: #fff;
-		  padding: 11px 5px 11px 5px;
-	  }
+	// 	&__title {
+	// 		flex-basis: 40%;
+	// 	}
 
-		@include respondTo(medium) {
-			flex-direction: row;
-			align-items: center;
+	// 	&__images {
+	// 		flex-basis: 60%;
+	// 		display: flex;
+	// 		justify-content: flex-end;
+	// 	}
+	// }
 
-			&__title {
-				flex-basis: 40%;
-			}
+	// @include respondTo(large) {
+	// 	flex-direction: row;
+	// 	align-items: center;
 
-			&__images {
-				flex-basis: 60%;
-				display: flex;
-				justify-content: flex-end;
-			}
-		}
+	// 	&__title {
+	// 		flex-basis: 40%;
+	// 	}
 
-		@include respondTo(large) {
-			flex-direction: row;
-			align-items: center;
+	// 	&__images {
+	// 		flex-basis: 60%;
+	// 		display: flex;
+	// 		justify-content: flex-end;
+	// 	}
+	// }
 
-			&__title {
-				flex-basis: 40%;
-			}
+	// @include respondTo(x-large) {
+	// 	flex-direction: row;
+	// 	align-items: center;
 
-			&__images {
-				flex-basis: 60%;
-				display: flex;
-				justify-content: flex-end;
-			}
-		}
+	// 	// &__title {
+	// 	// 	flex-basis: 40%;
+	// 	// }
 
-		@include respondTo(x-large) {
-			flex-direction: row;
-			align-items: center;
+	// 	&__images {
+	// 		flex-basis: 30%;
+	// 		display: flex;
+	// 		justify-content: flex-end;
+	// 	}
+	// }
+}
 
-			// &__title {
-			// 	flex-basis: 40%;
-			// }
+.cardNumberPanel {
+	// border: 1px solid orange;
 
-			&__images {
-				flex-basis: 30%;
-				display: flex;
-				justify-content: flex-end;
-			}
-		}
-	}
+	display: flex;
+	// justify-content: space-between;
+	// align-items: center;
+	align-items: flex-start;
 
-	.cardNumberPanel {
-		// border: 1px solid orange;
+	&__cardNumber {
+		// flex-basis: 85%;
+		flex-basis: 40%;
+		margin-right: 5px;
 
-		display: flex;
-		// justify-content: space-between;
-		// align-items: center;
-		align-items: flex-start;
-
-		&__cardNumber {
-			// flex-basis: 85%;
-			flex-basis: 40%;
-			margin-right: 5px;
-
-			.inputGroup {
-				width: 100%;
-			}
-		}
-
-		&__cardImage {
-			flex-basis: 10%;
-
-			.credit {
-				display: none;
-				&--default {
-					display: block;
-				}
-			}
-		}
-
-		@include respondTo(small) {
-			justify-content: flex-start;
-
-			&__cardNumber {
-				flex-basis: 50%;
-			}
-		}	
-
-		@include respondTo(medium) {
-			&__cardNumber {
-				flex-basis: 75%;
-			}
-
-			&__cardImage {
-				flex-basis: 5%;
-			}
-		}
-
-		@include respondTo(large) {
-			&__cardNumber {
-				flex-basis: 90%;
-			}
-
-			&__cardImage {
-				flex-basis: 10%;
-			}
-		}
-
-		@include respondTo(x-large) {
-			&__cardNumber {
-				flex-basis: 200px;
-			}
-
-			&__cardImage {
-				// flex-basis: 10%;
-			}
+		.inputGroup {
+			width: 100%;
 		}
 	}
 
-	.expDateAndCVCodePanel {
-		// border: 1px solid crimson;
-		display: flex;
-		justify-content: space-between;
+	&__cardImage {
+		flex-basis: 10%;
 
-	  flex-direction: column;
-  	align-items: flex-start;
-
-	  &__expDate {
-	  	flex-basis: 10%;
-	  	width: 100%;
-	  }
-
-	  &__cvCode {
-	  	flex-basis: 20%;
-	  	width: 100%;
-	  }
-
-		@include respondTo(x-large) {
-		  flex-direction: row;
-			align-items: center;
-
-			&__expDate{
-				flex-basis: 90px;
-				margin-right: 5px;
-				// margin-right: 25px;
-			}
-
-			&__cvCode {
-				flex-basis: 85px;
-				margin-right: 5px;
+		.credit {
+			display: none;
+			&--default {
+				display: block;
 			}
 		}
-	
 	}
+}
+
+
+.expDateAndCVCodePanel {
+	// border: 1px solid crimson;
+	display: flex;
+	justify-content: space-between;
+
+  flex-direction: column;
+	align-items: flex-start;
+
+  &__expDate {
+  	flex-basis: 10%;
+  	width: 100%;
+  }
+
+  &__cvCode {
+  	flex-basis: 20%;
+  	width: 100%;
+  }
 }
