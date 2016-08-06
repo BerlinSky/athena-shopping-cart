@@ -32,6 +32,8 @@
 	// background-color: yellow;
 
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 
 	&__links {
 		flex-basis: auto;
