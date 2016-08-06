@@ -90,4 +90,51 @@ $columns: 16;
 }
 
 
+// Pure CSS accordion
+.accordion {
+  // border:1px solid #542437;
+  // border-radius:10px;
+}
+
+.accordion [type=checkbox] {
+  display:none;
+}
+
+.accordion label {
+  display: block;
+  font-size: 1.0rem;
+  line-height: 2.5rem;
+  background:	#999;
+  color:#fff;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .2s ease-out;
+}
+
+.accordion label:hover, .accordion [type=checkbox]:checked ~ label {
+  background: #999;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5)
+}
+
+.accordion .content {
+  height: 0px;
+  border-top: 0;
+
+  padding:0 10px;
+  overflow: hidden;
+  border:1px solid #fff; /* Make the border match the background so it fades in nicely */
+  transition: all .5s ease-out;
+}
+
+.accordion [type=checkbox]:checked ~ label ~ .content {
+  height: auto;
+  border: 1px solid #542437;
+}
+
+
+
+
 
