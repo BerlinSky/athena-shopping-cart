@@ -59,6 +59,14 @@ $columns: 16;
 	}
 }
 
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
 .desktopOnly--text {
 	display: none;
 	@include break(sm) {
@@ -68,15 +76,29 @@ $columns: 16;
 
 .desktopOnly--block {
 	display: none;
-	@include break(sm) {
+	@include break(md) {
 		display: block;
 	}
 }
 
 .mobileOnly--block {
 	display: block;
-	@include break(sm) {
+	@include break(md) {
 		display: none;
+	}
+}
+
+.cartTotal {
+	display: flex;
+	justify-content: center;
+
+	@include break(md) {
+		justify-content: flex-end;
+	}
+
+	&__text {
+		margin-right: 10px;
+		font-weight: 900;
 	}
 }
 
