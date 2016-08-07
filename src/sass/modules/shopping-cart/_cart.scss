@@ -79,13 +79,18 @@
 
 .miniCart {
 	// background-color: #fff;
-	border-left: 1px solid #999;
-	padding: 15px;
+	border: none;
+	padding: 0;
 	color: #646464;
 	margin-left: auto;
 	margin-right: 20%;
 	font-size: .8em;
 	font-weight: 400;
+
+	@include break(md) {
+		border-left: 1px solid #999;
+		padding: 15px;
+	}
 
 	.miniCatd__title {
 		text-transform: uppercase;
