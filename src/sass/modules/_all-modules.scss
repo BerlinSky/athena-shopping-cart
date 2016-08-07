@@ -89,12 +89,12 @@ $columns: 16;
 	}
 }
 
-
 .accordion {
   // border:1px solid #542437;
   // border-radius:10px;
+  border-collapse: collapse;
   margin-bottom: 10px;
-  
+
   .accordionContent {
     height: 0px;
     border-top: 0;
