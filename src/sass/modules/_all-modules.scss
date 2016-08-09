@@ -15,126 +15,15 @@
 @import "data-form";
 @import "buttons";
 @import "slide-show";
-@import "flexbox-table"	;
+@import "flexbox-table";
+@import "flexbox-grid";
+@import "accordion";
 @import "./shopping-cart/cart";
 @import "./shopping-cart/card";
 @import "./select2/select";
 @import "./select2/select-custom";
+@import "parallax";
 
-
-// parallax
-
-.parallax__group {
-  position: relative;
-  height: 500px; /* fallback for older browsers */
-  height: 100vh;
-  transform-style: preserve-3d;
-}
-
-.parallax__group {
-  transition: transform 0.5s;
-}
-
-.parallax {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 1px;
-
-}
-
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.parallax__layer--base {
-  transform: translateZ(0);
-  // background-color: white;
-}
-
-.parallax__layer--back {
-  transform: translateZ(-1px);
-  // background-color: white;
-  background-color: lightgreen;
-
-  color: red;
-}
-
-.parallax__layer--fore {
-  transform: translateZ(90px) scale(.7);
-  z-index: 1;
-}
-  
-
-
-.parallax {
-  font-size: 200%;
-}
-
- /* add some padding to force scrollbars */
-.parallax__layer {
-  padding: 100vh 0;
-}
-
-.title {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-// mini-grid system 
-
-$items: 16;
-
-// grid container
-.l-grid__container {
-  display: flex;
-  flex-flow: row wrap;
-  // margin-bottom: 1rem;
-
-  // background-color: blue;
-
-  &--vertical {
-    flex-direction: column;
-  } 
-
-  &--center {
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-.l-grid {
-  padding: 0.5rem;
-}
-
-// loop over the breakpoints
-@each $key, $value in $breakpoints {
-  @for $i from 1 through $items {
-    .l-grid__span--#{$key}-#{$i} {
-      // flex: 0 0 100%;
-      @include break($key) {
-	      // @debug #{$i / $items * 100%}; 
-        flex: 0 0 #{$i / $items * 100%};
-      }
-    }
-  }
-}
-
-$columns: 16;
-@for $i from 1 through $columns {
-	.tableColumn__orderDesktop--#{$i} {
-		@include break(md) {
-			order: #{$i};
-		}
-	}
-}
 
 .cart__boxShadow {
   box-shadow: 0 0 0 10px #fff;
@@ -174,53 +63,6 @@ $columns: 16;
 	}
 }
 
-.accordion {
-  // border:1px solid #542437;
-  // border-radius:10px;
-  border-collapse: collapse;
-  margin-bottom: 10px;
-  margin: 5px;
-
-  .accordionContent {
-    height: 0px;
-    border-top: 0;
-
-    padding: 0 10px;
-    overflow: hidden;
-    border:1px solid #fff; /* Make the border match the background so it fades in nicely */
-    transition: all .5s ease-out;
-  }
-}
-
-.accordion [type=checkbox] {
-  display:none;
-}
-
-.accordion label {
-  display: block;
-  font-size: 1.0rem;
-  line-height: 2.5rem;
-  background:	#999;
-  color:#fff;
-  font-weight: 900;
-  text-align: center;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all .2s ease-out;
-}
-
-.accordion label:hover, .accordion [type=checkbox]:checked ~ label {
-  background: #999;
-  color: #fff;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5)
-}
-
-.accordion [type=checkbox]:checked ~ label ~ .accordionContent {
-  height: auto;
-  padding: 10px;
-
-  // border: 1px solid #333;
-}
 
 
 

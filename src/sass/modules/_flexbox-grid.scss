@@ -1,0 +1,46 @@
+// mini-grid system 
+
+$items: 16;
+
+// grid container
+.l-grid__container {
+  display: flex;
+  flex-flow: row wrap;
+  // margin-bottom: 1rem;
+  // background-color: blue;
+
+  &--vertical {
+    flex-direction: column;
+  } 
+
+  &--center {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.l-grid {
+  padding: 0.5rem;
+}
+
+// loop over the breakpoints
+@each $key, $value in $breakpoints {
+  @for $i from 1 through $items {
+    .l-grid__span--#{$key}-#{$i} {
+      // flex: 0 0 100%;
+      @include break($key) {
+	      // @debug #{$i / $items * 100%}; 
+        flex: 0 0 #{$i / $items * 100%};
+      }
+    }
+  }
+}
+
+$columns: 16;
+@for $i from 1 through $columns {
+	.tableColumn__orderDesktop--#{$i} {
+		@include break(md) {
+			order: #{$i};
+		}
+	}
+}
