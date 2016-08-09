@@ -21,6 +21,73 @@
 @import "./select2/select";
 @import "./select2/select-custom";
 
+
+// parallax
+
+.parallax__group {
+  position: relative;
+  height: 500px; /* fallback for older browsers */
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.parallax__group {
+  transition: transform 0.5s;
+}
+
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax__layer--base {
+  transform: translateZ(0);
+  // background-color: white;
+}
+
+.parallax__layer--back {
+  transform: translateZ(-1px);
+  // background-color: white;
+  background-color: lightgreen;
+
+  color: red;
+}
+
+.parallax__layer--fore {
+  transform: translateZ(90px) scale(.7);
+  z-index: 1;
+}
+  
+
+
+.parallax {
+  font-size: 200%;
+}
+
+ /* add some padding to force scrollbars */
+.parallax__layer {
+  padding: 100vh 0;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 // mini-grid system 
 
 $items: 16;
@@ -29,9 +96,18 @@ $items: 16;
 .l-grid__container {
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: 1rem;
+  // margin-bottom: 1rem;
 
   // background-color: blue;
+
+  &--vertical {
+    flex-direction: column;
+  } 
+
+  &--center {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .l-grid {
@@ -60,12 +136,21 @@ $columns: 16;
 	}
 }
 
+.cart__boxShadow {
+  box-shadow: 0 0 0 10px #fff;
+}
+
 .text-right {
 	text-align: right;
 }
 
 .text-left {
-	text-align: left;
+  text-align: left;
+}
+
+.text-center {
+  display: inline;
+	text-align: center;
 }
 
 .desktopOnly--text {

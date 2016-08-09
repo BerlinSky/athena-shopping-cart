@@ -29,11 +29,13 @@
 
 .cartItemImage {
 	// background-color: crimson;
+	display: inline-block;
+	align-vertical: center;
 	height: auto;
-	width: 40px;
+	width: 80px;
 
-	@include break(sm) {
-		width: 50px;
+	@include break(md) {
+		width: 90px;
 	}
 
 	img {
