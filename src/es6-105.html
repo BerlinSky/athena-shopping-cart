@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <title>athena</title>
+
+  <meta charset="utf-8" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+  <!--Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <script type="text/javascript">
+
+    // Arrow function:
+    // 1. Shorthand, still
+    // 2. Use console.table
+    // 3. Apply filter
+
+    const venue = "NYC";
+    const artists = ['U2', 'Madonna', 'Taylor Swift'];
+
+    const artistChart = artists.map((artist, i) => ({ name: artist, venue: venue, popularity: i+1 }));
+
+    const venueCapacity = [5000, 100, 2000, 50, 5000, 120000, 3200];
+    const largeVenues = venueCapacity.filter(size => size >= 2000);
+
+  </script>
+</head>
+
+<body>
+  
+
+</body>
+
+</html>
