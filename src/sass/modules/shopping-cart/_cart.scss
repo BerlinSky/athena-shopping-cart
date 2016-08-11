@@ -75,9 +75,13 @@
 	  border-collapse: collapse;
 	  // border: 1px solid #aaa;
 	  // padding: 5px 10px 5px 10px;
-	  padding: 5px;
-	  margin: 0;
 	  flex: 1 1 16.6666%;
+	  background-color: #fff;
+	  margin-right: 3px;
+
+	  &:last-of-type {
+		  margin-right: 0;
+	  }
 	}
 }
 

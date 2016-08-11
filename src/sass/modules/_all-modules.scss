@@ -24,6 +24,25 @@
 @import "./select2/select-custom";
 @import "parallax";
 
+.box {
+  position: relative;
+  width: 50%;   /* desired width */
+}
+
+.box:before {
+  content: "";
+  display: block;
+  padding-top: 100%;  /* initial ratio of 1:1*/
+}
+
+.box__content {
+  position:  absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 
 .block-section {
   background: #c2c9cc;
@@ -141,14 +160,17 @@
 
 .sizeBlock {
   color: #333;
-  background-color: #fff;
+  // background-color: #fff;
   // border: 2px solid #fff;
-  font-size: 1rem;
-  width: 100%;
+  // width: 100%;
+  padding: 1%;
+  font-size: 1.4rem;
+  font-weight: 600;
   text-align: center;
+  line-height: 3rem;
 
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease-out;
+  // box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
+  // transition: all 0.3s ease-out;
 
   &--chosen {
     background-color: #aaa;

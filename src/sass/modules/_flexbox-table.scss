@@ -36,9 +36,6 @@
     flex-basis: 10%;
   }
 
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
 
   // border: 1px solid blue;
 
@@ -62,6 +59,15 @@
 
   padding-top: 20px;
   padding-bottom: 20px;
+
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+
+  @include break(md) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   &--tall {
     padding-top: 15px;
