@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <title>athena</title>
+
+  <meta charset="utf-8" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+  <!--Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <style type="text/css">
+    .outerContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 300px;
+      height: 200px;
+      padding: 25px;
+      margin: 100px;
+      border: 1px solid #555;
+    }
+
+    .innerContainer {
+      width: 200px;
+      height: 100px;
+      padding: 0;
+      border: 1px solid #555;
+    }
+
+    .backround--primary {
+      background-color: darkblue;
+    } 
+
+    .backround--secondary {
+      background-color: tomato;
+    }
+
+    .skewMe {
+      transform: skewX(15deg);
+    }
+  </style>
+
+</head>
+
+<body>
+  
+  <div class="outerContainer">
+    <div>
+      Outer Container
+    </div> 
+    <div class="innerContainer">
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+    // Default parameter values:
+    // Use "undefined" as a placeholder
+
+    const outer = document.querySelector('.outerContainer');
+    const outerText = document.querySelector('.outerContainer div');
+    const inner = document.querySelector('.innerContainer');
+
+    function setArtistSite(siteName, color, bgColor) {
+      outerText.innerHTML = siteName;
+
+      const style = 'color: ' + color + '; background-color: ' + bgColor;
+
+      outer.setAttribute('style', style);
+      inner.setAttribute('style', style);
+    }
+
+    // function setArtistSite(siteName, color = 'white', bgColor = 'black') {
+    //   outerText.innerHTML = siteName;
+
+    //   const style = 'color: ' + color + '; background-color: ' + bgColor;
+
+    //   outer.setAttribute('style', style);
+    //   inner.setAttribute('style', style);
+    // }
+
+    inner.addEventListener('click', function() {
+      setArtistSite('5th Harmony', 'darkblue', 'tomato');
+
+      // setArtistSite('5th Harmony');
+      // setArtistSite('5th Harmony', undefined, 'green');
+    });
+
+  </script>
+
+</body>
+
+</html>
