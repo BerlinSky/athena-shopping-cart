@@ -31,7 +31,8 @@
 	// background-color: crimson;
 	display: inline-block;
 	height: auto;
-	width: 80px;
+	// width: 80px;
+	width: 80%;
 
 	@include break(md) {
 		width: 90px;
