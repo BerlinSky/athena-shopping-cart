@@ -86,16 +86,30 @@
     const state = "Texas";
     const songs = ["Girl", "Ring The Alarm", "Diva", "Until The End Of Time", "Best Thing I Never Had"];
 
-    inner.addEventListener('click', function() {
-      // const artist = `${name} is a ${age}-old American ${genre} singer from ${state}.`;
-
-      const artist = `
-        ${name} is a ${age}-old American ${genre} singer from ${state}.
-        Her top songs include:
-        <ul>
+    function topSongs() {
+      return (
+        `<ul>
           ${songs.map( song => `<li>${song}</li>`).join('')}
-        </ul>
-        `;
+        </ul>`
+        );
+    }
+
+    inner.addEventListener('click', function() {
+      const artist = `${name} is a ${age}-old American ${genre} singer from ${state}.`;
+
+      // const artist = `
+      //   ${name} is a ${age}-old American ${genre} singer from ${state}.
+      //   Her top songs include:
+      //   <ul>
+      //     ${songs.map( song => `<li>${song}</li>`).join('')}
+      //   </ul>
+      //   `; 
+
+      // const artist = `
+      //   ${name} is a ${age}-old American ${genre} singer from ${state}.
+      //     Her top songs include:
+      //     ${topSongs()}
+      //   `;
 
       setArtistSite(artist);
     });
