@@ -63,6 +63,7 @@
 
     // Template string:tagging:
     // Manipulate strings and values in a template string.
+    // HTML5: contenteditable
 
     const outer = document.querySelector('.outerContainer');
     const outerText = document.querySelector('.outerContainer div');
@@ -101,23 +102,14 @@
         `;
       });
 
-    console.log(s);
       return s;
     };
 
     inner.addEventListener('click', function() {
 
-      // const artist = `
-      //   ${name} is a ${age}-old American ${genre} singer from ${state}.
-      //     Her top songs include:
-      //     ${topSongs()}
-      //   `;
-
       const artist = createArtistSite`${name} is a ${age}-old American ${genre} singer from ${state}.`;
 
       setArtistSite(artist, '#333', '#eee');
-
-
     });
 
   </script>
