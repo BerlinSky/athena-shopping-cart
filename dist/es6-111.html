@@ -63,7 +63,7 @@
 
     // Template string:tagging:
     // Use object to look up: Manipulate strings and values in a template string.
-    // HTML5 <abbr>
+    // JS: arrary.reduce
 
     const outer = document.querySelector('.outerContainer');
     const outerText = document.querySelector('.outerContainer div');
@@ -86,16 +86,9 @@
     }
 
     function createArtistSite(strings, ...values) {
-      let s = '';
-      strings.forEach((string, i) => {
-        s += `${string} 
-          <abbr class="userText" title="${values[i] || ''} ">
-            ${artistLookup[values[i] || '']}  
-          </abbr>
-        `;
-      });
-
-      return s;
+      return strings.reduce((start, string, i) => { 
+        return `${start}${string}${artistLookup[values[i] || '']}`
+      }, '');
     };
 
     inner.addEventListener('click', function() {
