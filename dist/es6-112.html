@@ -61,9 +61,11 @@
 
   <script type="text/javascript">
 
-    // Template string:tagging:
-    // Use object to look up: Manipulate strings and values in a template string.
-    // JS: arrary.reduce
+    // String methods:
+    // 1 - startsWith
+    // 2 - endsWith
+    // 3 - include
+    // 4 - repeat
 
     const outer = document.querySelector('.outerContainer');
     const outerText = document.querySelector('.outerContainer div');
@@ -91,9 +93,22 @@
       }, '');
     };
 
+
     inner.addEventListener('click', function() {
 
       const artist = createArtistSite`${'name'} is a ${'age'}-old American ${'genre'} singer from ${'state'}.`;
+
+      const isBeyonce = artist.startsWith('Beyonce');
+      console.log('isBeyonce', isBeyonce);
+
+      const isOnce = artist.startsWith('once', 3);
+      console.log('isOnce', isOnce);
+
+      const isTexas = artist.endsWith('Texas.');
+      console.log('isTexas', isTexas);
+
+      const is35 = artist.endsWith('35', 15);
+      console.log('is35', is35);
 
       setArtistSite(artist, '#333', '#eee');
     });

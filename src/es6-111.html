@@ -87,7 +87,7 @@
 
     function createArtistSite(strings, ...values) {
       return strings.reduce((start, string, i) => { 
-        return `${start}${string}${artistLookup[values[i] || '']}`
+        return `${start}${string}${values[i] ? artistLookup[values[i]] : ''}`
       }, '');
     };
 
