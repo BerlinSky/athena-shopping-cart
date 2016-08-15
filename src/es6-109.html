@@ -41,8 +41,9 @@
       background-color: tomato;
     }
 
-    .skewMe {
-      transform: skewX(15deg);
+    .userText {
+      background-color: #E0E024;
+      color: tomato;
     }
   </style>
 
@@ -60,7 +61,7 @@
 
   <script type="text/javascript">
 
-    // Template string:
+    // Template string:tagging:
     // Manipulate strings and values in a template string.
 
     const outer = document.querySelector('.outerContainer');
@@ -90,21 +91,21 @@
         );
     }
 
-    function createArtistSite(string, ...values) {
-      console.table(string);
-      console.table(values);
-    }
+    function createArtistSite(strings, ...values) {
+      let s = '';
+      strings.forEach((string, i) => {
+        s += `${string} 
+          <span contenteditable class="userText">
+            ${values[i] || ''}   
+          </span>
+        `;
+      });
+
+    console.log(s);
+      return s;
+    };
 
     inner.addEventListener('click', function() {
-      const artist = `${name} is a ${age}-old American ${genre} singer from ${state}.`;
-
-      // const artist = `
-      //   ${name} is a ${age}-old American ${genre} singer from ${state}.
-      //   Her top songs include:
-      //   <ul>
-      //     ${songs.map( song => `<li>${song}</li>`).join('')}
-      //   </ul>
-      //   `; 
 
       // const artist = `
       //   ${name} is a ${age}-old American ${genre} singer from ${state}.
@@ -112,9 +113,10 @@
       //     ${topSongs()}
       //   `;
 
-      setArtistSite(artist);
+      const artist = createArtistSite`${name} is a ${age}-old American ${genre} singer from ${state}.`;
 
-      createArtistSite`${name} is a ${age}-old American ${genre} singer from ${state}.`;
+      setArtistSite(artist, '#333', '#eee');
+
 
     });
 
