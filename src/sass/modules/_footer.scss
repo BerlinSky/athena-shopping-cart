@@ -37,14 +37,14 @@
 
 	&__links {
 		flex-basis: auto;
-		@include respondTo(x-small) {
+		// @include respondTo(x-small) {
 			order: 1;
 			flex-grow: 1;
-		}
-		@include respondTo(small) {
-			order: 1;
-			flex-grow: 1;
-		}
+		// }
+		//  @include respondTo(small) {
+		// 	order: 1;
+		// 	flex-grow: 1;
+		// }
 	}
 
 	&__item {

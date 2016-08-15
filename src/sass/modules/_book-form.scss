@@ -22,16 +22,13 @@
 
 .actionForm {
 	display: flex;
+	flex-direction: column;
 
 	padding: 5px 10px 10px 5px;
 	// background-color: yellow;
 
-	@include respondTo(small) {
-		flex-direction: column;
-	}
-
-	@include respondTo(x-small) {
-		flex-direction: column;
+	@include break(md) {
+		flex-direction: row;
 	}
 
 	&__section{
@@ -53,13 +50,13 @@
 	&__section + &__section {
 		margin-left: 1em;
 
-		@include respondTo(x-small) {
-			margin-left: 0;
-		}
+		// @include respondTo(x-small) {
+		// 	margin-left: 0;
+		// }
 
-		@include respondTo(small) {
-			margin-left: 0;
-		}
+		// @include respondTo(small) {
+		// 	margin-left: 0;
+		// }
 	}
 
 	&__panel {

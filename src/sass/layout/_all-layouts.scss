@@ -20,13 +20,13 @@ body {
     display: flex;
     justify-content: flex-end;
 
-    @include respondTo(x-small) {
-      visibility: hidden;
-    } 
+    // @include respondTo(x-small) {
+    //   visibility: hidden;
+    // } 
 
-    @include respondTo(small) {
-      visibility: hidden;
-    } 
+    // @include respondTo(small) {
+    //   visibility: hidden;
+    // } 
 
     // @include respondTo(medium) {
     //   visibility: hidden;
@@ -45,17 +45,17 @@ body {
     // background-color: red;
     flex-basis: 66.66666%;
 
-    @include respondTo(medium) {
-      flex-basis: 100%;
-    }
+    // @include respondTo(medium) {
+    //   flex-basis: 100%;
+    // }
   }
   .l-panel:nth-child(2) {
     // background-color: green;
     flex-basis: 33.33333%;
 
-    @include respondTo(medium) {
-      flex-basis: 0;
-    }
+    // @include respondTo(medium) {
+    //   flex-basis: 0;
+    // }
   }
 }
 

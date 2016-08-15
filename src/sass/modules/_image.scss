@@ -8,7 +8,7 @@
     width: 30px;
   }
 
-  @include respondTo(medium) {
+  @include break(md) {
     width: 70px;
 
     &--tiny {
@@ -16,21 +16,21 @@
     }
   } 
 
-  @include respondTo(large) {
-    width: 70px;
+  // @include respondTo(large) {
+  //   width: 70px;
 
-    &--tiny {
-      width: 40px;
-    }
-  }  
+  //   &--tiny {
+  //     width: 40px;
+  //   }
+  // }  
 
-  @include respondTo(x-large) {
-    width: 70px;
+  // @include respondTo(x-large) {
+  //   width: 70px;
 
-    &--tiny {
-      width: 40px;
-    }
-  }
+  //   &--tiny {
+  //     width: 40px;
+  //   }
+  // }
 }
 
 

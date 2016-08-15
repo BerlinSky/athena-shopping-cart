@@ -5,9 +5,13 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: _font(site-base);
+}
+
 html, body {
-    min-width: 320px;
-    overflow-x: hidden;
+  min-width: 320px;
+  overflow-x: hidden;
 }
 
 body {
@@ -64,8 +68,6 @@ a:hover:before {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #3c3b3b;
-  font-family: "Raleway", Helvetica, sans-serif;
   font-weight: 800;
   letter-spacing: 0.25em;
   line-height: 1.65;
@@ -79,15 +81,15 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h2 {
-font-size: 1.1em;
+  font-size: 1.1em;
 }
 
 h3 {
-font-size: 0.9em;
+  font-size: 0.9em;
 }
 
 h4 {
-font-size: 0.7em;
+  font-size: 0.7em;
 }
 
 h5 {

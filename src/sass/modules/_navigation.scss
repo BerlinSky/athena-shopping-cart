@@ -8,15 +8,15 @@
   width: 100%;
   // z-index: _misc(z-index-base);
 
-  @include respondTo(xsmall) {
-    height: 3.25em;
-    line-height: 3.25em;
-  }
+  // @include respondTo(xsmall) {
+  //   height: 3.25em;
+  //   line-height: 3.25em;
+  // }
 
-  @include respondTo(small) {
-    height: 2.75em;
-    line-height: 2.75em;
-  }
+  // @include respondTo(small) {
+  //   height: 2.75em;
+  //   line-height: 2.75em;
+  // }
 
   ul {
     list-style: none;
@@ -39,13 +39,13 @@
   padding: 0 0 0 1.5em;
   white-space: nowrap;
 
-  @include respondTo(small) {
-    padding: 0 0 0 1em;
-  }
+  // @include respondTo(small) {
+  //   padding: 0 0 0 1em;
+  // }
 
-  a {
-    font-size: 0.7em;
-  }
+  // a {
+  //   font-size: 0.7em;
+  // }
 }
 
 .navlinks {
@@ -81,11 +81,11 @@
   }
 }
 
-@include respondTo(medium) {
-  .navlinks {
-    display: none;
-  }
-}
+// @include respondTo(medium) {
+//   .navlinks {
+//     display: none;
+//   }
+// }
 
 .navActions {
   height: inherit;
@@ -169,9 +169,9 @@
 
     // border: 1px solid red;
 
-    @include respondTo(small) {
-      display: none;
-    }
+    // @include respondTo(small) {
+    //   display: none;
+    // }
   }
 }
 
