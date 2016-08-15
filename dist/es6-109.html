@@ -60,10 +60,8 @@
 
   <script type="text/javascript">
 
-    // Template string
-    // 1. String concatenation
-    // 2. Nested template string
-    // 3. Embed functions
+    // Template string:
+    // Manipulate strings and values in a template string.
 
     const outer = document.querySelector('.outerContainer');
     const outerText = document.querySelector('.outerContainer div');
@@ -92,6 +90,11 @@
         );
     }
 
+    function createArtistSite(string, ...values) {
+      console.table(string);
+      console.table(values);
+    }
+
     inner.addEventListener('click', function() {
       const artist = `${name} is a ${age}-old American ${genre} singer from ${state}.`;
 
@@ -110,6 +113,9 @@
       //   `;
 
       setArtistSite(artist);
+
+      createArtistSite`${name} is a ${age}-old American ${genre} singer from ${state}.`;
+
     });
 
   </script>
