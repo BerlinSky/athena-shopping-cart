@@ -217,6 +217,8 @@
 
 
 // TODO: Move to the modules
+
+
 .cart__boxShadow {
   box-shadow: 0 0 0 10px #fff;
 }
@@ -230,8 +232,12 @@
 }
 
 .text-center {
-  display: inline;
+  // display: inline;
 	text-align: center;
+}
+
+.text-bold {
+  font-weight: _font(weight-bold);
 }
 
 .desktopOnly--text {

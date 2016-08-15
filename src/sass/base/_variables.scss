@@ -5,36 +5,43 @@ $misc: (
 
 // Duration.
 $duration: (
-	menu:	0.5s,
+	menu:				0.5s,
 	transition:	0.2s
 );
 
 // Size.
 $size: (
-	element-height:	2.75em,
-	element-margin:	2em,
-	section-spacing:	3em,
+	site-min-width:					20rem,
+	element-height:					2.75em,
+	element-margin:					2em,
+	section-spacing:				3em,
 	section-spacing-small:	.5em,
-	menu:	25em
+	menu:										25em
 );
 
 // Font.
 $font: (
-	family:	('Source Sans Pro', Helvetica, sans-serif),
-	family-fixed:	('Courier New', monospace),
-	family-heading:	('Raleway', Helvetica, sans-serif),
-	site-base: 16px,
-	weight:	400,
-	weight-bold:	700,
-	weight-heading:	400,
-	weight-heading-bold:	800,
-	weight-heading-extrabold:	900
+	family:										('Source Sans Pro', Helvetica, sans-serif),
+	family-fixed:							('Courier New', monospace),
+	family-heading:						('Raleway', Helvetica, sans-serif),
+	site-base: 								16px,
+	weight:										400,
+	weight-bold:							700,
+	weight-heading:						400,
+	weight-heading-bold:			800,
+	weight-heading-extrabold:	900,
+	line-height:							1.75
+);
+
+$font-size: (
+	site-default: 1.25rem
 );
 
 // Palette.
 $palette: (
-	bg:							#ffffff,
-	bg-alt:					#f4f4f4,
+  background: 		#f4f4f4,  
+  site-default:		#646464, //Below are not used at the moment:
+	bg-alt:					#f4f4f4, 
 	fg:							#646464,
 	fg-bold:				#3c3b3b,
 	fg-light:				#aaaaaa,

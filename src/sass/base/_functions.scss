@@ -12,6 +12,13 @@
 	@return map-get($font, $key);
 }
 
+/// Gets a font size value.
+/// @param {string} $key.
+/// @return {string} Value.
+@function _fontSize($key) {
+	@return map-get($font-size, $key);
+}
+
 /// Gets a misc value.
 /// @param {string} $key.
 /// @return {string} Value.
