@@ -22,10 +22,10 @@
 
 .accordion label {
   display: block;
+  color: _color(button-default, color);
+  background: _color(button-default, bg-color);
   font-size: 1.0rem;
   line-height: 2.5rem;
-  background:	#999;
-  color:#fff;
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
@@ -34,8 +34,11 @@
 }
 
 .accordion label:hover, .accordion [type=checkbox]:checked ~ label {
-  background: #999;
-  color: #fff;
+  // background: #999;
+  // color: #fff;
+  color: _color(button-default, hover-color);
+  // background: _color(button-default, bg-color);
+
   text-shadow: 1px 1px 1px rgba(0,0,0,0.5)
 }
 
