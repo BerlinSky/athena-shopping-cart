@@ -16,20 +16,17 @@ html, body {
 
 body {
   padding: 0;
-  background: _palette(background);
+  color: _color(site-default, color);
+  background: _color(site-default, bg-color);
+  font-family: _font(family);
+  font-size: _fontSize(site-default);
+  font-weight: _font(weight);
+  line-height: _font(line-height);
 }
 
 body.is-loading *, body.is-loading *:before, body.is-loading *:after {
   animation: none;
   transition: none;
-}
-
-body {
-  color: _color(site-default, color);
-  font-family: _font(family);
-  font-size: _fontSize(site-default);
-  font-weight: _font(weight);
-  line-height: _font(line-height);
 }
 
 input, select, textarea {

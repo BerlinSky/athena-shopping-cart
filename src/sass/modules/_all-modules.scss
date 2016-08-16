@@ -2,8 +2,6 @@
 @import "site-banner";
 @import "navigation";
 @import "main-content";
-@import "site-cover";
-@import "site-show";
 @import "footer";
 @import "panel-container";
 @import "media";
@@ -11,7 +9,6 @@
 @import "book-form";
 @import "data-form";
 @import "buttons";
-@import "slide-show";
 @import "flexbox-table";
 @import "flexbox-grid";
 @import "accordion";
@@ -19,7 +16,6 @@
 @import "./shopping-cart/card";
 @import "./select2/select";
 @import "./select2/select-custom";
-@import "parallax";
 
 .box {
   position: relative;
@@ -70,10 +66,10 @@
   width: 48px;
   height: 34px;
   border-radius: 6px;
-  background: #1976D2;
+  // background: #1976D2;
   padding: 13px 0 0;
   text-decoration: none;
-  color: #BBDEFB;
+  // color: #BBDEFB;
   font-size: 18px;
   text-align: center;
   border: 1px solid #c2c9cc;
@@ -83,22 +79,22 @@
 
 .block-links li div:hover {
   cursor: -webkit-grab;
-  background: #2196F3;
-  color: #fff;
+  // background: #2196F3;
+  // color: #fff;
   margin-left: 4px;
 }
 
 .block-links li div {
-  background-color: #1d7dcc;
+  // background-color: #1d7dcc;
 }
 
 .block-links li div:hover {
-  background-color: #2196f3;
+  // background-color: #2196f3;
 }
 
 .block-links li:before,
 .block-links li:after {
-  border-color: #1d7dcc;
+  // border-color: #1d7dcc;
 }
 
 .block-links li div:active {
@@ -111,16 +107,16 @@
 }
 
 .block-links li.dark-blue div {
-  background-color: #3b67d9;
+  // background-color: #3b67d9;
 }
 
 .block-links li.dark-blue div:hover {
-  background-color: #4479ff;
+  // background-color: #4479ff;
 }
 
 .block-links li.dark-blue:before,
 .block-links li.dark-blue:after {
-  border-color: #3b67d9;
+  // border-color: #3b67d9;
 }
 
 .block-links li:before {
@@ -130,7 +126,7 @@
   display: block;
   width: 50px;
   height: 50px;
-  background: #5b6266;
+  // background: #5b6266;
   border-radius: 6px;
   border: 1px solid #1976D2;
   top: -1px;
