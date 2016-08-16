@@ -24,8 +24,17 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
   transition: none;
 }
 
-body, input, select, textarea {
-  color: _palette(site-default);
+body {
+  color: _color(site-default, color);
+  font-family: _font(family);
+  font-size: _fontSize(site-default);
+  font-weight: _font(weight);
+  line-height: _font(line-height);
+}
+
+input, select, textarea {
+  color: _color(input-default, color);
+  // color: _palette(site-default);
   font-family: _font(family);
   font-size: _fontSize(site-default);
   font-weight: _font(weight);
@@ -45,11 +54,11 @@ a:before {
 
 a:hover {
   border-bottom-color: transparent;
-  color: #2ebaae;
+  color: _color(link, hover-color);
 }
 
 a:hover:before {
-  color: #2ebaae;
+  color: _color(link, hover-color);
 }
 
 

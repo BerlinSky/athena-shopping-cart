@@ -22,8 +22,8 @@ $size: (
 // Font.
 $font: (
 	family:										('Source Sans Pro', Helvetica, sans-serif),
-	family-fixed:							('Courier New', monospace),
-	family-heading:						('Raleway', Helvetica, sans-serif),
+	// family-fixed:							('Courier New', monospace),
+	// family-heading:						('Raleway', Helvetica, sans-serif),
 	site-base: 								16px,
 	weight:										400,
 	weight-heading:						700,
@@ -37,6 +37,28 @@ $font-size: (
 	body-text: 		1.25rem,
 	body-text-sm:	.8rem,
 	button-text:	1.4rem
+);
+
+$color-map: (
+	site-default: (
+		color: 		#646464,
+		bg-color: #f4f4f4		
+	),
+	button-default: (
+		color: 		#333,
+		bg-color: #999999
+	),
+	button-navigation: (
+		color: 		#ffffff,
+		bg-color: #e91e63
+	),
+	input-default: (
+		color: #333,
+		bg-color: #ffffff
+	),
+	link: (
+		hover-color: #2ebaae
+	)
 );
 
 // Palette.

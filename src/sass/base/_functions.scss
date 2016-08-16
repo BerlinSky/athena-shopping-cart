@@ -1,3 +1,15 @@
+/// Map deep get
+/// @param {Arglist} $keys - Key chain
+/// @return {*} - Desired value
+@function _color($keys...) {
+	$map: $color-map;
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+
 /// Gets a duration value.
 /// @param {string} $key.
 /// @return {string} Value.
