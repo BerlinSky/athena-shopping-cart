@@ -26,21 +26,23 @@ $font: (
 	family-heading:						('Raleway', Helvetica, sans-serif),
 	site-base: 								16px,
 	weight:										400,
+	weight-heading:						700,
 	weight-bold:							700,
-	weight-heading:						400,
-	weight-heading-bold:			800,
-	weight-heading-extrabold:	900,
 	line-height:							1.75
 );
 
 $font-size: (
-	site-default: 1.25rem
+	site-default: 1.25rem,
+	header-text: 	1.5rem,
+	body-text: 		1.25rem,
+	body-text-sm:	.8rem,
+	button-text:	1.4rem
 );
 
 // Palette.
 $palette: (
   background: 		#f4f4f4,  
-  site-default:		#646464, //Below are not used at the moment:
+  site-default:		#646464, 
 	bg-alt:					#f4f4f4, 
 	fg:							#646464,
 	fg-bold:				#3c3b3b,

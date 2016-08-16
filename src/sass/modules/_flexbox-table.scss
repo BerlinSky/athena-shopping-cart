@@ -107,10 +107,12 @@
 
 .tableRow__bodyText {
   padding: 5px;
-  line-height: 1.8rem;
-  font-size: 1.25rem;
-  font-weight: 400;
-  margin-bottom: 1rem;
+
+  @include bodyText();
+  // line-height: 1.8rem;
+  // font-size: 1.25rem;
+  // font-weight: 400;
+  // margin-bottom: 1rem;
 }
 
 .tableRow__bodyNum {

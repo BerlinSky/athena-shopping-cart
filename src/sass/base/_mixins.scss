@@ -28,3 +28,29 @@
 @mixin padding($tb, $lr, $pad: (0,0,0,0)) {
 	padding: ($tb + nth($pad,1)) ($lr + nth($pad,2)) max(0.1em, $tb - _size(element-margin) + nth($pad,3)) ($lr + nth($pad,4));
 }
+
+@mixin headerText() {
+  font-size: _fontSize(header-text);
+  font-weight: _font(weight-heading);
+  letter-spacing: .125em;
+}
+
+@mixin bodyText($contentSize: default) {
+  font-weight: 300;
+  letter-spacing: 0.125rem;
+  line-height: 1.5rem;
+
+  @if $contentSize == "small" {
+  	font-size: 0.925rem;
+  }
+  
+  @if $contentSize == "default" {
+  	font-size: 1.0rem;
+  }
+
+  @if $contentSize == "large" {
+  	font-size: 1.25rem;
+  }
+}
+
+
