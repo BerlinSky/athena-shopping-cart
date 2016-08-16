@@ -64,7 +64,7 @@
     // String methods:
     // 1 - startsWith
     // 2 - endsWith
-    // 3 - include
+    // 3 - includes
     // 4 - repeat
 
     const outer = document.querySelector('.outerContainer');
@@ -86,6 +86,8 @@
       genre: "R&B",
       state: "Texas",
     }
+
+    const songs = ["Girl", "Ring The Alarm", "Diva", "Until The End Of Time", "Best Thing I Never Had"];
 
     function createArtistSite(strings, ...values) {
       return strings.reduce((start, string, i) => { 
@@ -110,7 +112,18 @@
       const is35 = artist.endsWith('35', 15);
       console.log('is35', is35);
 
-      setArtistSite(artist, '#333', '#eee');
+      const hasAmerican = artist.includes('American');
+      console.log('hasAmerican', hasAmerican);
+
+      const songList = songs.map(song => {
+        return `
+          ${song === "Diva" ? song.repeat(5) : song}
+        `
+      }).join('');
+
+      console.log('songList', songList);
+
+      setArtistSite(songList, '#333', '#eee');
     });
 
   </script>
