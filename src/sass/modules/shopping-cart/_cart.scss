@@ -70,9 +70,10 @@
 	}
 
 	&__text {
-		font-size: _fontSize(site-default);
+		// font-size: _fontSize(site-default);
 		margin-right: 10px;
-		font-weight: 900;
+		// @include bodyText(large);
+		// font-weight: 900;
 	}
 }
 

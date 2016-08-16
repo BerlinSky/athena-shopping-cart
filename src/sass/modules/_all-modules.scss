@@ -159,8 +159,9 @@
   background-color: #E91E63;
   // background-color: #646464;
   color: #fff;
-  font-size: 1.25rem;
-  height: 4rem;
+  // font-size: 1.25rem;
+  // height: 4rem;
+  @include headerText();
 }
 
 .sizeBlock {
