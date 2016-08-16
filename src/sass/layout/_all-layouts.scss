@@ -1,24 +1,9 @@
-body {
-  // display: flex;
-}
-
 .l-siteContainer {
 	display: flex;
 	flex-direction: column;
 
   & > * {
     flex:1 1 auto;
-  }
-}
-
-.l-navigation {
-  display: flex;
-  justify-content: space-between;
-
-  .l-navlinks {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
   }
 }
 
@@ -30,11 +15,9 @@ body {
   }
 
   .l-panel:nth-child(1) {
-    // background-color: red;
     flex-basis: 66.66666%;
   }
   .l-panel:nth-child(2) {
-    // background-color: green;
     flex-basis: 33.33333%;
   }
 }
@@ -44,43 +27,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.l-mainContent {
-  overflow-x: hidden;
-}
-
-.l-header-fixed {
-  .l-navigation {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 200;
-
-    // background-color: yellow;
-  }
-
-  .l-mainContent {
-    overflow-y: auto;
-    -webkit-overflow-scrolling:touch;
-
-    margin-top: 10px;
-  }
-}
-
-.l-footer-fixed {
-  .l-footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 200;
-
-    // background-color: yellow;
-  }
-
-  .l-mainContent {
-    margin-bottom: 45px;
-  }
 }
 
 
