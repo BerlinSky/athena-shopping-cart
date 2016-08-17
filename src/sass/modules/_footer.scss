@@ -1,68 +1,30 @@
 .footer {
-	background-color: #eee;
 	padding: 0 0 20px 0;
 	width: 100%;
 
-	.icons {
-		color: #aaaaaa;
-	}
-
 	.copyright {
-		// color: _palette(fg-light);
+	  @include bodyText(small);
+		text-transform: uppercase;
 		padding-right: 10px;
 		padding-left: 10px;
-		color: #aaaaaa;
-		font-family: _font(family-heading);
-		font-size: 0.7rem;
-		font-weight: _font(weight-heading);
-	  line-height: 2.75;
-		letter-spacing: _font(kerning-heading);
-		text-transform: uppercase;
-	}
-
-	.siteBtn {
-		display: inline-block;
-		background-color: white;
-		color: black;
-		min-width: 40px;
 	}
 }
 
 .footerPanel {
-	// background-color: yellow;
-
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 
 	&__links {
 		flex-basis: auto;
-		// @include respondTo(x-small) {
-			order: 1;
-			flex-grow: 1;
-		// }
-		//  @include respondTo(small) {
-		// 	order: 1;
-		// 	flex-grow: 1;
-		// }
+		order: 1;
+		flex-grow: 1;
 	}
 
 	&__item {
 		&--default {
 			text-align: center;
 		}
-	}
-}
-
-.foorterIconPanel {
-	width: 100%;
-
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-
-	&__item {
-		// border: 1px solid red;
 	}
 }
 

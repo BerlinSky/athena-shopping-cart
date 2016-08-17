@@ -35,6 +35,12 @@
   letter-spacing: .125em;
 }
 
+@mixin footerText() {
+  font-size: _fontSize(footer-text);
+  font-weight: _font(weight);
+  letter-spacing: _font(kerning-heading);
+}
+
 @mixin bodyText($contentSize: default) {
   font-weight: 300;
   letter-spacing: 0.125rem;
