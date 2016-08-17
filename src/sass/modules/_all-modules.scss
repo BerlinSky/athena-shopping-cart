@@ -158,12 +158,15 @@
   animation-iteration-count: infinite;
 }
 
-.cart___NavButton {
+.cart___navButton {
   background-color: #E91E63;
-  // background-color: #646464;
   color: #fff;
-  // font-size: 1.25rem;
-  // height: 4rem;
+  @include headerText();
+}
+
+.cart___couponCodeButton {
+  background-color: #646464;
+  color: #fff;
   @include headerText();
 }
 
