@@ -9,21 +9,21 @@ $color_razzmatazz_approx: 		#e91e63;
 
 $color-map: (
 	site-default: (
-		color: 		$color_storm_dust_approx,
-		bg-color: $color_gallery_approx		
+		color: 		#ffffff,
+		bg-color: #000000		
 	),
 	button-default: (
-		color: 				$color_mine_shaft_approx,
-		bg-color: 		#$color_mountain_mist_approx,
+		color: 				#333333,
+		bg-color: 		gold,
 		hover-color:	$color_puerto_rico_approx
 	),
 	button-navigation: (
-		color: 		#$white,
-		bg-color: #$color_razzmatazz_approx
+		color: 		$white,
+		bg-color: $color_razzmatazz_approx
 	),
 	input-default: (
 		color: 		$color_mine_shaft_approx,
-		bg-color: #$white
+		bg-color: $white
 	),
 	link: (
 		hover-color: $color_puerto_rico_approx
