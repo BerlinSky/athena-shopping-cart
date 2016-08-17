@@ -16,6 +16,14 @@
 @import "./select2/select";
 @import "./select2/select-custom";
 
+.grid__container {
+  margin-bottom: 1.0rem;
+}
+
+.grid_row {
+  margin-bottom: 1.125rem;
+}
+
 .box {
   position: relative;
   width: 50%;   /* desired width */

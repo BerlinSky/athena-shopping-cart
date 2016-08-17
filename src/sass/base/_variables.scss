@@ -1,3 +1,27 @@
+$color-map: (
+	site-default: (
+		color: 		#646464,
+		bg-color: #eee		
+	),
+	button-default: (
+		color: 				#333,
+		bg-color: 		#999999,
+		hover-color:	#2ebaae
+	),
+	button-navigation: (
+		color: 		#ffffff,
+		bg-color: #e91e63
+	),
+	input-default: (
+		color: 		#333,
+		bg-color: #ffffff
+	),
+	link: (
+		hover-color: #2ebaae
+	)
+);
+
+
 // Misc.
 $misc: (
 	z-index-base:	10000
@@ -36,29 +60,6 @@ $font-size: (
 	body-text-sm:	.8rem,
 	footer-text:	.7rem,
 	button-text:	1.4rem
-);
-
-$color-map: (
-	site-default: (
-		color: 		#646464,
-		bg-color: #eee		
-	),
-	button-default: (
-		color: 				#333,
-		bg-color: 		#999999,
-		hover-color:	#2ebaae
-	),
-	button-navigation: (
-		color: 		#ffffff,
-		bg-color: #e91e63
-	),
-	input-default: (
-		color: 		#333,
-		bg-color: #ffffff
-	),
-	link: (
-		hover-color: #2ebaae
-	)
 );
 
 // Palette.
