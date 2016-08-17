@@ -1,23 +1,32 @@
+//colors
+$color_storm_dust_approx:  		#646464;
+$color_gallery_approx: 				#eee;
+$color_mine_shaft_approx: 		#333;
+$color_mountain_mist_approx: 	#999999;
+$color_puerto_rico_approx: 		#2ebaae;
+$white: 											#ffffff;
+$color_razzmatazz_approx: 		#e91e63;
+
 $color-map: (
 	site-default: (
-		color: 		#646464,
-		bg-color: #eee		
+		color: 		$color_storm_dust_approx,
+		bg-color: $color_gallery_approx		
 	),
 	button-default: (
-		color: 				#333,
-		bg-color: 		#999999,
-		hover-color:	#2ebaae
+		color: 				$color_mine_shaft_approx,
+		bg-color: 		#$color_mountain_mist_approx,
+		hover-color:	$color_puerto_rico_approx
 	),
 	button-navigation: (
-		color: 		#ffffff,
-		bg-color: #e91e63
+		color: 		#$white,
+		bg-color: #$color_razzmatazz_approx
 	),
 	input-default: (
-		color: 		#333,
-		bg-color: #ffffff
+		color: 		$color_mine_shaft_approx,
+		bg-color: #$white
 	),
 	link: (
-		hover-color: #2ebaae
+		hover-color: $color_puerto_rico_approx
 	)
 );
 
