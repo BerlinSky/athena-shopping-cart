@@ -264,6 +264,13 @@
   font-weight: _font(weight-bold);
 }
 
+.desktopOnly-flex {
+  display: none;
+  @include break(md) {
+    display: flex;
+  }
+}
+
 .desktopOnly--text {
 	display: none;
 	@include break(md) {
