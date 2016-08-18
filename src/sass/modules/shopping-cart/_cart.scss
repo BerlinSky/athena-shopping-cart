@@ -95,8 +95,12 @@
 	  background-color: #fff;
 	  margin-right: 3px;
 
+	  &:first-of-type {
+		  margin-left: 5px;
+	  } 
+
 	  &:last-of-type {
-		  margin-right: 0;
+		  margin-right: 5px;
 	  }
 	}
 }
