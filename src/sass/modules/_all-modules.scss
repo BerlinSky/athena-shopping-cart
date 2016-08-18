@@ -17,11 +17,19 @@
 @import "./select2/select-custom";
 
 .grid__container {
-  margin-bottom: 1.0rem;
+  margin-bottom: .50rem;
+
+  &--ruler {
+    border-bottom: 1px solid _color(site-default, grid-ruler);
+  }
 }
 
 .grid_row {
-  margin-bottom: 1.125rem;
+  margin-bottom: 1.0rem;
+
+  &--ruler {
+    // border-bottom: 1px solid _color(grid, ruler);
+  }
 }
 
 .box {

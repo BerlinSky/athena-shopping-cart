@@ -9,8 +9,9 @@ $color_razzmatazz_approx: 		#e91e63;
 
 $color-map: (
 	site-default: (
-		color: 		$color_storm_dust_approx,
-		bg-color: $color_gallery_approx		
+		color: 			$color_storm_dust_approx,
+		bg-color: 	$color_gallery_approx,
+		grid-ruler: $color_mountain_mist_approx
 	),
 	button-default: (
 		color: 				$color_mine_shaft_approx,
