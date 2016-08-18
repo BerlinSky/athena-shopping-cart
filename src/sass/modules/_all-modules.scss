@@ -24,11 +24,16 @@
   }
 }
 
-.grid_row {
+.grid__row {
   margin-bottom: 1.0rem;
 
   &--ruler {
     // border-bottom: 1px solid _color(grid, ruler);
+  }
+
+  &--paddedSides {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 
