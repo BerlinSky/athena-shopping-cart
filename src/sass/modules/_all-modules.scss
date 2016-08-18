@@ -26,6 +26,9 @@
 
 .grid__row {
   margin-bottom: 1.0rem;
+  @include break(md) {
+    margin-bottom: inherit;
+  }
 
   &--ruler {
     // border-bottom: 1px solid _color(grid, ruler);
