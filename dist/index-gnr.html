@@ -22,7 +22,7 @@
   
   <div class="l-siteContainer">
 
-    <section class="siteBanner">
+    <section class="siteBanner desktopOnly--block">
       <div>
         <div class="siteBanner__intro">My Favorite Artist</div>
         <div class="siteBanner__info">Site Banner Place Holder</div>
@@ -30,44 +30,43 @@
     </section>
 
     <section class="l-grid__container grid__container">
-      <div class="l-grid l-grid__span--md-2">
+      <div class="l-grid__span--md-2 desktopOnly--block">
       </div>
 
       <div class="l-grid l-grid__span--md-12 l-grid__span--xs-16 l-mainContent">
 
-        <div class="l-grid__container grid__container">
-          <div class="l-grid__span--xs-16 stepTitle stepTitle--textCenter">Review Cart</div>
+        <div class="l-grid__container grid__container grid__container--ruler">
+          <div class="l-grid__span--xs-16 stepTitle stepTitle--textCenter mobileOnly">My Store</div>
+          <div class="l-grid__span--xs-16 stepTitle stepTitle--textCenter">Review Cart (Size Selection)</div>
         </div> 
 
-        <div class="l-grid__container grid__container">
-          <a class="l-grid__span--xs-16 actionButton cart___NavButton mobileOnly--block grid_row" href="2-payment.html">Go to payment</a>
-        </div> 
+        <!-- <div class="l-grid__container grid__container">
+          <a class="l-grid__span--xs-16 actionButton cart___NavButton mobileOnly--block grid__row" href="2-payment.html">Go to payment</a>
+        </div>  -->
 
-        <div class="l-grid__container grid__container">
-          <div class="l-grid__span--xs-16 l-grid__span--md-3 memberShip__title grid_row">Membership</div>
+        <div class="l-grid__container grid__container desktopOnly-flex grid__container--ruler">
+          <div class="l-grid__span--xs-16 l-grid__span--md-3 memberShip__title grid__row">Membership</div>
           <div class="l-grid__span--md-10"></div>
-          <div class="l-grid__span--md-3 desktopOnly--text tableRow__column--default tableRow__headerNum">
-             <span>Amount</span>
-          </div>
+          <div class="l-grid__span--xs-16 l-grid__span--md-3 memberShip__title grid__row">Amount</div>
         </div>
 
-        <div class="l-grid__container grid__container">
-          <div class="l-grid__span--xs-16 l-grid__span--md-2 tableColumn__orderDesktop--1 l-grid__container l-grid__container--vertical l-grid__container--center grid_row">
+        <div class="l-grid__container grid__container desktopOnly-flex">
+          <div class="l-grid__span--md-2 l-grid__container l-grid__container--vertical l-grid__container--center grid__row">
             <div class="cartItemImage">
               <img src="./images/gnr/membership.jpg">
             </div>
           </div>
-          <div class="l-grid__span--xs-16 l-grid__span--md-10 tableColumn__orderDesktop--2 tableRow__bodyText text-center grid_row">Nightrain Fan Club Premium Membership GNRBPN16</div>
-          <div class="tableRow__bodyText l-grid__span--xs-16 l-grid__span--md-4 tableColumn__orderDesktop--3 text-center grid_row">US$ 85.00</div>
+          <div class="l-grid__span--md-12 tableRow__bodyText text-center grid__row">Nightrain Fan Club Premium Membership GNRBPN16</div>
+          <div class="tableRow__bodyText l-grid__span--md-2 grid__row">US$ 85.00</div>
         </div>
 
-        <div class="l-grid__container grid__container">
-          <div class="l-grid__span--xs-16 l-grid__span--md-3 tableRow__image--component l-grid__container l-grid__container--vertical l-grid__container--center grid_row">
+        <div class="l-grid__container grid__container grid__container--ruler">
+          <div class="l-grid__span--xs-16 l-grid__span--md-3 tableRow__image--component l-grid__container l-grid__container--vertical l-grid__container--center grid__row">
             <div class="cartItemImage">
               <img src="./images/gnr/tshirt.jpg">
             </div>
           </div>
-          <div class="l-grid__span--xs-16 l-grid__span--md-10 tableRow__bodyText text-center grid_row">
+          <div class="l-grid__span--xs-16 l-grid__span--md-10 tableRow__bodyText text-center grid__row">
             Nightrain T-Shirt GNRFF016
           </div>
 
@@ -84,7 +83,7 @@
               </select>
             </div>
 
-            <div class="cart__itemSizePanel mobileOnly--block grid_row">
+            <div class="cart__itemSizePanel mobileOnly--block grid__row">
                <ul>
                 <li><div class="sizeBlock">XS</div></li>
                 <li><div class="sizeBlock">S</div></li>
@@ -97,13 +96,13 @@
           </div>
         </div>
 
-        <div class="l-grid__container grid__container">
-          <div class="l-grid__span--xs-16 l-grid__span--md-3 tableRow__image--component l-grid__container l-grid__container--vertical l-grid__container--center grid_row">
+        <div class="l-grid__container grid__container grid__container--ruler">
+          <div class="l-grid__span--xs-16 l-grid__span--md-3 tableRow__image--component l-grid__container l-grid__container--vertical l-grid__container--center grid__row">
             <div class="cartItemImage">
               <img src="./images/gnr/membership.jpg">
             </div>
           </div>
-          <div class="l-grid__span--xs-16 l-grid__span--md-10 tableRow__bodyText text-center grid_row">Nightrain Fan Club Premium Membership GNRFPN16</div>
+          <div class="l-grid__span--xs-16 l-grid__span--md-10 tableRow__bodyText text-center grid__row">Nightrain Fan Club Premium Membership GNRFPN16</div>
 
           <div class="l-grid__span--xs-16 l-grid__span--md-3">
             <div class="desktopOnly--block">
@@ -118,7 +117,7 @@
               </select>
             </div>
 
-            <div class="cart__itemSizePanel mobileOnly--block grid_row">
+            <div class="cart__itemSizePanel mobileOnly--block grid__row">
               <ul>
                 <li><div class="sizeBlock">XS</div></li>
                 <li><div class="sizeBlock sizeBlock--faded">S</div></li>
@@ -131,13 +130,13 @@
           </div>
         </div>
 
-        <div class="l-grid__container">
-          <div class="l-grid__span--xs-16 l-grid__span--md-3 tableRow__image--component l-grid__container l-grid__container--vertical l-grid__container--center grid_row">
+        <div class="l-grid__container grid__container grid__container--ruler">
+          <div class="l-grid__span--xs-16 l-grid__span--md-3 tableRow__image--component l-grid__container l-grid__container--vertical l-grid__container--center grid__row">
             <div class="cartItemImage">
               <img src="./images/gnr/hoodie.jpg">
             </div>
           </div>
-          <div class="l-grid__span--xs-16 l-grid__span--md-10 tableRow__bodyText text-center grid_row">
+          <div class="l-grid__span--xs-16 l-grid__span--md-10 tableRow__bodyText text-center grid__row">
             Nightrain Premium Membership Hoodie GNRF7833
           </div>
           <div class="l-grid__span--xs-16 l-grid__span--md-3">
@@ -153,7 +152,7 @@
               </select>
             </div>
 
-            <div class="cart__itemSizePanel mobileOnly--block grid_row">
+            <div class="cart__itemSizePanel mobileOnly--block grid__row">
               <ul>
                 <li><div class="sizeBlock">XS</div></li>
                 <li><div class="sizeBlock sizeBlock--chosen">S</div></li>
@@ -168,18 +167,18 @@
         </div>
 
         <div class="l-grid__container grid__container">
-          <div class="l-grid__span--xs-16 tableRow__bodyText cartTotal grid_row">
+          <div class="l-grid__span--xs-16 tableRow__bodyText cartTotal">
             <div class="cartTotal__text">TOTAL</div>
             <div>US$ 85.00</div>
           </div>
         </div>
         
         <div class="l-grid__container grid__container">
-          <div class="l-grid__span--xs-16 l-grid__span--md-3">
+          <div class="l-grid__span--xs-16 l-grid__span--md-5">
             <form class="dataForm">
-              <div class="inputGroup js-couponCodeInput">
+              <div class="inputGroup grid__row--paddedSides js-couponCodeInput">
                 <input class="dataInput dataInput--secondary dataInput--bordered" type="text">
-                <label class="dataLabel--secondary"></label>
+                <!-- <label class="dataLabel--secondary"></label> -->
               </div>
               <a class="actionButton cart___couponCodeButton js-couponCodeButton">Coupon Code</a>
               <a class="actionButton cart___couponCodeButton js-couponCodeInput">Apply Coupon</a>
