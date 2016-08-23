@@ -137,8 +137,11 @@
 			flex-direction: row;
 			justify-content: space-betwee;
 
-			font-weight: 300;
-		  font-size: 14px;
+			// font-weight: 300;
+		 //  font-size: 14px;
+
+			@include bodyText()
+
 
 		  .miniCart__Column:nth-child(1) {
 		  	flex: 0 0 70%;
@@ -158,9 +161,9 @@
 		}
 
 		.miniCart__tableRow--header {
+			@include headerText()
+
 			text-transform: uppercase;
-			font-weight: 700;
-		  font-size: 16px;
 			border-bottom: 1px solid #999;
 			padding-bottom: 5px;
 			margin-bottom: 10px;
@@ -168,8 +171,10 @@
 
 		.miniCart__tableRow--footer {
 			text-transform: uppercase;
-			font-weight: 700;
-		  font-size: 16px;
+			@include bodyText()
+
+			// font-weight: 700;
+		  // font-size: 16px;
 			border-top: 1px solid #999;
 			margin-top: 10px;
 			padding-top: 5px;
