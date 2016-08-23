@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <title>athena</title>
+
+  <meta charset="utf-8" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+  <!--Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <style type="text/css">
+    .outerContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 300px;
+      height: 200px;
+      padding: 25px;
+      margin: 100px;
+      border: 1px solid #555;
+    }
+
+    .innerContainer {
+      width: 200px;
+      height: 100px;
+      padding: 0;
+      border: 1px solid #555;
+    }
+
+    .backround--primary {
+      background-color: darkblue;
+    } 
+
+    .backround--secondary {
+      background-color: tomato;
+    }
+
+    .userText {
+      /*background-color: #E0E024;*/
+      color: tomato;
+    }
+  </style>
+
+</head>
+
+<body>
+  
+  <div class="outerContainer">
+    <div>
+      Outer Container
+    </div> 
+    <div class="innerContainer">
+    </div>
+  </div>
+
+  <ul class="songList">
+    <li>Girl</li>
+    <li>Ring The Alarm"</li>
+    <li>Diva</li>
+    <li>Until The End Of Time</li>
+    <li>Best Thing I Never Had</li>
+  </ul>
+
+  <script type="text/javascript">
+
+    // Destruct array:
+    // - Swap values
+
+    const outer = document.querySelector('.outerContainer');
+    const outerText = document.querySelector('.outerContainer div');
+    const inner = document.querySelector('.innerContainer');
+
+    inner.addEventListener('click', function() {
+
+      let popArtist = "Carrie Underwood";
+      let jazzArtist = "Nora Jones";
+
+      console.log('popArtist', popArtist);
+      console.log('jazzArtist', jazzArtist);
+
+      [jazzArtist, popArtist] = [popArtist, jazzArtist];
+
+      console.log('popArtist', popArtist);
+      console.log('jazzArtist', jazzArtist);
+    });
+
+  </script>
+
+</body>
+
+</html>

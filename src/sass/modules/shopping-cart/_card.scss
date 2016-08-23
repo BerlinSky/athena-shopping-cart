@@ -1,7 +1,7 @@
 .cardListPanel {
 	display: flex;
 	justify-content: flex-start;
-	padding: 0 2px 0 2px;
+	padding: 0 3px 0 3px;
 
   &__title {
   	flex-basis: 100%;
@@ -19,7 +19,7 @@
 
 .cardNumberPanel {
 	// border: 1px solid orange;
-	padding: 0 2px 0 2px;
+	padding: 0 3px 0 3px;
 
 	display: flex;
 	flex-wrap: wrap;
