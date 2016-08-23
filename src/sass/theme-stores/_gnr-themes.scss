@@ -26,6 +26,10 @@ $color-map: (
 		color: 		$white,
 		bg-color: $color_razzmatazz_approx
 	),
+	accordion-label: (
+		color: 		$white,
+		bg-color: $color_razzmatazz_approx
+	),
 	input-default: (
 		color: 		$color_mine_shaft_approx,
 		bg-color: $white
@@ -35,6 +39,14 @@ $color-map: (
 	)
 );
 
+$font-map: (
+	acoordion-label: (
+		font-size: 1.125rem,
+		line-height: 3rem,
+		font-weight: 400,
+		letter-spacing: .1em
+	)
+);
 
 // Misc.
 $misc: (

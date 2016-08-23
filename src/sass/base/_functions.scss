@@ -9,6 +9,13 @@
   @return $map;
 }
 
+@function _fontDef($keys...) {
+	$map: $font-map;
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
 
 /// Gets a duration value.
 /// @param {string} $key.

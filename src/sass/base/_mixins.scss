@@ -33,6 +33,13 @@
   letter-spacing: _font(kerning-heading);
 }
 
+@mixin accordionLabel() {
+  font-size: _fontDef(acoordion-label, font-size);
+  line-height: _fontDef(acoordion-label, line-height);
+  font-weight: _fontDef(acoordion-label, font-weight);
+  letter-spacing: _fontDef(acoordion-label, letter-spacing);
+}
+
 @mixin bodyText($contentSize: default) {
   font-weight: 300;
   letter-spacing: 0.125rem;
