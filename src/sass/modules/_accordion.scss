@@ -13,6 +13,10 @@
     overflow: hidden;
     border:1px solid #fff; /* Make the border match the background so it fades in nicely */
     transition: all .5s ease-out;
+
+    &--bodyText {
+      @include bodyText();
+    }
   }
 }
 
@@ -34,12 +38,9 @@
 }
 
 .accordion label:hover, .accordion [type=checkbox]:checked ~ label {
-  // background: #999;
-  // color: #fff;
-  color: _color(button-default, hover-color);
+  // color: _color(button-default, hover-color);
   // background: _color(button-default, bg-color);
-
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5)
+  // text-shadow: 1px 1px 1px rgba(0,0,0,0.5)
 }
 
 .accordion [type=checkbox]:checked ~ label ~ .accordionContent {
