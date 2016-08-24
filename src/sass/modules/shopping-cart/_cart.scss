@@ -41,7 +41,7 @@
 	display: inline-block;
 	height: auto;
 	// width: 80px;
-	width: 60%;
+	width: 100%;
 
 	@include break(md) {
 		width: 90px;
@@ -93,11 +93,11 @@
 	  margin-right: 3px;
 
 	  &:first-of-type {
-		  margin-left: 5px;
+		  // margin-left: 5px;
 	  } 
 
 	  &:last-of-type {
-		  margin-right: 5px;
+		  // margin-right: 5px;
 	  }
 	}
 }
