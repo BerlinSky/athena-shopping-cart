@@ -59,17 +59,30 @@
     </div>
   </div>
 
+  <ul class="songList">
+    <li>Girl</li>
+    <li>Ring The Alarm"</li>
+    <li>Diva</li>
+    <li>Until The End Of Time</li>
+    <li>Best Thing I Never Had</li>
+  </ul>
+
   <script type="text/javascript">
 
-    // String methods:
-    // 1 - startsWith
-    // 2 - endsWith
-    // 3 - includes
-    // 4 - repeat
+    // Spread operator:
+    // - Spread to function
 
     const outer = document.querySelector('.outerContainer');
     const outerText = document.querySelector('.outerContainer div');
     const inner = document.querySelector('.innerContainer');
+
+    function disPlayBook(isbn, title, author) {
+      return `
+          <div>${isbn}</div>
+          <div>${title}</div>
+          <div>${author}</div>
+        `;
+    }
 
     function setArtistSite(siteName, color = "white", bgColor = "black") {
       outerText.innerHTML = siteName;
@@ -80,50 +93,23 @@
       inner.setAttribute('style', style);
     }
 
-    const artistLookup = {
-      name: "Beyonce",
-      age: 35,
-      genre: "R&B",
-      state: "Texas",
-    }
-
-    const songs = ["Girl", "Ring The Alarm", "Diva", "Until The End Of Time", "Best Thing I Never Had"];
-
-    function createArtistSite(strings, ...values) {
-      return strings.reduce((start, string, i) => { 
-        return `${start}${string}${values[i] ? artistLookup[values[i]] : ''}`
-      }, '');
-    };
-
-
     inner.addEventListener('click', function() {
 
-      const artist = createArtistSite`${'name'} is a ${'age'}-old American ${'genre'} singer from ${'state'}.`;
+      const songlist2014 = ["Girl", "Ring The Alarm", "Diva"];
+      const songlist2015 = ["Until The End Of Time", "Best Thing I Never Had"];
 
-      const isBeyonce = artist.startsWith('Beyonce');
-      console.log('isBeyonce', isBeyonce);
+      console.log('songlist2014 >', songlist2014);
 
-      const isOnce = artist.startsWith('once', 3);
-      console.log('isOnce', isOnce);
+      songlist2014.push('New Song of the Year');
+      console.log('songlist2014 >', songlist2014);
 
-      const isTexas = artist.endsWith('Texas.');
-      console.log('isTexas', isTexas);
+      songlist2014.push(...songlist2015);
+      console.log('songlist2014 >', songlist2014);
 
-      const is35 = artist.endsWith('35', 15);
-      console.log('is35', is35);
-
-      const hasAmerican = artist.includes('American');
-      console.log('hasAmerican', hasAmerican);
-
-      const songList = songs.map(song => {
-        return `
-          ${song === "Diva" ? song.repeat(5) : song}
-        `
-      }).join('');
-
-      console.log('songList', songList);
-
-      setArtistSite(songList, '#333', '#eee');
+      const bookData = ['0446310786', 'To Kill a Mockingbird', 'Haper Lee', ]
+      const bookInfo = disPlayBook(...bookData);
+      setArtistSite(bookInfo, '#333', '#eee');
+      
     });
 
   </script>

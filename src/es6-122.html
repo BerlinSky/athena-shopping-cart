@@ -59,30 +59,57 @@
     </div>
   </div>
 
+  <ul class="songList">
+    <li>Girl</li>
+    <li>Ring The Alarm"</li>
+    <li>Diva</li>
+    <li>Until The End Of Time</li>
+    <li>Best Thing I Never Had</li>
+  </ul>
+
   <script type="text/javascript">
 
-    // Destruct objects:
-    // 1 - destruct array
-    // 2 - destruct string array
-    // 3 - use the rest parameter
+    // Spread operator:
+    // - Spread to function
 
     const outer = document.querySelector('.outerContainer');
     const outerText = document.querySelector('.outerContainer div');
     const inner = document.querySelector('.innerContainer');
 
-    const songs = ["Girl", "Ring The Alarm", "Diva", "Until The End Of Time", "Best Thing I Never Had"];
-    const songsInString = "Girl,Ring The Alarm,Diva,Until The End Of Time,Best Thing I Never Had";
+    function disPlayBook(isbn, title, author) {
+      return `
+          <div>${isbn}</div>
+          <div>${title}</div>
+          <div>${author}</div>
+        `;
+    }
+
+    function setArtistSite(siteName, color = "white", bgColor = "black") {
+      outerText.innerHTML = siteName;
+
+      const style = 'color: ' + color + '; background-color: ' + bgColor;
+
+      outer.setAttribute('style', style);
+      inner.setAttribute('style', style);
+    }
 
     inner.addEventListener('click', function() {
 
-      const [ bestSong, niceTune, uniqueApproach ] = songs;
-      console.log("bestSong, niceTune, uniqueApproach > ", bestSong, niceTune, uniqueApproach);
+      const songlist2014 = ["Girl", "Ring The Alarm", "Diva"];
+      const songlist2015 = ["Until The End Of Time", "Best Thing I Never Had"];
 
-      // const [ bestSong, niceTune, uniqueApproach ] = songsInString.split(",");
-      // console.log("[songsInString] bestSong, niceTune, uniqueApproach > ", bestSong, niceTune, uniqueApproach);
-    
-      // const [ bestSong, niceTune, ...otherSongs] = songs;
-      // console.log("bestSong, niceTune, otherSongs > ", bestSong, niceTune, otherSongs);
+      console.log('songlist2014 >', songlist2014);
+
+      songlist2014.push('New Song of the Year');
+      console.log('songlist2014 >', songlist2014);
+
+      songlist2014.push(...songlist2015);
+      console.log('songlist2014 >', songlist2014);
+
+      const bookData = ['0446310786', 'To Kill a Mockingbird', 'Haper Lee', ]
+      const bookInfo = disPlayBook(...bookData);
+      setArtistSite(bookInfo, '#333', '#eee');
+      
     });
 
   </script>

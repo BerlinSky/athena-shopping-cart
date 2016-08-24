@@ -75,10 +75,10 @@
 
     inner.addEventListener('click', function() {
 
-      console.info("Option #1");
-      for (let i = 0; i < songs.length; i++ ) {
-        console.log(songs[i]);
-      }
+      // console.info("Option #1");
+      // for (let i = 0; i < songs.length; i++ ) {
+      //   console.log(songs[i]);
+      // }
 
       // console.info("Option #2");
       // songs.forEach( song => console.log(song) );
@@ -102,14 +102,14 @@
       //   }
       // } 
 
-      // console.info("Option #6");
-      // for (const song of songs) {
+      console.info("Option #6");
+      for (const song of songs) {
 
-      //   if (song === 'Diva') {
-      //     continue;
-      //   }
-      //   console.log(song);
-      // }
+        if (song === 'Diva') {
+          continue;
+        }
+        console.log(song);
+      }
 
     });
 

@@ -17,7 +17,8 @@
 @import "./select2/select-custom";
 
 .grid__container {
-  margin-bottom: .50rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
 
   &--ruler {
     border-bottom: 1px solid _color(site-default, grid-ruler);

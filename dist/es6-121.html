@@ -59,57 +59,35 @@
     </div>
   </div>
 
+  <ul class="songList">
+    <li>Girl</li>
+    <li>Ring The Alarm"</li>
+    <li>Diva</li>
+    <li>Until The End Of Time</li>
+    <li>Best Thing I Never Had</li>
+  </ul>
+
   <script type="text/javascript">
 
-    // Destruct objects:
-    // - Add default values
+    // Array methods:
+    // 1 - Array.some()
+    // 2 - Array.every()
 
     const outer = document.querySelector('.outerContainer');
     const outerText = document.querySelector('.outerContainer div');
     const inner = document.querySelector('.innerContainer');
 
-    function setArtistSite(siteName, color = "white", bgColor = "black", fontWeight, border) {
-      outerText.innerHTML = siteName;
-
-      // const style = 'color: ' + color + '; background-color: ' + bgColor;
-      const style = `color: ${color}; 
-        background-color: ${bgColor}; 
-        font-weight: ${fontWeight};
-        border: ${border};
-      `;
-
-      outer.setAttribute('style', style);
-      inner.setAttribute('style', style);
-    }
-
-
-    const artistLookup = {
-      name: "Beyonce",
-      age: 35,
-      genre: "R&B",
-      state: "Texas",
-    }
-
-    function createArtistSite(strings, ...values) {
-      return strings.reduce((start, string, i) => { 
-        return `${start}${string}${values[i] ? artistLookup[values[i]] : ''}`
-      }, '');
-    };
-
-
     inner.addEventListener('click', function() {
 
-      const artist = createArtistSite`${'name'} is a ${'age'}-old American ${'genre'} singer from ${'state'}.`;
+      const ages = [6, 10, 8, 21, 32, 12, 14, 17, 25, 23, 37, 11];
+      console.log('ages >', ages);
+
+      const anyKids = ages.some( age => age >= 12 );
+      console.log('anyKids >', anyKids);
+
+      const allUnder40 = ages.every( age => age <= 40 );
+      console.log('allUnder40 >', allUnder40);
       
-      const siteSettings = {
-        color: 'red',
-        bgColor : 'yellow',
-      }
-
-      const redBorder = "1px solid blue";
-      const { color, bgColor, fontWeight = 900, border = redBorder } = siteSettings;
-
-      setArtistSite(artist, color, bgColor, fontWeight, border);
     });
 
   </script>

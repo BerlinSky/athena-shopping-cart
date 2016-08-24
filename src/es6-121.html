@@ -59,58 +59,35 @@
     </div>
   </div>
 
+  <ul class="songList">
+    <li>Girl</li>
+    <li>Ring The Alarm"</li>
+    <li>Diva</li>
+    <li>Until The End Of Time</li>
+    <li>Best Thing I Never Had</li>
+  </ul>
+
   <script type="text/javascript">
 
-    // for ... of loop:
-    // 1 - for (const i ...) loop
-    // 2 - forEach loop
-    // 3 - for (i in ... ) loop
-    // 4 - for ... of 
+    // Array methods:
+    // 1 - Array.some()
+    // 2 - Array.every()
 
     const outer = document.querySelector('.outerContainer');
     const outerText = document.querySelector('.outerContainer div');
     const inner = document.querySelector('.innerContainer');
 
-    const songs = ["Girl", "Ring The Alarm", "Diva", "Until The End Of Time", "Best Thing I Never Had"];
-
     inner.addEventListener('click', function() {
 
-      // console.info("Option #1");
-      // for (let i = 0; i < songs.length; i++ ) {
-      //   console.log(songs[i]);
-      // }
+      const ages = [6, 10, 8, 21, 32, 12, 14, 17, 25, 23, 37, 11];
+      console.log('ages >', ages);
 
-      // console.info("Option #2");
-      // songs.forEach( song => console.log(song) );
-     
-      // console.info("Option #3");
-      // for (i in songs) {
-      //   console.log(songs[i]);
-      // }
+      const anyKids = ages.some( age => age >= 12 );
+      console.log('anyKids >', anyKids);
 
-      // console.info("Option #4");
-      // for (const song of songs) {
-      //   console.log(song);
-      // }
-
-      // console.info("Option #5");
-      // for (const song of songs) {
-      //   console.log(song);
-
-      //   if (song === 'Diva') {
-      //     break;
-      //   }
-      // } 
-
-      console.info("Option #6");
-      for (const song of songs) {
-
-        if (song === 'Diva') {
-          continue;
-        }
-        console.log(song);
-      }
-
+      const allUnder40 = ages.every( age => age <= 40 );
+      console.log('allUnder40 >', allUnder40);
+      
     });
 
   </script>
