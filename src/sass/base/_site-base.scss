@@ -50,12 +50,12 @@ a:before {
 }
 
 a:hover {
-  border-bottom-color: transparent;
-  color: _color(link, hover-color);
+  // border-bottom-color: transparent;
+  // color: _color(link, hover-color);
 }
 
 a:hover:before {
-  color: _color(link, hover-color);
+  // color: _color(link, hover-color);
 }
 
 
