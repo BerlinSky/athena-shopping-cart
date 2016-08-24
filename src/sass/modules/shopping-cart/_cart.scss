@@ -61,6 +61,8 @@
 	display: flex;
 	justify-content: center;
 
+	@include headerText();
+	
 	@include break(md) {
 		justify-content: flex-end;
 	}
