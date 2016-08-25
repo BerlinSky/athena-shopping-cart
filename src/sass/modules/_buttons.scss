@@ -15,9 +15,9 @@
   appearance: none;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   background-color: transparent;
-  border-radius: 3px;
+  border-radius: 0;
   border: 0;
-  box-shadow: inset 0 0 0 2px #eee;
+  // box-shadow: inset 0 0 0 2px #eee;
   // color: #999;
   cursor: pointer;
   display: inline-block;
