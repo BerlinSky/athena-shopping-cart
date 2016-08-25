@@ -35,4 +35,10 @@
   text-overflow: ellipsis;
 
   @include headerText();
+
+  &--short {
+    height: 1.5rem;
+    line-height: 2rem;
+
+  }
 }
