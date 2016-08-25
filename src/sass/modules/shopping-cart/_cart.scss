@@ -154,13 +154,9 @@
 		.miniCart__tableRow {
 			display: flex;
 			flex-direction: row;
-			justify-content: space-betwee;
-
-			// font-weight: 300;
-		 //  font-size: 14px;
-
+			justify-content: space-between;
 			@include bodyText()
-
+			line-height: 2rem;
 
 		  .miniCart__Column:nth-child(1) {
 		  	flex: 0 0 80%;
