@@ -176,27 +176,28 @@
 }
 
 .cart___buttonContainer {
-  margin-left: -2px;
-  margin-right: -2px;
+  // margin-left: -2px;
+  // margin-right: -2px;
 }
 
 .cart___navButton {
   background-color: #E91E63;
   color: #fff;
-  margin-left: -2px;
-  margin-right: -2px;
+  // margin-left: -2px;
+  // margin-right: -2px;
   @include headerText();
 }
 
 .cart___couponCodeButton {
   background-color: #646464;
   color: #fff;
-  margin-left: -2px;
+  // margin-left: -2px;
+
   @include headerText();
 }
 
 .inputGroup__couponCodeInput {
-  padding-right: 1px;
+  // padding-right: 1px;
 }
 
 .sizeBlock {
