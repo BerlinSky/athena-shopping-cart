@@ -61,10 +61,15 @@
 	display: flex;
 	justify-content: center;
 
-	@include headerText();
+	@include bodyText();
 
 	@include break(md) {
 		justify-content: flex-end;
+	}
+
+	&--primay {
+		margin-bottom: 25px;
+		
 	}
 
 	&__text {
