@@ -207,6 +207,10 @@
   // margin-left: -2px;
   // margin-right: -2px;
   @include headerText();
+
+  &--cancel {
+    background-color: #646464;
+  }
 }
 
 .cart___couponCodeButton {
