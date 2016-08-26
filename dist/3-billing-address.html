@@ -20,23 +20,25 @@
 
 <body>
   
-  <div class="l-siteContainer siteContainer">
+  <div class="l-siteContainer">
 
-    <section class="l-siteBanner siteBanner">
+    <section class="siteBanner desktopOnly--block">
       <div>
         <div class="siteBanner__intro">My Favorite Artist</div>
         <div class="siteBanner__info">Site Banner Place Holder</div>
       </div>
     </section>
 
-    <section class="l-mainContent mainContent">
+    <section class="l-grid__container grid__container-x">
+      <div class="l-grid__span--md-3 desktopOnly--block">
+      </div>
+      <div class="l-grid l-grid__span--md-6 l-grid__span--xs-16 l-mainContent mainContent">
+        <div class="l-grid__container grid__container-x grid__container--ruler">
+          <div class="l-grid__span--xs-16 stepTitle stepTitle--textCenter mobileOnly">My Store</div>
+          <div class="l-grid__span--xs-16 stepTitle stepTitle--textCenter">Billing Address</div>
+        </div> 
 
-      <div class="l-panelContainer panelContainer">
-        <div class="l-panel formContainer formContainer--noButtomBorder 
-        formContainer--narrow formContainer--smallSpaceOnRight">
-          <div class="stepTitle">3 &nbsp;&nbsp; Billing Address</div>
-
-          <form class="dataForm">
+        <form class="dataForm">
             <div class="dataForm__section">
               <div class="inputGroup">
                 <input class="dataInput" type="text">
@@ -79,8 +81,8 @@
                 </div>
               </div>
 
-              <div class="dataForm__section dataForm__section--combo">
-                <div class="inputGroup inputGroup--country">
+              <div class="dataForm__section">
+                <div class="inputGroup inputGroup--country-X">
                   <div class="dropdownPanel">
                     <select class="js-selectCountry">
                       <option value="0">Afghanistan</option>
@@ -333,8 +335,10 @@
                   </div>
                   <label class="dropdownlabel">* Country</label>
                 </div>
+              </div>
 
-                <div class="inputGroup inputGroup--state">
+              <div class="dataForm__section">
+                <div class="inputGroup inputGroup--state-X">
                   <div class="dropdownPanel">
                     <select class="js-selectState">
                       <option>State</option>
@@ -404,8 +408,10 @@
                   </div>
                   <label class="dropdownlabel">* State</label>
                 </div>
+              </div>
 
-                <div class="inputGroup inputGroup--zip">
+              <div class="dataForm__section">
+                <div class="inputGroup inputGroup--zip-X">
                   <div class="zipPanel">
                     <input type="text">
                     <label>* Zip</label>
@@ -419,79 +425,8 @@
               </div>
               
           </form>
-
-        </div>
-
-        <div class="l-panel cartStepsContainer">
-          <div class="miniCart">
-            <div class="miniCatd__title">Mini Cart</div>
-            <div class="miniCart__table">
-              <div class="miniCart__tableRow miniCart__tableRow--header">
-                <div class="miniCart__Column">Membership</div>
-                <div class="miniCart__Column"></div>
-              </div>
-              <div class="miniCart__tableRow">
-                <div class="miniCart__Column ">Summer 2013 Metropolitan Book Tour (NYC2013)</div>
-                <div class="miniCart__Column">
-                </div>
-              </div>
-              <div class="miniCart__tableRow">
-                <div class="miniCart__Column miniCart__Column--subItem">Winter 2016 West Coast Book Tour (LAC2016)</div>
-                <div class="miniCart__Column">
-                  <select class="js-selectItemSize">
-                    <option value="0">XXS</option>
-                    <option selected value="1">XS</option>
-                    <option value="2">S</option>
-                    <option value="3">M</option>
-                    <option value="4">L</option>
-                    <option value="5">XL</option>
-                    <option value="6">XXL</option>
-                  </select>
-                </div>
-              </div> 
-              <div class="miniCart__tableRow">
-                <div class="miniCart__Column miniCart__Column--subItem">Winter 2016 West Coast Book Tour (LAC2016)</div>
-                <div class="miniCart__Column">
-                  <select class="js-selectItemSize">
-                    <option value="0">XXS</option>
-                    <option value="1">XS</option>
-                    <option value="2">S</option>
-                    <option value="3">M</option>
-                    <option selected value="4">L</option>
-                    <option value="5">XL</option>
-                    <option value="6">XXL</option>
-                  </select>
-                </div>
-              </div> 
-              <div class="miniCart__tableRow">
-                <div class="miniCart__Column miniCart__Column--subItem">Winter 2016 West Coast Book Tour (LAC2016)</div>
-                <div class="miniCart__Column">
-                  <select class="js-selectItemSize">
-                    <option value="0">XXS</option>
-                    <option value="1">XS</option>
-                    <option selected value="2">S</option>
-                    <option value="3">M</option>
-                    <option value="4">L</option>
-                    <option value="5">XL</option>
-                    <option value="6">XXL</option>
-                  </select>
-                </div>
-              </div>
-              <div class="miniCart__tableRow miniCart__tableRow--footer">
-                <div class="miniCart__Column"></div>
-                <div class="miniCart__Column">US$ 89.55</div>
-              </div>
-
-              <div class="dataForm__buttonPanel dataForm__buttonPanel--secondary">
-                <a class="actionButton actionButton--bordered">coupon code</a>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-
       </div>
+
     </section>
 
     <footer class="l-footer footer">
@@ -500,7 +435,7 @@
         <div class="footerPanel__item footerPanel__item--default copyright"><a href="">Help</a></div>
         <div class="footerPanel__item footerPanel__item--default copyright"><a href="">Newsletter</a></div>
         <div class="footerPanel__item footerPanel__item--default copyright"><a href="">Terms of Use</a></div>
-        <div class="footerPanel__item footerPanel__item--default copyright">Privacy Policy</div>
+        <div class="footerPanel__item footerPanel__item--default copyright"><a href="">Privacy Policy</a></div>
       </div>  
       <div class="footerPanel footerPanel__links">
         <div class="footerPanel__item footerPanel__item--default copyright">Copyright ©2016 The Fine Arist</div>
