@@ -62,6 +62,7 @@
 	justify-content: center;
 
 	@include bodyText();
+	font-size: 1.25rem;
 
 	@include break(md) {
 		justify-content: flex-end;
@@ -156,7 +157,9 @@
 			flex-direction: row;
 			justify-content: space-between;
 			@include bodyText()
-			line-height: 2rem;
+			line-height: 1.25rem;
+			padding-top: 2px;
+			padding-bottom: 2px;
 
 		  .miniCart__Column:nth-child(1) {
 		  	flex: 0 0 80%;
