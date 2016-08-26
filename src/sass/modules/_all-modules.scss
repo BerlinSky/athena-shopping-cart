@@ -20,6 +20,10 @@
   margin-top: 25px;
   margin-bottom: 25px;
 
+  &--secondary {
+    margin-bottom: 40px;
+  }
+
   &--ruler {
     border-bottom: 1px solid _color(site-default, grid-ruler);
   }
@@ -173,6 +177,23 @@
   animation-duration: 1.5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+
+.cartAddress {
+  // background-color: #fff;
+  // border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  padding: 1.25rem 0;
+  // padding-bottom: 1.25rem;
+
+  &__header {
+    @include headerText();
+  }
+
+  &__body {
+    padding-left: 10px;
+    @include bodyText();
+  }
 }
 
 .cart___buttonContainer {
