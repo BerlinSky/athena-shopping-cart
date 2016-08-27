@@ -29,8 +29,15 @@ $items: 16;
     .l-grid__span--#{$key}-#{$i} {
       // flex: 0 0 100%;
       @include break($key) {
-	      // @debug #{$i / $items * 100%}; 
+        // @debug #{$i / $items * 100%}; 
         flex: 0 0 #{$i / $items * 100%};
+      }
+    }
+
+    .l-grid__skip--#{$key}-#{$i} {
+      @include break($key) {
+	      // @debug #{$i / $items * 100%}; 
+        margin-left: #{$i / $items * 100%};
       }
     }
   }

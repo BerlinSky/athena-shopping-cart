@@ -32,7 +32,7 @@
 .grid__row {
   margin-bottom: 1.0rem;
   @include break(md) {
-    margin-bottom: inherit;
+    // margin-bottom: inherit;
   }
 
   &--ruler {
