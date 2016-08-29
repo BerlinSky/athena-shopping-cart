@@ -6,6 +6,11 @@
 
 	@include bodyText(large);
 
+	text-align: center;
+	@include break(md) {
+		text-align: left;
+	}
+
 	&--textCenter {
 		text-align: center;
 	}

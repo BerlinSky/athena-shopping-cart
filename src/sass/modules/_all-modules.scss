@@ -179,6 +179,14 @@
   animation-iteration-count: infinite;
 }
 
+.cart__itemText {
+  text-align: center;
+
+  @include break(md) {
+    text-align: left;
+  }
+}
+
 .cartAddress {
   // background-color: #fff;
   // border-top: 1px solid #999;
