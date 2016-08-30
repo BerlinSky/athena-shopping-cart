@@ -13,6 +13,7 @@
 @import "accordion";
 @import "./shopping-cart/cart";
 @import "./shopping-cart/card";
+@import "./shopping-cart/use-content";
 @import "./select2/select";
 @import "./select2/select-custom";
 
@@ -63,7 +64,6 @@
   bottom: 0;
   right: 0;
 }
-
 
 .block-section {
   background: #c2c9cc;
@@ -179,83 +179,15 @@
   animation-iteration-count: infinite;
 }
 
-.cart__itemText {
-  text-align: center;
-
-  @include break(md) {
-    text-align: left;
-  }
-
-  &--header {
-    // font-size: 1.25rem;
-    font-weight: 700;
-  }
-}
-
-.cartAddress {
-  // background-color: #fff;
-  // border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
-  padding: 1.25rem 0;
-  // padding-bottom: 1.25rem;
-
-  @include break(md) {
-    border-bottom: none;
-  }
-
-  &__header {
-    @include headerText();
-  }
-
-  &__body {
-    padding-left: 10px;
-    @include bodyText();
-  }
-}
-
-.cart___buttonContainer {
-  // margin-left: -2px;
-  // margin-right: -2px;
-}
-
-.cart___navButton {
-  background-color: #E91E63;
-  color: #fff;
-  // margin-left: -2px;
-  // margin-right: -2px;
-  @include headerText();
-
-  &--cancel {
-    background-color: #646464;
-  }
-}
-
-.cart___couponCodeButton {
-  background-color: #646464;
-  color: #fff;
-  // margin-left: -2px;
-
-  @include headerText();
-}
-
 .inputGroup__couponCodeInput {
   // padding-right: 1px;
 }
 
 .sizeBlock {
-  // color: #333;
-  // background-color: #fff;
-  // border: 2px solid #fff;
-  // width: 100%;
   padding: 2%;
-  // font-size: 1.4rem;
-  // font-weight: 600;
   text-align: center;
-  // line-height: 3rem;
 
   @include headerText();
-  // box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
-  // transition: all 0.3s ease-out;
 
   &--chosen {
     background-color: #aaa;
@@ -266,7 +198,6 @@
     opacity: 0.3;
   }
 }
-/* Standard syntax */
 
 @keyframes pulse {
   0% {
@@ -295,14 +226,7 @@
   }
 }
 
-
 // TODO: Move to the modules
-
-
-.cart__boxShadow {
-  box-shadow: 0 0 0 10px #fff;
-}
-
 .text-right {
 	text-align: right;
 }
@@ -312,7 +236,6 @@
 }
 
 .text-center {
-  // display: inline;
 	text-align: center;
 }
 
@@ -348,20 +271,7 @@
 	}
 }
 
-.userContent {
-  @include bodyText();
-  // padding: 0 15px;
-  margin: 20px;
 
-  @include break(md) {
-    margin: 0;
-  }
-
-  p {
-    margin-top: 15px; 
-    margin-bottom: 15px
-  }
-}
 
 
 
