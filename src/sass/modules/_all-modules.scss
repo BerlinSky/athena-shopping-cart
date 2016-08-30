@@ -185,6 +185,11 @@
   @include break(md) {
     text-align: left;
   }
+
+  &--header {
+    // font-size: 1.25rem;
+    font-weight: 700;
+  }
 }
 
 .cartAddress {
