@@ -26,6 +26,10 @@ $items: 16;
   // padding: 0.5rem;
 }
 
+.l-grid--fullWith {
+  flex: 0 0 100%;
+}
+
 // loop over the breakpoints
 @each $key, $value in $breakpoints {
   @for $i from 1 through $items {

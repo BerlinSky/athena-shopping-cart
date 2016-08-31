@@ -26,20 +26,42 @@ $cart-size-by-breakpoint: (
   xx: 8
 );
 
-.cartGrid {
+$cart-section-ratio-by-breakpoint: (
+  xs: 16,
+  sm: 16,
+  md: 10,
+  lg: 10,
+  xl: 10,
+  xx: 10
+);
+
+.l-cartGrid {
   flex: 0 0 100%;
   margin-left: 0;
   margin-right: 0;
 
   @each $key, $value in $cart-size-by-breakpoint {
-     @include break($key) {
-        flex: 0 0 #{$value / 16 * 100%};
-        margin-left: #{((16 - $value) / 2) / 16 * 100%};
-        margin-right: #{((16 - $value) / 2) / 16 * 100%};
-     }
+    @include break($key) {
+      flex: 0 0 #{$value / 16 * 100%};
+      margin-left: #{((16 - $value) / 2) / 16 * 100%};
+      margin-right: #{((16 - $value) / 2) / 16 * 100%};
+    }
   }
+
+  // @each $key, $value in $cart-section-ratio-by-breakpoint {
+  //   &__sectionLeft {
+  //    @include break($key) {
+  //       flex: 0 0 #{$value / 16 * 100%};
+  //    }
+  //  }
+  // }
 }
 
+.l-cartHeading {
+  &__item {
+    flex: 0 0 100%;
+  }
+}
 
 .grid__container {
   margin-top: 25px;
