@@ -6,8 +6,11 @@ $items: 16;
 .l-grid__container {
   display: flex;
   flex-flow: row wrap;
-  // margin-bottom: 1rem;
-  // background-color: blue;
+  align-items: stretch;
+
+  &--alignToBottom {
+    align-items: flex-end;;
+  }
 
   &--vertical {
     flex-direction: column;

@@ -21,6 +21,10 @@
   margin-top: 25px;
   margin-bottom: 25px;
 
+  @include break(md) {
+    padding-bottom: 15px;
+  }
+
   &--secondary {
     margin-bottom: 40px;
   }
