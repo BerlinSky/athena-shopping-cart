@@ -63,6 +63,55 @@ $cart-section-ratio-by-breakpoint: (
   }
 }
 
+.l-membershipPackage {  // 2, 10, 4
+  &__item:nth-child(1) {
+    flex-basis: 100%;
+
+    @include break(md) {
+      flex-basis: calc(2 / 16 * 100%);
+    }
+  }
+  &__item:nth-child(2) {
+    flex-basis: 100%;
+
+    @include break(md) {
+      flex-basis: calc(10 / 16 * 100%);
+    }
+  }
+  &__item:nth-child(3) {
+    flex-basis: 100%;
+
+    @include break(md) {
+      flex-basis: calc(4 / 16 * 100%);
+    }
+  }
+}
+
+.l-membershipComponent{  // 2, 8, 6
+  &__item:nth-child(1) {
+    flex-basis: 100%;
+
+    @include break(md) {
+      flex-basis: calc(2 / 16 * 100%);
+    }
+  }
+  &__item:nth-child(2) {
+    flex-basis: 100%;
+
+    @include break(md) {
+      flex-basis: calc(8 / 16 * 100%);
+    }
+  }
+  &__item:nth-child(3) {
+    flex-basis: 100%;
+
+    @include break(md) {
+      flex-basis: calc(6 / 16 * 100%);
+    }
+  }
+}
+
+
 .grid__container {
   margin-top: 25px;
   margin-bottom: 25px;
