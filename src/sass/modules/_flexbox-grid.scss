@@ -2,26 +2,6 @@
 
 $items: 16;
 
-// grid container
-.l-grid__container {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: stretch;
-
-  &--alignToBottom {
-    align-items: flex-end;;
-  }
-
-  &--vertical {
-    flex-direction: column;
-  } 
-
-  &--center {
-    align-items: center;
-    justify-content: center;
-  }
-}
-
 .l-grid {
   // padding: 0.5rem;
 }

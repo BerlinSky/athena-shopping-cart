@@ -1,3 +1,21 @@
+$cart-size-by-breakpoint: (
+  xs: 16,
+  sm: 16,
+  md: 14,
+  lg: 12,
+  xl: 10,
+  xx: 8
+);
+
+$cart-section-ratio-by-breakpoint: (
+  xs: 16,
+  sm: 16,
+  md: 10,
+  lg: 10,
+  xl: 10,
+  xx: 10
+);
+
 .l-siteContainer {
 	display: flex;
 	flex-direction: column;
@@ -33,4 +51,112 @@
   align-items: center;
 }
 
+// grid container
+.l-grid__container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
 
+  &--alignToBottom {
+    align-items: flex-end;;
+  }
+
+  &--vertical {
+    flex-direction: column;
+  } 
+
+  &--center {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.l-cartGrid {
+  overflow-x: hidden;
+    
+  flex: 0 0 100%;
+  margin-left: 0;
+  margin-right: 0;
+
+  @each $key, $value in $cart-size-by-breakpoint {
+    @include break($key) {
+      flex: 0 0 #{$value / 16 * 100%};
+      margin-left: #{((16 - $value) / 2) / 16 * 100%};
+      margin-right: #{((16 - $value) / 2) / 16 * 100%};
+    }
+  }
+
+  // @each $key, $value in $cart-section-ratio-by-breakpoint {
+  //   &__sectionLeft {
+  //    @include break($key) {
+  //       flex: 0 0 #{$value / 16 * 100%};
+  //    }
+  //  }
+  // }
+}
+
+.l-cartHeading {
+  &__item {
+    flex: 0 0 100%;
+  }
+}
+
+.l-membershipPackage {  
+  &__total {
+    flex-basis: 100%;
+  }
+  &__item:nth-child(1) {
+    flex-basis: 100%;
+
+    @include break(md) {
+      flex-basis: calc(2 / 16 * 100%);
+    }
+  }
+  &__item:nth-child(2) {
+    flex-basis: 100%;
+
+    @include break(md) {
+      flex-basis: calc(10 / 16 * 100%);
+    }
+  }
+  &__item:nth-child(3) {
+    flex-basis: 100%;
+
+    @include break(md) {
+      flex-basis: calc(4 / 16 * 100%);
+    }
+  }
+}
+
+.l-membershipComponent{  // 2, 8, 6
+  &__item:nth-child(1) {
+    flex-basis: 100%;
+
+    @include break(md) {
+      flex-basis: calc(2 / 16 * 100%);
+    }
+  }
+  &__item:nth-child(2) {
+    flex-basis: 100%;
+
+    @include break(md) {
+      flex-basis: calc(8 / 16 * 100%);
+    }
+  }
+  &__item:nth-child(3) {
+    flex-basis: 100%;
+
+    @include break(md) {
+      flex-basis: calc(6 / 16 * 100%);
+    }
+  }
+}
+
+.l-cartActionBlock {
+  flex-basis: 100%;
+
+  @include break(md) {
+    flex-basis: calc(6 / 16 * 100%);
+    margin-left: calc(10/ 16 * 100%);
+  }
+}
