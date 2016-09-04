@@ -7,14 +7,32 @@ $cart-size-by-breakpoint: (
   xx: 8
 );
 
-$cart-section-ratio-by-breakpoint: (
-  xs: 16,
-  sm: 16,
-  md: 10,
-  lg: 10,
-  xl: 10,
-  xx: 10
+$cart-section-ratio-map: (
+  left: (
+    xs: 1,
+    sm: 1,
+    md: 0.6,
+    lg: 0.6,
+    xl: 0.6,
+    xx: 0.6
+  ), 
+  right: (
+    xs: 1,
+    sm: 1,
+    md: 0.4,
+    lg: 0.4,
+    xl: 0.4,
+    xx: 0.4
+  )
 );
+
+@function _flexbasis($keys...) {
+  $map: $cart-section-ratio-map;
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
 
 .l-siteContainer {
 	display: flex;
@@ -73,26 +91,38 @@ $cart-section-ratio-by-breakpoint: (
 
 .l-cartGrid {
   overflow-x: hidden;
-    
+
   flex: 0 0 100%;
   margin-left: 0;
   margin-right: 0;
 
+  // @each $key, $value in $cart-size-by-breakpoint {
+  //   @include break($key) {
+  //     flex: 0 0 #{$value / 16 * 100%};
+  //     margin-left: #{((16 - $value) / 2) / 16 * 100%};
+  //     margin-right: #{((16 - $value) / 2) / 16 * 100%};
+  //   }
+  // }
+
   @each $key, $value in $cart-size-by-breakpoint {
     @include break($key) {
-      flex: 0 0 #{$value / 16 * 100%};
-      margin-left: #{((16 - $value) / 2) / 16 * 100%};
-      margin-right: #{((16 - $value) / 2) / 16 * 100%};
+      &__default {
+        flex: 0 0 #{$value / 16 * 100%};
+        margin-left: #{((16 - $value) / 2) / 16 * 100%};
+        margin-right: #{((16 - $value) / 2) / 16 * 100%};
+      }
+      &__left {
+        margin-left: #{((16 - $value) / 2) / 16 * 100%};
+        flex: 0 0 #{$value * _flexbasis('left', $key) / 16 * 100%};
+        // margin-right: 0;
+      }
+      &__right {
+        // margin-left: 0;
+        flex: 0 0 #{$value * _flexbasis('right', $key) / 16 * 100%};
+        margin-right: #{((16 - $value) / 2) / 16 * 100%};
+      }
     }
   }
-
-  // @each $key, $value in $cart-section-ratio-by-breakpoint {
-  //   &__sectionLeft {
-  //    @include break($key) {
-  //       flex: 0 0 #{$value / 16 * 100%};
-  //    }
-  //  }
-  // }
 }
 
 .l-cartHeading {
