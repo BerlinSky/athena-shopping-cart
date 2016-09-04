@@ -51,4 +51,26 @@ span.select2-container--open .select2-dropdown .select2-search--dropdown input {
   border-radius: none;
 }
 
+span.select2-container--default .select2-selection--single .select2-selection__arrow {
+	position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  background: url(../images/dd-down.png) 50% 50% no-repeat;
+  background-size: 1.25rem 1.25rem;
+  width: 2rem;
+  height: 1.5rem;
+}
+
+span.select2-container--open .select2-selection--single .select2-selection__arrow {
+	position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  background: url(../images/dd-up.png) 50% 50% no-repeat;
+  background-size: 1.25rem 1.25rem;
+  width: 2rem;
+  height: 1.5rem;
+}
+
 
