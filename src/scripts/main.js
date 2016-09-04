@@ -91,8 +91,8 @@ $(function () {
 	});
 
 	$(".js-selectCountry").select2({ width: '100%' });
-
-	$(".js-selectState").select2();
+	
+	$(".js-selectState").select2({ width: '100%' });
 
 	$(".js-selectItemSize").select2({
 		minimumResultsForSearch: Infinity
