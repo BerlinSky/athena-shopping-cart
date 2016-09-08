@@ -3,9 +3,7 @@
 @import "main-content";
 @import "footer";
 @import "panel-container";
-@import "media";
 @import "image";
-@import "book-form";
 @import "data-form";
 @import "buttons";
 @import "flexbox-table";
@@ -13,313 +11,198 @@
 @import "accordion";
 @import "./shopping-cart/cart";
 @import "./shopping-cart/card";
-@import "./shopping-cart/use-content";
 @import "./select2/select";
 @import "./select2/select-custom";
+@import "./shopping-cart/use-content";
+// @import "media";
+// @import "book-form";
 
-.grid__container {
-  margin-top: 25px;
-  margin-bottom: 25px;
-
-  @include break(md) {
-    padding-bottom: 15px;
-  }
-
-  &--secondary {
-    margin-bottom: 40px;
-  }
-
-  &--ruler {
-    border-bottom: 1px solid _color(site-default, grid-ruler);
-  }
-}
-
-.grid__row {
-  margin-bottom: 1.0rem;
-  @include break(md) {
-    // margin-bottom: inherit;
-  }
-
-  &--ruler {
-    // border-bottom: 1px solid _color(grid, ruler);
-  }
-
-  &--paddedSides {
-    padding-left: 2px;
-    padding-right: 2px;
-  }
-}
 
 // grid table data
-.columnHeading {
-  &__dataLabel {
-    display: none;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-
-    @include break(md) {
-      display: block;
-    }
-
-    &--numeric {
-      text-align: right;
-    }
-  }
-}
-
-.dataLabel {
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-
-  @include break(md) {
-    display: none;
-  }
-}
-
-.dataValue {
-  font-size: 16px;
-  padding-left: 20px;
-
-  @include break(md) {
-    padding-left: 0;
-    font-size: 14px;
-  }
-
-  &--numeric {
-    text-align: left;
-
-    @include break(md) {
-      text-align: right;
-    }
-  }
-}
-
-.box {
-  position: relative;
-  width: 50%;   /* desired width */
-}
-
-.box:before {
-  content: "";
-  display: block;
-  padding-top: 100%;  /* initial ratio of 1:1*/
-}
-
-.box__content {
-  position:  absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-.block-section {
-  background: #c2c9cc;
-  width: 80px;
-  /* border-right: 2px solid #5b6266; */
-  box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.4);
-}
-
-.block-links {
-  list-style: none;
-  margin: 0px;
-  padding: 15px;
-  width: 50px;
-}
-
-.block-links li {
-  position: relative;
-  height: 50px;
-  margin-bottom: 6px;
-}
-
-.block-links li div {
-  z-index: 10;
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 48px;
-  height: 34px;
-  border-radius: 6px;
-  // background: #1976D2;
-  padding: 13px 0 0;
-  text-decoration: none;
-  // color: #BBDEFB;
-  font-size: 18px;
-  text-align: center;
-  border: 1px solid #c2c9cc;
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease-out;
-}
-
-.block-links li div:hover {
-  cursor: -webkit-grab;
-  // background: #2196F3;
-  // color: #fff;
-  margin-left: 4px;
-}
-
-.block-links li div {
-  // background-color: #1d7dcc;
-}
-
-.block-links li div:hover {
-  // background-color: #2196f3;
-}
-
-.block-links li:before,
-.block-links li:after {
-  // border-color: #1d7dcc;
-}
-
-.block-links li div:active {
-  /* background-color: red; */
-  cursor: -webkit-grabbing;
-}
-
-.block-links li div:focus {
-  /* background-color: green; */
-}
-
-.block-links li.dark-blue div {
-  // background-color: #3b67d9;
-}
-
-.block-links li.dark-blue div:hover {
-  // background-color: #4479ff;
-}
-
-.block-links li.dark-blue:before,
-.block-links li.dark-blue:after {
-  // border-color: #3b67d9;
-}
-
-.block-links li:before {
-  z-index: 5;
-  position: absolute;
-  content: " ";
-  display: block;
-  width: 50px;
-  height: 50px;
-  // background: #5b6266;
-  border-radius: 6px;
-  border: 1px solid #1976D2;
-  top: -1px;
-  left: -1px;
-}
-
-.animate-pulse:after {
-  z-index: 4;
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 6px;
-  border: 1px solid #1976D2;
-  opacity: 0.5;
-  top: -1px;
-  left: -1px;
-  animation-name: pulse;
-  animation-duration: 1.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-.inputGroup__couponCodeInput {
-  // padding-right: 1px;
-}
-
-.sizeBlock {
-  padding: 2%;
-  text-align: center;
-
-  @include headerText();
-
-  &--chosen {
-    background-color: #aaa;
-    color: #eee;
-  }
-
-  &--faded {
-    opacity: 0.3;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  80% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
-}
 
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes pulse {
-  0% {
-    transform: scale(0);
-  }
-  80% {}
-  100% {
-    transform: scale(2);
-  }
-}
+// .box {
+//   position: relative;
+//   width: 50%;   /* desired width */
+// }
+
+// .box:before {
+//   content: "";
+//   display: block;
+//   padding-top: 100%;  /* initial ratio of 1:1*/
+// }
+
+// .box__content {
+//   position:  absolute;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+// }
+
+// .block-section {
+//   background: #c2c9cc;
+//   width: 80px;
+//   /* border-right: 2px solid #5b6266; */
+//   box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.4);
+// }
+
+// .block-links {
+//   list-style: none;
+//   margin: 0px;
+//   padding: 15px;
+//   width: 50px;
+// }
+
+// .block-links li {
+//   position: relative;
+//   height: 50px;
+//   margin-bottom: 6px;
+// }
+
+// .block-links li div {
+//   z-index: 10;
+//   position: absolute;
+//   display: block;
+//   top: 0;
+//   left: 0;
+//   width: 48px;
+//   height: 34px;
+//   border-radius: 6px;
+//   // background: #1976D2;
+//   padding: 13px 0 0;
+//   text-decoration: none;
+//   // color: #BBDEFB;
+//   font-size: 18px;
+//   text-align: center;
+//   border: 1px solid #c2c9cc;
+//   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
+//   transition: all 0.3s ease-out;
+// }
+
+// .block-links li div:hover {
+//   cursor: -webkit-grab;
+//   // background: #2196F3;
+//   // color: #fff;
+//   margin-left: 4px;
+// }
+
+// .block-links li div {
+//   // background-color: #1d7dcc;
+// }
+
+// .block-links li div:hover {
+//   // background-color: #2196f3;
+// }
+
+// .block-links li:before,
+// .block-links li:after {
+//   // border-color: #1d7dcc;
+// }
+
+// .block-links li div:active {
+//   /* background-color: red; */
+//   cursor: -webkit-grabbing;
+// }
+
+// .block-links li div:focus {
+//   /* background-color: green; */
+// }
+
+// .block-links li.dark-blue div {
+//   // background-color: #3b67d9;
+// }
+
+// .block-links li.dark-blue div:hover {
+//   // background-color: #4479ff;
+// }
+
+// .block-links li.dark-blue:before,
+// .block-links li.dark-blue:after {
+//   // border-color: #3b67d9;
+// }
+
+// .block-links li:before {
+//   z-index: 5;
+//   position: absolute;
+//   content: " ";
+//   display: block;
+//   width: 50px;
+//   height: 50px;
+//   // background: #5b6266;
+//   border-radius: 6px;
+//   border: 1px solid #1976D2;
+//   top: -1px;
+//   left: -1px;
+// }
+
+// .animate-pulse:after {
+//   z-index: 4;
+//   content: " ";
+//   display: block;
+//   position: absolute;
+//   width: 50px;
+//   height: 50px;
+//   border-radius: 6px;
+//   border: 1px solid #1976D2;
+//   opacity: 0.5;
+//   top: -1px;
+//   left: -1px;
+//   animation-name: pulse;
+//   animation-duration: 1.5s;
+//   animation-timing-function: linear;
+//   animation-iteration-count: infinite;
+// }
+
+// .inputGroup__couponCodeInput {
+//   // padding-right: 1px;
+// }
+
+// .sizeBlock {
+//   padding: 2%;
+//   text-align: center;
+
+//   @include headerText();
+
+//   &--chosen {
+//     background-color: #aaa;
+//     color: #eee;
+//   }
+
+//   &--faded {
+//     opacity: 0.3;
+//   }
+// }
+
+// @keyframes pulse {
+//   0% {
+//     transform: scale(1);
+//     opacity: 1;
+//   }
+//   80% {
+//     transform: scale(1.5);
+//     opacity: 0;
+//   }
+//   100% {
+//     transform: scale(1.5);
+//     opacity: 0;
+//   }
+// }
+
+
+// /* Chrome, Safari, Opera */
+// @-webkit-keyframes pulse {
+//   0% {
+//     transform: scale(0);
+//   }
+//   80% {}
+//   100% {
+//     transform: scale(2);
+//   }
+// }
 
 // TODO: Move to the modules
-.text-right {
-	text-align: right;
-}
 
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-	text-align: center;
-}
-
-.text-bold {
-  font-weight: _font(weight-bold);
-}
-
-.desktopOnly-flex {
-  display: none;
-  @include break(md) {
-    display: flex;
-  }
-}
-
-.desktopOnly--text {
-	display: none;
-	@include break(md) {
-		display: inline;
-	}
-}
-
-.desktopOnly--block {
-	display: none;
-	@include break(md) {
-		display: block;
-	}
-}
-
-.mobileOnly--block {
-	display: block;
-	@include break(md) {
-		display: none;
-	}
-}
 
 
 
