@@ -96,14 +96,6 @@ $cart-section-ratio-map: (
   margin-left: 0;
   margin-right: 0;
 
-  // @each $key, $value in $cart-size-by-breakpoint {
-  //   @include break($key) {
-  //     flex: 0 0 #{$value / 16 * 100%};
-  //     margin-left: #{((16 - $value) / 2) / 16 * 100%};
-  //     margin-right: #{((16 - $value) / 2) / 16 * 100%};
-  //   }
-  // }
-
   @each $key, $value in $cart-size-by-breakpoint {
     @include break($key) {
       &__default {
@@ -114,10 +106,8 @@ $cart-section-ratio-map: (
       &__left {
         margin-left: #{((16 - $value) / 2) / 16 * 100%};
         flex: 0 0 #{$value * _flexbasis('left', $key) / 16 * 100%};
-        // margin-right: 0;
       }
       &__right {
-        // margin-left: 0;
         flex: 0 0 #{$value * _flexbasis('right', $key) / 16 * 100%};
         margin-right: #{((16 - $value) / 2) / 16 * 100%};
       }
