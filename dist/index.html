@@ -123,12 +123,14 @@
         <div class="l-grid__container">
           <div class="l-cartActionBlock cartActionBlock">
             <form class="dataForm">
-
-               <div class="inputGroup js-couponCodeInput">
-                 <input class="dataInput" type="text">
-                 <label>Coupon Code</label>
-               </div>
-
+              <div class="cartInputError">
+                <div class="cartInputError__denote">*</div>
+                <div class="cartInputError__text">Please supply a valid coupon code. Otherwise, no memebership benefit can be enjoyed.</div>
+              </div>
+              <div class="inputGroup js-couponCodeInput">
+                <input class="dataInput" type="text">
+                <label>Coupon Code</label>
+              </div>
               <a class="actionButton cart___couponCodeButton js-couponCodeButton">Coupon Code</a>
               <a class="actionButton cart___couponCodeButton js-couponCodeInput">Apply Coupon</a>
             </form>

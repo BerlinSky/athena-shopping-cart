@@ -55,7 +55,11 @@
 		font-weight: 300;
 		letter-spacing: .125rem;
 		line-height: 1.5rem;
-		font-size: 1rem;		
+		font-size: 1rem;	
+
+		@include break(md) {
+			padding: 10px 20px 20px 5px;
+		}	
 	}
 }
 
