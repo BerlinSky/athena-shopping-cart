@@ -14,7 +14,14 @@
   font-weight: _font(weight-bold);
 }
 
-.desktopOnly-flex {
+// .desktopOnly-flex {
+//   display: none;
+//   @include break(md) {
+//     display: flex;
+//   }
+// }
+
+.desktopOnly--flex {
   display: none;
   @include break(md) {
     display: flex;
