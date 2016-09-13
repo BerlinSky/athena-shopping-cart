@@ -16326,9 +16326,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 	(0, _jquery2.default)('.js-couponCodeInput').hide();
 
-	(0, _jquery2.default)('.js-couponCodeButton').click(function (event) {
+	var couponButtonLead = (0, _jquery2.default)('.js-couponCodeButton-lead');
+	var couponButton = (0, _jquery2.default)('.js-couponCodeButton');
+
+	couponButtonLead.click(function (event) {
 		(0, _jquery2.default)(event.target).hide();
+		couponButton.hide();
 		(0, _jquery2.default)('.js-couponCodeInput').show();
+		(0, _jquery2.default)('.js-couponCodeInput').focus();
+	});
+
+	couponButton.click(function (event) {
+		(0, _jquery2.default)(event.target).hide();
+		couponButtonLead.hide();
+		(0, _jquery2.default)('.js-couponCodeInput').show();
+		(0, _jquery2.default)('.js-couponCodeInput').focus();
 	});
 
 	(0, _jquery2.default)('.js-credit--default').css({ "display": "block" });

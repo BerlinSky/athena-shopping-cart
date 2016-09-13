@@ -6,9 +6,21 @@ $(function () {
 
 	$('.js-couponCodeInput').hide();
 
-	$('.js-couponCodeButton').click(function( event ) {
+	const couponButtonLead = $('.js-couponCodeButton-lead');
+	const couponButton = $('.js-couponCodeButton');
+
+	couponButtonLead.click(function( event ) {
 		$(event.target).hide();
+		couponButton.hide();
 		$('.js-couponCodeInput').show();
+		$('.js-couponCodeInput').focus();
+	});
+
+	couponButton.click(function( event ) {
+		$(event.target).hide();
+		couponButtonLead.hide();
+		$('.js-couponCodeInput').show();
+		$('.js-couponCodeInput').focus();
 	});
 	
   $('.js-credit--default').css({ "display": "block" });
