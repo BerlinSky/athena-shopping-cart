@@ -309,3 +309,19 @@
 		}
 	}
 }
+
+.cartInputError {
+  display: flex;
+  justify-content: flex-start;
+
+  color: red;
+  margin-bottom: 10px;
+
+  &__denote {
+    padding-right: 5px;
+  }
+
+  &__text {
+    line-height: 1.5rem;
+  }
+}
