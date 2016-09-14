@@ -19,21 +19,21 @@
 // @import "media";
 // @import "book-form";
 
-// .sizeBlock {
-//   padding: 2%;
-//   text-align: center;
+.sizeBlock {
+  padding: 2%;
+  text-align: center;
 
-//   @include headerText();
+  @include headerText();
 
-//   &--chosen {
-//     background-color: #aaa;
-//     color: #eee;
-//   }
+  &--chosen {
+    background-color: #aaa;
+    color: #eee;
+  }
 
-//   &--faded {
-//     opacity: 0.3;
-//   }
-// }
+  &--faded {
+    opacity: 0.3;
+  }
+}
 
 // more cart definitions
 

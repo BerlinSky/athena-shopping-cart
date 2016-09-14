@@ -325,3 +325,19 @@
     line-height: 1.5rem;
   }
 }
+
+.sizeBlock {
+  padding: 2%;
+  text-align: center;
+
+  @include headerText();
+
+  &--chosen {
+    background-color: #aaa;
+    color: #eee;
+  }
+
+  &--faded {
+    opacity: 0.3;
+  }
+}
