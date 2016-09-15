@@ -22,72 +22,47 @@
   
   <div class="l-siteContainer">
 
-    <section class="siteBanner desktopOnly--block">
+    <section class="siteBanner">
       <div>
         <div class="siteBanner__intro">My Favorite Artist</div>
         <div class="siteBanner__info">Site Banner Place Holder</div>
       </div>
     </section>
 
-    <section class="l-grid__container grid__container">
-      <div class="l-grid__span--md-2 desktopOnly--block">
-      </div>
+    <section class="l-grid__container">
 
-      <div class="l-grid l-grid__span--md-12 l-grid__span--xs-16 l-mainContent">
-
-        <div class="l-grid__container grid__container grid__container--ruler">
-          <div class="l-grid__span--xs-16 stepTitle stepTitle--textCenter mobileOnly">My Store</div>
-          <div class="l-grid__span--xs-16 stepTitle stepTitle--textCenter">Review Cart (Size Selection)</div>
+      <div class="l-cartGrid l-cartGrid__default mainContent">
+        <div class="l-grid__container grid__container--ruler l-cartHeading">
+          <div class="l-cartHeading__item stepTitle stepTitle--textCenter mobileOnly--block">My Store</div>
+          <div class="l-cartHeading__item stepTitle">Review Cart (Size Selection)</div>
         </div> 
 
-        <!-- <div class="l-grid__container grid__container">
-          <a class="l-grid__span--xs-16 actionButton cart___NavButton mobileOnly--block grid__row" href="2-payment.html">Go to payment</a>
-        </div>  -->
-
-        <div class="l-grid__container grid__container desktopOnly-flex grid__container--ruler">
-          <div class="l-grid__span--xs-16 l-grid__span--md-3 memberShip__title grid__row">Membership</div>
-          <div class="l-grid__span--md-10"></div>
-          <div class="l-grid__span--xs-16 l-grid__span--md-3 memberShip__title grid__row">Amount</div>
-        </div>
-
-        <div class="l-grid__container grid__container desktopOnly-flex">
-          <div class="l-grid__span--md-2 l-grid__container l-grid__container--vertical l-grid__container--center grid__row">
+        <!-- <div class="l-grid__container l-membershipPackage membershipPackage desktopOnly--flex"> -->
+        <div class="membershipPackage desktopOnly--flex">
+          <div class="l-membershipPackage__item l-grid__container l-grid__container--vertical l-grid__container--center">
             <div class="cartItemImage">
               <img src="./images/gnr/membership.jpg">
             </div>
           </div>
-          <div class="l-grid__span--md-12 tableRow__bodyText text-center grid__row">Nightrain Fan Club Premium Membership GNRBPN16</div>
-          <div class="tableRow__bodyText l-grid__span--md-2 grid__row">US$ 85.00</div>
+          <div class="l-membershipPackage__item membershipPackage__item cart__itemText cart__itemText--header">Nightrain Fan Club Premium Membership GNRBPN16</div>
+          <div class="l-membershipPackage__item membershipPackage__item cart__itemText--header text-right">US$ 85.00</div>
         </div>
 
-        <div class="l-grid__container grid__container grid__container--ruler">
-          <div class="l-grid__span--xs-16 l-grid__span--md-3 tableRow__image--component l-grid__container l-grid__container--vertical l-grid__container--center grid__row">
+        <div class="l-grid__container l-grid__container--alignToBottom l-membershipComponent membershipComponent">
+          <div class="l-membershipComponent__item l-grid__container l-grid__container--vertical l-grid__container--center">
             <div class="cartItemImage">
               <img src="./images/gnr/tshirt.jpg">
             </div>
           </div>
-          <div class="l-grid__span--xs-16 l-grid__span--md-10 tableRow__bodyText text-center grid__row">
+          <div class="l-membershipComponent__item membershipComponent__item cart__itemText">
             Nightrain T-Shirt GNRFF016
           </div>
 
-          <div class="l-grid__span--xs-16 l-grid__span--md-3">
-            <div class="desktopOnly--block">
-              <select class="js-selectItemSize">
-                <option value="0">XXS</option>
-                <option value="1">XS</option>
-                <option value="2">S</option>
-                <option value="3">M</option>
-                <option value="4">L</option>
-                <option value="5">XL</option>
-                <option selected value="6">XXL</option>
-              </select>
-            </div>
-
-            <div class="cart__itemSizePanel mobileOnly--block grid__row">
+          <div class="l-membershipComponent__item">
+            <div class="cart__itemSizePanel">
                <ul>
-                <li><div class="sizeBlock">XS</div></li>
                 <li><div class="sizeBlock">S</div></li>
-                <li><div class="sizeBlock sizeBlock--faded">M</div></li>
+                <li><div class="sizeBlock sizeBlock--chosen">M</div></li>
                 <li><div class="sizeBlock">L</div></li>
                 <li><div class="sizeBlock">XL</div></li>
                 <li><div class="sizeBlock">XXL</div></li>
@@ -96,31 +71,40 @@
           </div>
         </div>
 
-        <div class="l-grid__container grid__container grid__container--ruler">
-          <div class="l-grid__span--xs-16 l-grid__span--md-3 tableRow__image--component l-grid__container l-grid__container--vertical l-grid__container--center grid__row">
+        <div class="l-grid__container l-grid__container--alignToBottom l-membershipComponent membershipComponent">
+          <div class="l-membershipComponent__item l-grid__container l-grid__container--vertical l-grid__container--center">
             <div class="cartItemImage">
               <img src="./images/gnr/membership.jpg">
             </div>
           </div>
-          <div class="l-grid__span--xs-16 l-grid__span--md-10 tableRow__bodyText text-center grid__row">Nightrain Fan Club Premium Membership GNRFPN16</div>
+          <div class="l-membershipComponent__item membershipComponent__item cart__itemText">Nightrain Fan Club Premium Membership GNRFPN16</div>
 
-          <div class="l-grid__span--xs-16 l-grid__span--md-3">
-            <div class="desktopOnly--block">
-              <select class="js-selectItemSize">
-                <option value="0">XXS</option>
-                <option value="1">XS</option>
-                <option selected value="2">S</option>
-                <option value="3">M</option>
-                <option value="4">L</option>
-                <option value="5">XL</option>
-                <option value="6">XXL</option>
-              </select>
-            </div>
-
-            <div class="cart__itemSizePanel mobileOnly--block grid__row">
+          <div class="l-membershipComponent__item">
+            <div class="cart__itemSizePanel">
               <ul>
-                <li><div class="sizeBlock">XS</div></li>
-                <li><div class="sizeBlock sizeBlock--faded">S</div></li>
+                <li><div class="sizeBlock">S</div></li>
+                <li><div class="sizeBlock">M</div></li>
+                <li><div class="sizeBlock sizeBlock--chosen">L</div></li>
+                <li><div class="sizeBlock">XL</div></li>
+                <li><div class="sizeBlock">XXL</div></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="l-grid__container l-grid__container--alignToBottom l-membershipComponent membershipComponent">
+          <div class="l-membershipComponent__item l-grid__container l-grid__container--vertical l-grid__container--center">
+            <div class="cartItemImage">
+              <img src="./images/gnr/hoodie.jpg">
+            </div>
+          </div>
+          <div class="l-membershipComponent__item membershipComponent__item cart__itemText">
+            Nightrain Premium Membership Hoodie GNRF7833
+          </div>
+          <div class="l-membershipComponent__item">
+            <div class="cart__itemSizePanel">
+              <ul>
+                <li><div class="sizeBlock sizeBlock--chosen">S</div></li>
                 <li><div class="sizeBlock">M</div></li>
                 <li><div class="sizeBlock">L</div></li>
                 <li><div class="sizeBlock">XL</div></li>
@@ -130,55 +114,23 @@
           </div>
         </div>
 
-        <div class="l-grid__container grid__container grid__container--ruler">
-          <div class="l-grid__span--xs-16 l-grid__span--md-3 tableRow__image--component l-grid__container l-grid__container--vertical l-grid__container--center grid__row">
-            <div class="cartItemImage">
-              <img src="./images/gnr/hoodie.jpg">
-            </div>
-          </div>
-          <div class="l-grid__span--xs-16 l-grid__span--md-10 tableRow__bodyText text-center grid__row">
-            Nightrain Premium Membership Hoodie GNRF7833
-          </div>
-          <div class="l-grid__span--xs-16 l-grid__span--md-3">
-            <div class="desktopOnly--block">
-              <select class="js-selectItemSize">
-                <option value="0">XXS</option>
-                <option value="1">XS</option>
-                <option value="2">S</option>
-                <option value="3">M</option>
-                <option value="4">L</option>
-                <option selected value="5">XL</option>
-                <option value="6">XXL</option>
-              </select>
-            </div>
-
-            <div class="cart__itemSizePanel mobileOnly--block grid__row">
-              <ul>
-                <li><div class="sizeBlock">XS</div></li>
-                <li><div class="sizeBlock sizeBlock--chosen">S</div></li>
-                <li><div class="sizeBlock">M</div></li>
-                <li><div class="sizeBlock">L</div></li>
-                <li><div class="sizeBlock">XL</div></li>
-                <li><div class="sizeBlock sizeBlock--faded">XXL</div></li>
-              </ul>
-            </div>
-          </div>
-    
-        </div>
-
-        <div class="l-grid__container grid__container">
-          <div class="l-grid__span--xs-16 tableRow__bodyText cartTotal">
+        <div class="l-grid__container l-membershipPackage membershipTotal">
+          <div class="l-membershipPackage__total cartTotal cartTotal--primay">
             <div class="cartTotal__text">TOTAL</div>
             <div>US$ 85.00</div>
           </div>
         </div>
         
-        <div class="l-grid__container grid__container">
-          <div class="l-grid__span--xs-16 l-grid__span--md-5">
+        <div class="l-grid__container">
+          <div class="l-cartActionBlock cartActionBlock">
             <form class="dataForm">
-              <div class="inputGroup grid__row--paddedSides js-couponCodeInput">
-                <input class="dataInput dataInput--secondary dataInput--bordered" type="text">
-                <!-- <label class="dataLabel--secondary"></label> -->
+              <div class="cartInputError">
+                <div class="cartInputError__denote">*</div>
+                <div class="cartInputError__text">Please supply a valid coupon code. Otherwise, no memebership benefit can be enjoyed.</div>
+              </div>
+              <div class="inputGroup js-couponCodeInput">
+                <input class="dataInput" type="text">
+                <label>Coupon Code</label>
               </div>
               <a class="actionButton cart___couponCodeButton js-couponCodeButton">Coupon Code</a>
               <a class="actionButton cart___couponCodeButton js-couponCodeInput">Apply Coupon</a>
@@ -186,8 +138,8 @@
           </div>
         </div> 
 
-        <div class="l-grid__container grid__container">
-          <a class="l-grid__span--xs-16 l-grid__span--md-5 actionButton cart___navButton" href="2-payment.html">Go to payment</a>
+        <div class="l-grid__container cart___buttonContainer">
+          <a class="l-cartActionBlock cartActionBlock actionButton cart___navButton" href="2-payment.html">Go to payment</a>
         </div>
 
       </div>

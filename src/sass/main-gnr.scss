@@ -5,5 +5,36 @@
 @import "modules/all-modules";  
 @import "state/all-states";  
 
+body, html {
+	font-family: librefranklin-regular,Arial,sans-serif;
+	text-rendering: optimizeLegibility!important;
+	-webkit-font-smoothing: antialiased!important;
+}
 
+.cart___navButton {
+  background-color: #fac43d;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 
+.cartInputError__text {
+  font-size: 0.925rem;
+  font-weight: 100;
+  line-height: 1.25;
+}
+
+.footer .copyright {
+	font-size: .825rem;
+  font-weight: 300;
+  color: #999;
+}
+
+.stepTitle {
+	color: #fac43d;
+	font-weight: 300;
+}
+
+.cartTotal { 
+	color: #fac43d;
+}
