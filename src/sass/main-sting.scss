@@ -1,24 +1,23 @@
 @import "theme/all-base-themes";
-@import "theme-stores/theme-gnr";
+@import "theme-stores/theme-sting";
 @import "base/all-base";
 @import "layout/all-layouts";
 @import "modules/all-modules";  
 @import "state/all-states";  
 
 body, html {
-	font-family: librefranklin-regular,Arial,sans-serif;
-	text-rendering: optimizeLegibility!important;
-	-webkit-font-smoothing: antialiased!important;
+  font-family: 'latoregular', Helvetica, Arial, sans-serif !important;
 }
 
 .cart___navButton {
-  background-color: #fac43d;
-  color: #000;
+  background-color: #ce4218;
+  color: #fff;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
 .cartInputError__text {
+  color: #ce4218;
   font-size: 0.925rem;
   font-weight: 100;
   line-height: 1.25;
@@ -27,17 +26,17 @@ body, html {
 .footer .copyright {
 	font-size: .825rem;
   font-weight: 300;
-  color: #999;
+  color: #4E4E4E;
 }
 
-.stepTitle {
-	color: #fac43d;
-	font-weight: 300;
-}
+// .stepTitle {
+// 	color: #fac43d;
+// 	font-weight: 300;
+// }
 
-.cartTotal { 
-	color: #fac43d;
-}
+// .cartTotal { 
+// 	color: #fac43d;
+// }
 
 .accordion label {
   // background-color: #fac43d;
@@ -46,6 +45,6 @@ body, html {
   color: #fff;
 }
 
-.accordion .accordionContent { 
-	border: none;
-}
+// .accordion .accordionContent { 
+// 	border: none;
+// }
