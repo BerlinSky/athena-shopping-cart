@@ -17,145 +17,59 @@
 @import "./shopping-cart/use-content";
 
 
-// @import "media";
-// @import "book-form";
+.sentence span {
+	color: #444;
+	white-space: nowrap;
+	font-size: 200%;
+	font-weight: normal;
+}
 
-// input[type=tel] {
-//   -webkit-appearance: none;
-//   -moz-appearance: none;
-// }
+.words span {
+	position: relative;
+	opacity: 0;
+	animation: animatedWords 5s ease-in-out infinite;
+}
 
-// more cart definitions
+.words span:nth-child(1) {
+	animation-delay: 0s;
+	color: #678a6b;
+}
 
-// .box {
-//   position: relative;
-//   width: 50%;   /* desired width */
-// }
+.words span:nth-child(2) {
+	animation-delay: 3s;
+	color: #bcd292;
+}
 
-// .box:before {
-//   content: "";
-//   display: block;
-//   padding-top: 100%;  /* initial ratio of 1:1*/
-// }
+.words span:nth-child(3) {
+	animation-delay: 6s;
+	color: #e7d7fc;
+}
 
-// .box__content {
-//   position:  absolute;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-// }
+.words span:nth-child(4) {
+	animation-delay: 9s;
+	color: #dec1f5;
+}
 
-// .block-section {
-//   background: #c2c9cc;
-//   width: 80px;
-//   box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.4);
-// }
+.words span:nth-child(5) {
+	animation-delay: 12s;
+	color: #8769ac;
+}
 
-// .block-links {
-//   list-style: none;
-//   margin: 0px;
-//   padding: 15px;
-//   width: 50px;
-// }
+.words span:nth-child(6) {
+	animation-delay: 15s;
+	color: #e7d7fc;
+}
 
-// .block-links li {
-//   position: relative;
-//   height: 50px;
-//   margin-bottom: 6px;
-// }
-
-// .block-links li div {
-//   z-index: 10;
-//   position: absolute;
-//   display: block;
-//   top: 0;
-//   left: 0;
-//   width: 48px;
-//   height: 34px;
-//   border-radius: 6px;
-//   padding: 13px 0 0;
-//   text-decoration: none;
-//   font-size: 18px;
-//   text-align: center;
-//   border: 1px solid #c2c9cc;
-//   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
-//   transition: all 0.3s ease-out;
-// }
-
-// .block-links li div:hover {
-//   cursor: -webkit-grab;
-//   margin-left: 4px;
-// }
-
-// .block-links li div:active {
-//   cursor: -webkit-grabbing;
-// }
-
-
-// .block-links li:before {
-//   z-index: 5;
-//   position: absolute;
-//   content: " ";
-//   display: block;
-//   width: 50px;
-//   height: 50px;
-//   border-radius: 6px;
-//   border: 1px solid #1976D2;
-//   top: -1px;
-//   left: -1px;
-// }
-
-// .animate-pulse:after {
-//   z-index: 4;
-//   content: " ";
-//   display: block;
-//   position: absolute;
-//   width: 50px;
-//   height: 50px;
-//   border-radius: 6px;
-//   border: 1px solid #1976D2;
-//   opacity: 0.5;
-//   top: -1px;
-//   left: -1px;
-//   animation-name: pulse;
-//   animation-duration: 1.5s;
-//   animation-timing-function: linear;
-//   animation-iteration-count: infinite;
-// }
-
-
-// @keyframes pulse {
-//   0% {
-//     transform: scale(1);
-//     opacity: 1;
-//   }
-//   80% {
-//     transform: scale(1.5);
-//     opacity: 0;
-//   }
-//   100% {
-//     transform: scale(1.5);
-//     opacity: 0;
-//   }
-// }
-
-/* Chrome, Safari, Opera */
-// @-webkit-keyframes pulse {
-//   0% {
-//     transform: scale(0);
-//   }
-//   80% {}
-//   100% {
-//     transform: scale(2);
-//   }
-// }
-
-// TODO: Move to the modules
-
-
-
-
-
+@keyframes animatedWords {
+	from {
+		opacity: 1;
+		animation-timing-function: ease-in;
+		top: 0;
+	}
+	to {
+		opacity: 0;
+		top: 5em;
+	}
+}
 
 
