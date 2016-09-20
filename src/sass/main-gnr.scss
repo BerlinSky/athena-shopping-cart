@@ -47,6 +47,44 @@ body, html {
   color: #fff;
 }
 
+.dataForm .dropdownPanel {
+  background-color: #000;
+  border: 1px solid #333;
+  border-radius: 0;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  background-color: #000;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #fff;
+}
+
+span.select2-container--open .select2-selection--single .select2-selection__arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  background: url(../images/dd-up-white.png) 50% 50% no-repeat;
+  background-size: 1.25rem 1.25rem;
+  width: 2rem;
+  height: 1.5rem;
+  margin-right: 15px;
+}
+
+span.select2-container--default .select2-selection--single .select2-selection__arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  background: url(../images/dd-down-white.png) 50% 50% no-repeat;
+  background-size: 1.25rem 1.25rem;
+  width: 2rem;
+  height: 1.5rem;
+  margin-right: 15px;
+}
+
 .cartInputError__text {
   font-size: 0.925rem;
   font-weight: 100;
