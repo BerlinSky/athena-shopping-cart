@@ -20,6 +20,11 @@ body, html {
   }
 }
 
+.temp {
+  background-color: #646464;
+  color: #fff;
+}
+
 .siteBanner__intro {
   font-size: 2.125rem;
   color: #fac43d;
@@ -35,6 +40,11 @@ body, html {
   color: #000;
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.cart___navButton--cancel {
+  background-color: #646464;
+  color: #fff;
 }
 
 .cartInputError__text {
