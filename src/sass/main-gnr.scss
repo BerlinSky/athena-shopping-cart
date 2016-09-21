@@ -53,11 +53,29 @@ body, html {
   border-radius: 0;
 }
 
+span.select2-container--open .select2-dropdown {
+  background-color: #000;
+  border: 1px solid #333;
+}
+
+span.select2-container--open .select2-results__options .select2-results__option {
+  color: #fff;
+}
+
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   background-color: #000;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #fff;
+}
+
+span.select2-container--open .select2-dropdown .select2-search--dropdown {
+  background-color: #333;
+}
+
+span.select2-container--open .select2-dropdown .select2-search--dropdown input {
+  background-color: #000;
   color: #fff;
 }
 
