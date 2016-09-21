@@ -103,6 +103,14 @@ span.select2-container--default .select2-selection--single .select2-selection__a
   margin-right: 15px;
 }
 
+.miniCart {
+  .inputGroup {
+    .dataInput {
+      background-color: #fff;
+      color: #333;
+    }
+  }
+}
 .cartInputError__text {
   font-size: 0.925rem;
   font-weight: 100;
