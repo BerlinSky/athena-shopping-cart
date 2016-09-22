@@ -16,11 +16,25 @@ body, html {
   font-weight: 700;
 }
 
+.dataForm .dataInput {
+  border: 1px solid #999;
+  border-radius: 0;
+}
+
 .cartInputError__text {
   color: #ce4218;
   font-size: 0.925rem;
   font-weight: 100;
   line-height: 1.25;
+}
+
+.dataForm .dropdownPanel {
+  border: 1px solid #999;
+  border-radius: 0;
+}
+
+.cart___navButton.cart___navButton--cancel {
+  background-color: #646464;
 }
 
 .footer .copyright {
