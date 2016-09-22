@@ -10,11 +10,13 @@ html {
 }
 
 html, body {
+  min-height: 100vh;
   min-width: _size(site-min-width);
   overflow-x: hidden;
 }
 
 body {
+  min-height: 100vh;
   padding: 0;
   color: _color(site-default, color);
   background: _color(site-default, bg-color);

@@ -35,6 +35,8 @@ $cart-section-ratio-map: (
 }
 
 .l-siteContainer {
+  min-height: 100vh;
+
 	display: flex;
 	flex-direction: column;
 
