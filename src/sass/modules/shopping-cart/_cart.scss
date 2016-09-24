@@ -155,6 +155,7 @@
   background-color: #E91E63;
   color: #fff;
   @include headerText();
+  letter-spacing: .05em;
 
   &--cancel {
     background-color: #646464;
@@ -166,6 +167,7 @@
   color: #fff;
 
   @include headerText();
+  letter-spacing: .05em;
 }
 
 .cart__boxShadow {
