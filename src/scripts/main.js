@@ -91,13 +91,26 @@ $(function () {
 		$(cardTypeMask).hide();
 	}
 
-	if ($('.js-cvvHelp').length > 0) { 
-		$('.js-cvvHelp').hover(function() {
-			console.log("Here!!");
+	function showCvvHelp() {
+		if ($('.js-cvvInstructions').length > 0) { 
 			$('.js-cvvInstructions').addClass('js-show');
-		},
-		function(){ 
+		}
+	}
+
+	function hideCvvHelp() {
+		if ($('.js-cvvInstructions').length > 0) { 
 			$('.js-cvvInstructions').removeClass('js-show');
+		}
+	}
+
+	$(document).click(function(){
+    hideCvvHelp();
+	});
+
+	if ($('.js-cvvHelp').length > 0) { 
+		$('.js-cvvHelp').click(function(e) {
+	    e.stopPropagation();
+			showCvvHelp();
 		});
 	}
 
