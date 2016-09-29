@@ -91,6 +91,16 @@ $(function () {
 		$(cardTypeMask).hide();
 	}
 
+	if ($('.js-cvvHelp').length > 0) { 
+		$('.js-cvvHelp').hover(function() {
+			console.log("Here!!");
+			$('.js-cvvInstructions').addClass('js-show');
+		},
+		function(){ 
+			$('.js-cvvInstructions').removeClass('js-show');
+		});
+	}
+
 	$('.dataForm__section .inputGroup input').focusout((event) => {
 		const input = $(event.target);
 	  const textVal = input.val();
