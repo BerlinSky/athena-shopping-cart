@@ -2,26 +2,22 @@
 .cvvInstructions {
 	flex: 1 0 100%;
 	background-color: transparent;
-	background-image: url("../../../images/cards/visa-cvv.png");
-	background-size: 100% 100%, contain;
-	background-repeat: no-repeat;
-	background-origin: padding-box;
-
-	height: 200px;
-	@include break(xs) {
-		height: 240px;
-	}
-	@include break(sm) {
-		height: 300px;
-	}
-
 	opacity: 0;
 	transition: .5s all ease;
 	display: none;
+
+	.imageBox {
+		// background-color: tomato;
+		flex: 1 0 50%;
+		&__item {
+			max-width: 100%;
+		}
+	}
 }
 
 .js-show {
-	display: block;
+	display: flex;
+	flex-wrap: nowrap;
 	opacity: 1;
 	transition: .5s all ease;
 }
