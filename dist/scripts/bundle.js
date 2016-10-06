@@ -16409,28 +16409,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 		(0, _jquery2.default)(cardTypeMask).hide();
 	}
 
-	function showCvvHelp() {
-		if ((0, _jquery2.default)('.js-cvvInstructions').length > 0) {
-			(0, _jquery2.default)('.js-cvvInstructions').addClass('js-show');
-		}
-	}
-
-	function hideCvvHelp() {
-		if ((0, _jquery2.default)('.js-cvvInstructions').length > 0) {
-			(0, _jquery2.default)('.js-cvvInstructions').removeClass('js-show');
-		}
-	}
-
 	(0, _jquery2.default)(document).click(function () {
 		hideCvvHelp();
 	});
-
-	if ((0, _jquery2.default)('.js-cvvHelp').length > 0) {
-		(0, _jquery2.default)('.js-cvvHelp').click(function (e) {
-			e.stopPropagation();
-			showCvvHelp();
-		});
-	}
 
 	(0, _jquery2.default)('.dataForm__section .inputGroup input').focusout(function (event) {
 		var input = (0, _jquery2.default)(event.target);

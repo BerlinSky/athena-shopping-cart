@@ -91,28 +91,9 @@ $(function () {
 		$(cardTypeMask).hide();
 	}
 
-	function showCvvHelp() {
-		if ($('.js-cvvInstructions').length > 0) { 
-			$('.js-cvvInstructions').addClass('js-show');
-		}
-	}
-
-	function hideCvvHelp() {
-		if ($('.js-cvvInstructions').length > 0) { 
-			$('.js-cvvInstructions').removeClass('js-show');
-		}
-	}
-
 	$(document).click(function(){
     hideCvvHelp();
 	});
-
-	if ($('.js-cvvHelp').length > 0) { 
-		$('.js-cvvHelp').click(function(e) {
-	    e.stopPropagation();
-			showCvvHelp();
-		});
-	}
 
 	$('.dataForm__section .inputGroup input').focusout((event) => {
 		const input = $(event.target);
