@@ -1,11 +1,11 @@
 // CVV Help 
 
-.lightbox-target {
+.lightboxContainer {
   position: fixed;
   top: -100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  opacity: 0.3;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: .6;
   transition: opacity .5s ease-in-out;
   overflow: hidden;
   z-index: 2000;
@@ -13,20 +13,23 @@
 
 .cvvInstructions {
 	display: flex;
+	flex-direction: column;
 	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: center;
-	margin: auto;
+	// margin: auto;
+	// opacity: 0.8;
   width: 100%;
   height: 100%;
   border: 3px solid white;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
   transition: .5s ease-in-out;
-  background-color: tomato;
+  // background-color: tomato;
 
 	.imageBox {
-		flex: 1 0 50%;
+		opacity: 1;
+		// flex: 1 0 50%;
 		&__item {
 			max-width: 100%;
 		}
@@ -71,13 +74,13 @@ a.lightbox-close:after {
   transform: rotate(-45deg);
 }
 
-.lightbox-target:target {
+.lightboxContainer:target {
   opacity: 1;
   top: 0;
   bottom: 0;
 }
 
-.lightbox-target:target a.lightbox-close {
+.lightboxContainer:target a.lightbox-close {
   top: 0px;
 }
 
