@@ -91,9 +91,14 @@ $(function () {
 		$(cardTypeMask).hide();
 	}
 
-	$(document).click(function(){
-    hideCvvHelp();
-	});
+	if ($('.js-cvvInstructions').length > 0) { 
+		$('.js-cvvInstructions').click(function(e) {
+	    e.stopPropagation();
+
+			const $link = $('.js-lightboxClose');
+			location.href = $link.attr('href');
+		});
+	}
 
 	$('.dataForm__section .inputGroup input').focusout((event) => {
 		const input = $(event.target);
