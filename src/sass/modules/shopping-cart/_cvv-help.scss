@@ -4,8 +4,8 @@
   position: fixed;
   top: -100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  opacity: .6;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: .8;
   transition: opacity .5s ease-in-out;
   overflow: hidden;
   z-index: 2000;
@@ -17,6 +17,7 @@
 	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: center;
+	align-content: center;
 	// margin: auto;
 	// opacity: 0.8;
   width: 100%;
