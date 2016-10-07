@@ -37,7 +37,6 @@
           <div class="l-cartHeading__item stepTitle">Review Cart (Size Selection)</div>
         </div> 
 
-        <!-- <div class="l-grid__container l-membershipPackage membershipPackage desktopOnly--flex"> -->
         <div class="membershipPackage desktopOnly--flex">
           <div class="l-membershipPackage__item l-grid__container l-grid__container--vertical l-grid__container--center">
             <div class="cartItemImage">
@@ -123,7 +122,6 @@
         
         <div class="l-grid__container">
           <div class="l-cartActionBlock cartActionBlock">
-
             <form class="dataForm" method="post" action="payment.html">
               <div class="cartInputError">
                 <div class="cartInputError__denote">*</div>
@@ -134,14 +132,16 @@
                 <label>Coupon Code</label>
               </div>
               <a class="actionButton cart___couponCodeButton js-couponCodeButton">Coupon Code</a>
-              <a class="actionButton cart___couponCodeButton js-couponCodeInput">Apply Coupon</a>
+              <button type="submit" class="actionButton cart___couponCodeButton js-couponCodeInput">Apply Coupon</button>
             </form>
           </div>
         </div> 
 
-        <div class="l-grid__container cart___buttonContainer">
-          <a class="l-cartActionBlock cartActionBlock actionButton cart___navButton" href="payment.html">Go to payment</a>
-        </div>
+        <!-- <div class="l-grid__container cart___buttonContainer"> -->
+        <form class="l-grid__container cart___buttonContainer" method="post" action="payment.html">
+          <button type="submit" class="l-cartActionBlock cartActionBlock actionButton cart___navButton" onclick="form.submit();">Go to payment</button>
+        </form>
+        <!-- </div> -->
 
       </div>
     </section>
