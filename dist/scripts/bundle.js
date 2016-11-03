@@ -16324,6 +16324,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 (0, _jquery2.default)(function () {
 
+	// Size selection
+
+	var sizePicker = (0, _jquery2.default)('.js-sizeSelection');
+
+	sizePicker.click(function (event) {
+		var markerClass = 'sizeBlock--chosen';
+		var selected = (0, _jquery2.default)(event.target);
+
+		selected.parent('.js-sizeSelection').siblings().children('.sizeBlock--chosen').removeClass(markerClass);
+		selected.addClass(markerClass);
+	});
+
+	// End Size selection
+
 	(0, _jquery2.default)('.js-couponCodeInput').hide();
 
 	var couponButtonLead = (0, _jquery2.default)('.js-couponCodeButton-lead');

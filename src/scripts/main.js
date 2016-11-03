@@ -4,6 +4,20 @@ import Select2 from 'select2';
 
 $(function () {
 
+	// Size selection
+
+	const sizePicker = $('.js-sizeSelection');
+
+	sizePicker.click(function( event ) {
+		const markerClass = 'sizeBlock--chosen';
+		const selected = $(event.target);
+
+		selected.parent('.js-sizeSelection').siblings().children('.sizeBlock--chosen').removeClass(markerClass);
+		selected.addClass(markerClass);
+	});
+
+	// End Size selection
+
 	$('.js-couponCodeInput').hide();
 
 	const couponButtonLead = $('.js-couponCodeButton-lead');

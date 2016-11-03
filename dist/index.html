@@ -60,11 +60,11 @@
           <div class="l-membershipComponent__item">
             <div class="cart__itemSizePanel">
                <ul>
-                <li><div class="sizeBlock">S</div></li>
-                <li><div class="sizeBlock sizeBlock--chosen">M</div></li>
-                <li><div class="sizeBlock">L</div></li>
-                <li><div class="sizeBlock">XL</div></li>
-                <li><div class="sizeBlock">XXL</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock">S</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock sizeBlock--chosen js-sizeBlock">M</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock">L</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock">XL</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock">XXL</div></li>
               </ul>
             </div>
           </div>
@@ -81,11 +81,11 @@
           <div class="l-membershipComponent__item">
             <div class="cart__itemSizePanel">
               <ul>
-                <li><div class="sizeBlock">S</div></li>
-                <li><div class="sizeBlock">M</div></li>
-                <li><div class="sizeBlock sizeBlock--chosen">L</div></li>
-                <li><div class="sizeBlock">XL</div></li>
-                <li><div class="sizeBlock">XXL</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock  js-sizeBlockjs-sizeBlock">S</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock">M</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock sizeBlock--chosen js-sizeBlock">L</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock">XL</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock">XXL</div></li>
               </ul>
             </div>
           </div>
@@ -103,11 +103,11 @@
           <div class="l-membershipComponent__item">
             <div class="cart__itemSizePanel">
               <ul>
-                <li><div class="sizeBlock sizeBlock--chosen">S</div></li>
-                <li><div class="sizeBlock">M</div></li>
-                <li><div class="sizeBlock">L</div></li>
-                <li><div class="sizeBlock">XL</div></li>
-                <li><div class="sizeBlock">XXL</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock sizeBlock--chosen js-sizeBlock">S</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock">M</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock">L</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock">XL</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock">XXL</div></li>
               </ul>
             </div>
           </div>
@@ -123,6 +123,7 @@
         <div class="l-grid__container">
           <div class="l-cartActionBlock cartActionBlock">
             <form class="dataForm" method="post" action="payment.html">
+              <input type="hidden" name="sizeSelection" value="M" class="js-sizeSelection">
               <div class="cartInputError">
                 <div class="cartInputError__denote">*</div>
                 <div class="cartInputError__text">Please supply a valid coupon code. Otherwise, no memebership benefit can be enjoyed.</div>
@@ -134,11 +135,12 @@
               <a class="actionButton cart___couponCodeButton js-couponCodeButton">Coupon Code</a>
               <button type="submit" class="actionButton cart___couponCodeButton js-couponCodeInput">Apply Coupon</button>
             </form>
-          </div>
+          </div> js-sizeSelection
         </div> 
 
         <!-- <div class="l-grid__container cart___buttonContainer"> -->
         <form class="l-grid__container cart___buttonContainer" method="post" action="payment.html">
+          <input type="hidden" name="sizeSelection" value="M" class="js-sizeSelection">
           <button type="submit" class="l-cartActionBlock cartActionBlock actionButton cart___navButton">Go to payment</button>
         </form>
         <!-- </div> -->
