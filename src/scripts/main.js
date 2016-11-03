@@ -14,6 +14,8 @@ $(function () {
 
 		selected.parent('.js-sizeSelection').siblings().children('.sizeBlock--chosen').removeClass(markerClass);
 		selected.addClass(markerClass);
+
+		$('input[type=hidden].js-sizeSelectionHidden').val("old??");
 	});
 
 	// End Size selection

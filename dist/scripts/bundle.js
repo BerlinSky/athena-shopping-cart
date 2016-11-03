@@ -16334,6 +16334,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 		selected.parent('.js-sizeSelection').siblings().children('.sizeBlock--chosen').removeClass(markerClass);
 		selected.addClass(markerClass);
+
+		(0, _jquery2.default)('input[type=hidden].js-sizeSelectionHidden').val("old??");
 	});
 
 	// End Size selection

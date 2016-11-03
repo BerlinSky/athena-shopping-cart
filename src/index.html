@@ -60,11 +60,11 @@
           <div class="l-membershipComponent__item">
             <div class="cart__itemSizePanel">
                <ul>
-                <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock">S</div></li>
-                <li class="js-sizeSelection"><div class="sizeBlock sizeBlock--chosen js-sizeBlock">M</div></li>
-                <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock">L</div></li>
-                <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock">XL</div></li>
-                <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock">XXL</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock" data-sizePicker="S">S</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock sizeBlock--chosen js-sizeBlock" data-sizePicker="M">M</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock" data-sizePicker="L">L</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock" data-sizePicker="XL">XL</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock" data-sizePicker="XXL">XXL</div></li>
               </ul>
             </div>
           </div>
@@ -76,12 +76,12 @@
               <img src="./images/gnr/membership.jpg">
             </div>
           </div>
-          <div class="l-membershipComponent__item membershipComponent__item cart__itemText">Nightrain Fan Club Premium Membership GNRFPN16</div>
+          <div class="l-membershipComponent__item membershipComponent__item cart__itemText">Nightrain Fan Club Premium Membership GNRFPN17</div>
 
           <div class="l-membershipComponent__item">
             <div class="cart__itemSizePanel">
               <ul>
-                <li class="js-sizeSelection"><div class="sizeBlock  js-sizeBlockjs-sizeBlock">S</div></li>
+                <li class="js-sizeSelection"><div class="sizeBlock  js-sizeBlock js-sizeBlock">S</div></li>
                 <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock">M</div></li>
                 <li class="js-sizeSelection"><div class="sizeBlock sizeBlock--chosen js-sizeBlock">L</div></li>
                 <li class="js-sizeSelection"><div class="sizeBlock js-sizeBlock">XL</div></li>
@@ -122,8 +122,8 @@
         
         <div class="l-grid__container">
           <div class="l-cartActionBlock cartActionBlock">
-            <form class="dataForm" method="post" action="payment.html">
-              <input type="hidden" name="sizeSelection" value="M" class="js-sizeSelection">
+            <form class="dataForm js-dataForm" method="post" action="payment.html">
+              <input type="hidden" name="sizeSelection" value="M" class="js-sizeSelectionHidden">
               <div class="cartInputError">
                 <div class="cartInputError__denote">*</div>
                 <div class="cartInputError__text">Please supply a valid coupon code. Otherwise, no memebership benefit can be enjoyed.</div>
@@ -139,8 +139,8 @@
         </div> 
 
         <!-- <div class="l-grid__container cart___buttonContainer"> -->
-        <form class="l-grid__container cart___buttonContainer" method="post" action="payment.html">
-          <input type="hidden" name="sizeSelection" value="M" class="js-sizeSelection">
+        <form class="l-grid__container cart___buttonContainer js-dataForm" method="post" action="payment.html">
+          <input type="hidden" name="sizeSelection" value="M" class="js-sizeSelectionHidden">
           <button type="submit" class="l-cartActionBlock cartActionBlock actionButton cart___navButton">Go to payment</button>
         </form>
         <!-- </div> -->
