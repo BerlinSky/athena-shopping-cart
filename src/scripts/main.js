@@ -4,6 +4,18 @@ import Select2 from 'select2';
 
 $(function () {
 
+	// Place order - submit form
+	const btnPlaceOrder = $('.js-btnPlaceOrder');
+	if (btnPlaceOrder.length > 0) {
+		btnPlaceOrder.click(function( event ) {
+			console.log('btnPlaceOrder clicked');
+			$('.js-paymentForm').submit();
+
+		});
+	}
+	// End: Place order - submit form
+
+
 	// Size selection
 	const sizePicker = $('.js-sizeSelection');
 
@@ -20,7 +32,6 @@ $(function () {
 	$('.js-dataForm').submit(function( event ) {
 		const sizes = $('.sizeBlock--chosen');
 		// console.log("sizes: ", sizes.length);
-
 		let sizeList = [];
 		sizes.each(function(index, item) {
 			const elem = $(item);
@@ -29,9 +40,9 @@ $(function () {
 			sizeList.push(`${elem.attr('data-itemId')}:${elem.attr('data-sizePicker')}`);
 			// console.log(sizeList);
 		});
-		$('input[type=hidden].js-sizeSelectionHidden').val(sizeList);
 
-	  event.preventDefault();
+		$('input[type=hidden].js-sizeSelectionHidden').val(sizeList);
+	  // event.preventDefault();
 	});
 	// End: Assign the size selections
 

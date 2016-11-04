@@ -16324,6 +16324,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 (0, _jquery2.default)(function () {
 
+	// Place order - submit form
+	var btnPlaceOrder = (0, _jquery2.default)('.js-btnPlaceOrder');
+	if (btnPlaceOrder.length > 0) {
+		btnPlaceOrder.click(function (event) {
+			console.log('btnPlaceOrder clicked');
+			(0, _jquery2.default)('.js-paymentForm').submit();
+		});
+	}
+	// End: Place order - submit form
+
 	// Size selection
 	var sizePicker = (0, _jquery2.default)('.js-sizeSelection');
 
@@ -16340,7 +16350,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 	(0, _jquery2.default)('.js-dataForm').submit(function (event) {
 		var sizes = (0, _jquery2.default)('.sizeBlock--chosen');
 		// console.log("sizes: ", sizes.length);
-
 		var sizeList = [];
 		sizes.each(function (index, item) {
 			var elem = (0, _jquery2.default)(item);
@@ -16349,9 +16358,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 			sizeList.push(elem.attr('data-itemId') + ':' + elem.attr('data-sizePicker'));
 			// console.log(sizeList);
 		});
-		(0, _jquery2.default)('input[type=hidden].js-sizeSelectionHidden').val(sizeList);
 
-		event.preventDefault();
+		(0, _jquery2.default)('input[type=hidden].js-sizeSelectionHidden').val(sizeList);
+		// event.preventDefault();
 	});
 	// End: Assign the size selections
 
