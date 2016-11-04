@@ -5,7 +5,6 @@ import Select2 from 'select2';
 $(function () {
 
 	// Size selection
-
 	const sizePicker = $('.js-sizeSelection');
 
 	sizePicker.click(function( event ) {
@@ -14,11 +13,27 @@ $(function () {
 
 		selected.parent('.js-sizeSelection').siblings().children('.sizeBlock--chosen').removeClass(markerClass);
 		selected.addClass(markerClass);
-
-		$('input[type=hidden].js-sizeSelectionHidden').val("old??");
 	});
+	// End: Size selection
 
-	// End Size selection
+	// Assign the size selections
+	$('.js-dataForm').submit(function( event ) {
+		const sizes = $('.sizeBlock--chosen');
+		// console.log("sizes: ", sizes.length);
+
+		let sizeList = [];
+		sizes.each(function(index, item) {
+			const elem = $(item);
+			// console.log(elem.attr('data-itemId'));
+			// console.log(elem.attr('data-sizePicker'));
+			sizeList.push(`${elem.attr('data-itemId')}:${elem.attr('data-sizePicker')}`);
+			// console.log(sizeList);
+		});
+		$('input[type=hidden].js-sizeSelectionHidden').val(sizeList);
+
+	  event.preventDefault();
+	});
+	// End: Assign the size selections
 
 	$('.js-couponCodeInput').hide();
 

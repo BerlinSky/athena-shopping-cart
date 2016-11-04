@@ -16325,7 +16325,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 (0, _jquery2.default)(function () {
 
 	// Size selection
-
 	var sizePicker = (0, _jquery2.default)('.js-sizeSelection');
 
 	sizePicker.click(function (event) {
@@ -16334,11 +16333,27 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 		selected.parent('.js-sizeSelection').siblings().children('.sizeBlock--chosen').removeClass(markerClass);
 		selected.addClass(markerClass);
-
-		(0, _jquery2.default)('input[type=hidden].js-sizeSelectionHidden').val("old??");
 	});
+	// End: Size selection
 
-	// End Size selection
+	// Assign the size selections
+	(0, _jquery2.default)('.js-dataForm').submit(function (event) {
+		var sizes = (0, _jquery2.default)('.sizeBlock--chosen');
+		// console.log("sizes: ", sizes.length);
+
+		var sizeList = [];
+		sizes.each(function (index, item) {
+			var elem = (0, _jquery2.default)(item);
+			// console.log(elem.attr('data-itemId'));
+			// console.log(elem.attr('data-sizePicker'));
+			sizeList.push(elem.attr('data-itemId') + ':' + elem.attr('data-sizePicker'));
+			// console.log(sizeList);
+		});
+		(0, _jquery2.default)('input[type=hidden].js-sizeSelectionHidden').val(sizeList);
+
+		event.preventDefault();
+	});
+	// End: Assign the size selections
 
 	(0, _jquery2.default)('.js-couponCodeInput').hide();
 
